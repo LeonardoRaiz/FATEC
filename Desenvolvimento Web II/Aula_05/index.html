@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 05</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{firstName}}
+        {{lastName}}
+    </div>
+    <div id="app2">
+        {{firstName}}
+        {{lastName}}
+    </div>
+</body>
+</html>
+
+<script>
+    const {createApp} = Vue;
+    createApp({
+        data() {
+            return {
+                firstName: "Leo",
+                lastName: "Raiz"
+            }
+        }
+    }).mount("#app")
+
+    createApp({
+        data() {
+            return {
+                firstName: "Carol",
+                lastName: "Raiz"
+            }
+        }
+    }).mount("#app2")
+</script>
