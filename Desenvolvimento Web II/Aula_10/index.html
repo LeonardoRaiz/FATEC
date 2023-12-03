@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="app">
+        <label><input type="checkbox" v-model="isPurple" > Roxo </label>
+        <input type="number" v-model="size" />
+        <input type="number" v-model="value" />
+        <select v-model="selectedColor">
+            <option value="">Branco</option>
+            <option value="text-black">Preto</option>
+            <option value="text-orange">Laranja</option>
+        </select>
+        <div class="circle" :class="[circle_classes, selectedColor]" :style="{ width: size + 'px', height: size + 'px', lineHeight: size + 'px', transform: `rotate(${value}deg)`}">
+            Olá!
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="app.js"></script>

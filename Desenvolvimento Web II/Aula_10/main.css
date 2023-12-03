@@ -1,0 +1,46 @@
+body {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+label {
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: block;
+}
+
+select {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+input[type=number] {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #45D619;
+    text-align: center;
+    color: white;
+    line-height: 150px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.purple {
+    background-color: #8a44cb;
+}
+
+.text-black {
+    color: #212020;
+}
+
+.text-orange {
+    color: #da4534;
+}
+
