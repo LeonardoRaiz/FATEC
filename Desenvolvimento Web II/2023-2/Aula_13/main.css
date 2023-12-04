@@ -1,0 +1,18 @@
+#app {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
