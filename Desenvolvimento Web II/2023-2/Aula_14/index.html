@@ -1,33 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pokédex</title>
+    <title>Title</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-<div id="app" v-cloak>
-    <div class="search-bar">
-        <input type="text" v-model="searchText" placeholder="Search Pokémon">
+    <div id="app" v-cloak>
+        {{ message }}
     </div>
-    <div class="pokemon-container">
-        <ul>
-            <li v-for="pokemon in filteredPokemons" :key="pokemon.id" :class="getTypeClass(pokemon.types[0].type.name)" @click="toggleDetails(pokemon)">
-                <div class="pokemon-card">
-                    <img :src="pokemon.sprites.front_default" alt="pokemon-image">
-                    <p class="pokemon-name">{{ capitalizeFirstLetter(pokemon.name) }}</p>
-                    <div v-if="pokemon.showDetails" class="details">
-                        <p>Type: {{ capitalizeFirstLetter(pokemon.types[0].type.name) }}</p>
-                        <p>Weight: {{ pokemon.weight }}</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div v-if="loading" class="loading-message">Loading...</div>
-</div>
-
-<script src="app.js"></script>
 </body>
 </html>
+
+<script src="app.js"></script>
