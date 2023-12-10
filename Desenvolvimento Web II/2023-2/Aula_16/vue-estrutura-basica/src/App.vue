@@ -1,7 +1,7 @@
 <template>
   <p>Olá</p>
-  <Greeting></Greeting>
-  <User></User>
+  <Greeting :idade="idade"></Greeting>
+  <user :idade="idade" @idade-change="idade++"></user>
 </template>
 
 
@@ -13,6 +13,11 @@ export default {
   components: {
     Greeting,
     User
+  },
+  data() {
+    return {
+      idade: 20
+    }
   }
 }
 </script>

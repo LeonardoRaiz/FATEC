@@ -1,6 +1,7 @@
 <script>
 export default {
   name: 'Greeting',
+  props: ["idade"],
   data() {
     return {
       msg: 'Hello World'
@@ -10,7 +11,8 @@ export default {
 </script>
 
 <template>
-  <p> {{ msg }}</p>
+  <p v-if="idade > 30"> {{ msg }}</p>
+  <p v-else>Você só pode ver esta mensagem se sua idade for maior que 30 anos</p>
 </template>
 
 <style scoped lang="scss">
