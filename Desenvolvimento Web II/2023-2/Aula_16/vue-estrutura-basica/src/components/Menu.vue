@@ -17,7 +17,8 @@
 <script>
 import Aula_16 from "@/components/Aula_16.vue";
 import Aula_17 from "@/components/Aula_17.vue";
-import Aula_18 from "@/components/Aula_18/Aula_18.vue"
+import Aula_18 from "@/components/Aula_18/Aula_18.vue";
+import Aula_19 from "@/components/Aula_19/Aula_19.vue";
 
 export default {
   data() {
@@ -33,7 +34,8 @@ export default {
   components: {
     aula_16: Aula_16,
     aula_17: Aula_17,
-    aula_18: Aula_18
+    aula_18: Aula_18,
+    aula_19: Aula_19
   },
 };
 </script>
