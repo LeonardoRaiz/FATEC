@@ -16,12 +16,14 @@ export default {
       <div class="bar" :style="{ width: `${ questionsAnswered / questions.length * 100 }%` }"></div>
       <div class="status">{{questionsAnswered}} respondidas de {{questions.length}} </div>
     </div>
-    <div class="single-question" v-for="(question, qi) in questions" :key="question.q" v-show="questionsAnswered === qi">
-      <div class="question">{{question.q}}</div>
-      <div class="answers">
-        <div class="answer" v-for="answer in question.answers" :key="answer.text" @click="selectAnswer(answer.is_correct)">{{answer.text}}</div>
+    <transition-group name="fade">
+      <div class="single-question" v-for="(question, qi) in questions" :key="question.q" v-show="questionsAnswered === qi">
+        <div class="question">{{question.q}}</div>
+        <div class="answers">
+          <div class="answer" v-for="answer in question.answers" :key="answer.text" @click="selectAnswer(answer.is_correct)">{{answer.text}}</div>
+        </div>
       </div>
-    </div>
+    </transition-group>
   </div>
 </template>
 
@@ -93,5 +95,20 @@ export default {
   background-color: #6f0b73;
   border-color: #6f0b73;
   color: #fff;
+}
+
+.fade-enter-from {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: all 1s linear;
+}
+.fade-leave-active {
+  transition: all 1s linear;
+  opacity: 0;
+  position: absolute;
+}
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

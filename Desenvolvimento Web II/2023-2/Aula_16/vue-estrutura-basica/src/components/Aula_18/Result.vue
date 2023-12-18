@@ -47,20 +47,7 @@ export default {
   text-align: center;
   box-sizing: border-box;
 }
-.fade-enter-from {
-  opacity: 0;
-}
-.fade-enter-active {
-  transition: all 0.3s linear;
-}
-.fade-leave-active {
-  transition: all 0.3s linear;
-  opacity: 0;
-  position: absolute;
-}
-.fade-leave-to {
-  opacity: 0;
-}
+
 
 .result{
   width: 100%;
