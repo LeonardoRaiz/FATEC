@@ -22,7 +22,8 @@ Atualizações Frequentes: Este repositório é atualizado regularmente. Fique d
 
 Participe nas Discussões: Use as issues para fazer perguntas, discutir conceitos ou sugerir melhorias.
 
-🤝 Contribua!
+### 🤝 Contribua!
+
 Este é um espaço coletivo. Sua contribuição é valiosa. Seja ativo nas discussões, compartilhe seus insights e ajude a construir uma comunidade de aprendizado vibrante.
 
 Aproveite sua estadia e tenha uma jornada acadêmica fantástica na FATEC Franca! 🎓✨
