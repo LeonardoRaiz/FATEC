@@ -32,7 +32,7 @@
     data() {
       return {
         flag: false,
-        words: ['Léo', 'Carol', 'Lana'],
+        words: ['Léo ', 'Carol', 'Lana'],
         textInput: ''
       }
     },
