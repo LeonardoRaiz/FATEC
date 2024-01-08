@@ -8,8 +8,6 @@ Aqui você encontrará um tesouro de recursos que serão seu guia durante esta j
 
 📚 Pesquisas: Explore pesquisas relevantes à disciplina. Estas são uma extensão do que aprendemos em aula e podem fornecer insights adicionais.
 
-🌐 Recursos Online: Links úteis, artigos, tutoriais e outras fontes online que complementam o conteúdo da disciplina.
-
 📁 Projetos: Conheça projetos passados e atuais, e inspire-se para suas próprias iniciativas.
 
 ## Como Contribuir
