@@ -1,0 +1,23 @@
+[v-cloak] {
+    display: none;
+}
+
+label {
+    font-size: 20px;
+}
+
+input[type=number] {
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 100px;
+    background-color: #4b0f80;
+    color: white;
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+}

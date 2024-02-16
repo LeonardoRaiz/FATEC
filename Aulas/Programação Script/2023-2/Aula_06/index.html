@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Aula 06 - VUE.js e methods</title>
+    <style>
+        .par {
+            color: green;
+        }
+
+        .impar {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>{{titulo}}</h1>
+        <h2>{{subtitulo}}</h2>
+        <p>2 + 3 = {{soma(2, 3)}}</p>
+        <p>Número: {{count}}</p>
+        <p :class="{'par': parImpar(count) === 'Par', 'impar': parImpar(count) === 'Impar'}">{{parImpar(count)}}</p>
+        <button @click="contador">Soma + 1</button>
+    </div>
+</body>
+</html>
+
+<script>
+    const { createApp } = Vue;
+    createApp({ 
+        data() {
+            return {
+                titulo: "Olá Vue!",
+                subtitulo: "Estou aprendendo o Vue!",
+                count: 0
+            }
+        },
+        methods: {
+            soma: (num1, num2) => {
+                return num1 + num2
+            },
+            contador: function () {
+                this.count++
+            },
+            parImpar: function (num) {
+                return num % 2 == 0 ? "Par" : "Impar"
+            },
+        }
+     }).mount('#app')
+</script>

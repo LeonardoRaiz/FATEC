@@ -1,0 +1,5 @@
+Escreva um programa TypeScript que imprima todos os números primos de 1 a 53 usando a função **`while`**.
+
+Escreva um programa TypeScript que leia uma lista de números inteiros do usuário, e imprima o maior número inserido. let lista: numeber[] = [1, 2, 3, 4]
+
+Escreva um programa TypeScript que leia um número inteiro do usuário, e imprima todos os números de 1 a esse número que são divisíveis por 3.

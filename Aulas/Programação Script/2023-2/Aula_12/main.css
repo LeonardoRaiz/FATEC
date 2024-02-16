@@ -1,0 +1,46 @@
+[v-cloak] {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #e0e0e0;
+}
+
+li span.nome {
+    font-weight: bold;
+    color: #333;
+}
+
+li span.idade {
+    font-style: italic;
+    color: #555;
+}
+
+.detalhes {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+li.expanded {
+    background-color: #d3d3d3;
+}
+
+li.expanded .detalhes {
+    display: block;
+}
