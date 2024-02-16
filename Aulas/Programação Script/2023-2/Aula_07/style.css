@@ -1,0 +1,36 @@
+.linha {
+    display: flex;
+}
+
+button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    background-color: rgb(161, 235, 235);
+    
+}
+
+button:active {
+    background-color: rgb(52, 94, 94);
+    color: aliceblue;
+}
+
+.operador {
+    background-color: orange;
+}
+
+.display {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+.calculadora {
+    width: 150px;
+}
+
+.igual {
+    background-color: rgb(25, 25, 129);
+    color: aliceblue;
+}
+

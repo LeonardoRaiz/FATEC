@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="maincss.css">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app" v-cloak>
+        <p> {{ fullName() }} </p>
+        <hr>
+
+        <label>First Name</label>
+        <input type="text" v-model="firstName">
+        <label>Last Name</label>
+        <input type="text" v-model="lastName">
+    </div>
+</body>
+</html>
+
+<script src="app.js"></script>

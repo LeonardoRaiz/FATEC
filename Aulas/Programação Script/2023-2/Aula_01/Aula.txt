@@ -1,0 +1,17 @@
+criar um repositorio 
+instalar o GIT
+instalar o NODE.js
+criar a pasta local no PC
+git clone "URL do repositorio"
+npm i -g typescript
+npm i -g ts-node
+
+npx ts-node exemplo1.ts
+
+Faça um programa que receba quatro números inteiros, calcule e mostre a soma desses números.
+
+Faça um programa que receba três notas, calcule e mostre a média aritmética entre elas.
+
+Faça um programa que receba três notas, calcule e mostre a média ponderada entre elas.
+
+Faça um programa que receba o salário de um funcionário, calcule e mostre o novo salário, sabendo-se que este sofreu um aumento de 25%.

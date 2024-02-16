@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Alternância de Componentes</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="app">
+    <button @click="alternarComponente">Alternar Componente</button>
+
+    <transition name="fade" mode="out-in">
+        <component :is="componenteAtual"></component>
+    </transition>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

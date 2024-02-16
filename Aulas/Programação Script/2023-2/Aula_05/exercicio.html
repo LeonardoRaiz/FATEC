@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 05 - Exercicio</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="app">
+    {{firstName}}
+    {{lastName}}
+    {{city}}
+</div>
+<div id="app2">
+    {{firstName}}
+    {{lastName}}
+    {{city}}
+</div>
+</body>
+</html>
+
+<script>
+    const {createApp} = Vue;
+    app = createApp({
+        data() {
+            return {
+                firstName: "Leo",
+                lastName: "Raiz",
+                city: "Franca"
+            }
+        }
+    }).mount("#app")
+
+    app2 = createApp({
+        data() {
+            return {
+                firstName: "Carol",
+                lastName: "Raiz",
+                city: "Peixoto"
+            }
+        }
+    }).mount("#app2")
+
+    setTimeout(() => {
+        const aux = app.city;
+        app.city = app2.city;
+        app2.city = aux;
+    }, 7000)
+</script>
