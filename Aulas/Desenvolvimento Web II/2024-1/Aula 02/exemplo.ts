@@ -48,4 +48,20 @@ namespace condicao
     {
         console.log("Operador OU ou OR");
     }
+
+    let resposta: string
+
+    resposta = numero == 10 ? "Igual a 10" : "Não é igual";
+    console.log(resposta)
+    if(numero == 10)
+    {
+        resposta = "Igual a 10"; // SIM
+    } else {
+        resposta = "Não é igual"; // NÃO
+    }
+    let vida: number = 100;
+    status = vida <= 0 ? "Morreu" : "Vivo";
+    console.log(status);
+    resposta = numero % 2 == 0 ? "Par" : "Impar";
+    console.log(resposta);
 }
