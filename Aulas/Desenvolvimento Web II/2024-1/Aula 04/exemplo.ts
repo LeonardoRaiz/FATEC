@@ -48,4 +48,27 @@ namespace vetor
     }
 
     console.log(alunos[1].ra);
+
+    let pares: number[];
+    pares = num.filter(function (numero){
+        return numero % 2 === 0
+    })
+
+    for (let i = 0; i < num.length; i++)
+    {
+        if (num[i] % 2 === 0)
+        {
+            pares[i] = num[i];
+        }
+    }
+
+    num.reduce(function (total,numero){
+        return total + numero;
+    })
+
+    let total: number = 0
+    for (let i = 0; i < num.length; i++)
+    {
+        total += num[i];
+    }
 }
