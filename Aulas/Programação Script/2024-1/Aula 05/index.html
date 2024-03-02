@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 05 - Intro VUE</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1>{{ titulo }}</h1>
+    <p>Olá {{ nome }}, bem vindo(a) ao novo mundo de Vue.js</p>
+</div>
+<div id="app2">
+    <h1>Estamos no APP2</h1>
+    <p>Olá {{ nome }}, bem vindo(a) ao novo mundo de Vue.js</p>
+    <p>A Soma de 5 + 4 = {{ 5 + 4 }}</p>
+    <p>A multiplicação de 5 x 4 = {{ multi() }}</p>
+    <p>A subtração de {{ num1 }} - {{ num2}} = {{ sub(num1, num2)}}</p>
+    <p>O {{ num }} é {{ resposta() }}</p>
+    <p>Timer: {{timer()}}</p>
+    <p>O valor é {{ resposta() }}</p>
+</div>
+</body>
+</html>
+
+<script>
+    const { createApp } = Vue;
+    createApp({
+        data() {
+            return {
+                titulo: "Olá Vue.js",
+                nome: "Jubileu",
+            }
+        }
+    }).mount("#app")
+
+    createApp({
+        data() {
+            return {
+                nome: "Zé",
+                num1: 20,
+                num2: 10,
+                vetor: [2, 3, 4],
+                num: 0
+            }
+        },
+        methods: {
+            multi: () => {
+                let x = 5;
+                let y = 4;
+                return x * y;
+            },
+            sub(x, y) {
+                return x - y
+            },
+            resposta() {
+                if (this.num % 2 === 0)
+                {
+                    return "Par"
+                } else {
+                    return "Impar"
+                }
+            },
+            timer() {
+                setTimeout(() => {
+                    this.num += 1;
+                }, 1000)
+                return this.num
+            }
+        }
+    }).mount("#app2")
+</script>
