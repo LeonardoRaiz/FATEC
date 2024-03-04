@@ -10,9 +10,8 @@
     <div :style="{backgroundColor: corDeFundo}">
         Este é um exemplo de V-BIND!
     </div>
-    <h1 :style="{ color: corDeFundo }">O contador está em: {{ contador }}</h1>
+    <h1 :style="{color: corLetra}">O contador está em: {{ contador }}</h1>
     <button @click="incrementarContador"> + 1 </button>
-    <img :src="bomba" >
 </div>
 </body>
 </html>
@@ -22,16 +21,15 @@
     createApp({
         data() {
             return {
-                corDeFundo: 'red', // Cor inicial
-                contador: 0,
-                bomba: 'bomba.png' 
+                corDeFundo: 'red',
+                corLetra: 'green',
+                contador: 0
             }
         },
         methods: {
             incrementarContador() {
-                this.contador++;
-                // Modifica a corDeFundo diretamente aqui, baseado no novo valor de contador
-                this.corDeFundo = this.contador % 2 === 0 ? 'orange' : 'purple';
+                this.contador++
+                this.corLetra = this.contador % 2 === 0 ? 'orange' : 'purple'
             }
         }
     }).mount("#app");
