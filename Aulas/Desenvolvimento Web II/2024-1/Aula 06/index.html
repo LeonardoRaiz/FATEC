@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 06 - Intro Vue</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Olá {{ nome }}, bem vindo ao Vue 3!</h1>
+        <h3>{{ num1 }} + {{ num2 }} = {{ num1 + num2}}</h3>
+        <h3>{{ num1 }} - {{ num2 }} = {{subtracao(num1, num2)}}</h3>
+        <h3>{{ num1 }} * {{ num2 }} = {{ multiplicacao()}}</h3>
+        <h3>Contador: {{ timer() }} = {{parImpar()}}</h3>
+    </div>
+</body>
+</html>
+
+<script>
+    const { createApp } = Vue;
+    createApp( {
+        data() {
+            return {
+                nome: "Leonardo",
+                num1: 5,
+                num2: 3,
+                num: 0
+            }
+        },
+        methods: {
+            subtracao: (x, y) => {
+                return x - y
+            },
+            multiplicacao: function () {
+                return this.num1 * this.num2
+            },
+            timer() {
+                setTimeout(() => {
+                    this.num += 1
+                },1000)
+                return this.num
+            },
+            parImpar: function () {
+                return this.num % 2 === 0 ? "Par" : "Impar"
+            }
+        }
+    } ).mount("#app")
+</script>
