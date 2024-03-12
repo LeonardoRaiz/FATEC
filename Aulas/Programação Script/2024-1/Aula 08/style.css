@@ -1,0 +1,12 @@
+[v-cloak]{
+    display: none;
+}
+
+input[type="text"] {
+    margin: 10px 0;
+    display: block;
+    border: none;
+    background-color: #ddefdf;
+    height: 30px;
+    border-radius: 5px;
+}
