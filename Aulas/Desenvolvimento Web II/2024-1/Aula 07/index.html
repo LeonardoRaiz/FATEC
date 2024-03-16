@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 07 - V-ON e V-BIND</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1 v-bind:style="{ backgroundColor: corFundo }"> A cor do css está setada para {{ corFundo }} </h1>
+    <button v-on:click="trocaCor()">Troca cor</button>
+    <p>{{ qtdClick }} </p>
+</div>
+
+<div id="app2">
+    <h1 v-bind:style="{ backgroundColor: corFundo }"> A cor do css está setada para {{ corFundo }} </h1>
+    <button v-on:click="trocaCor()">Troca cor</button>
+    <p>{{ qtdClick }} </p>
+    <h1 :style="{ color: cor }">{{ valor }} - {{ parImpar() }}</h1>
+</div>
+</body>
+</html>
+
+<script>
+    const { createApp } = Vue;
+    createApp({
+        data() {
+            return {
+                corFundo: '#ff9012',
+                corFundo1: '#22fabc',
+                qtdClick: 0,
+                cor: '',
+                valor: 0
+            }
+        },
+        methods: {
+            trocaCor() {
+                let aux = this.corFundo;
+                this.corFundo = this.corFundo1;
+                this.corFundo1 = aux;
+                this.qtdClick += 1
+            },
+            parImpar() {
+                setTimeout(() => {
+                    this.valor += 1
+                    if (this.valor % 2 === 0){
+                        this.cor = "red"
+                    } else {
+                        this.cor = "green"
+                    }
+                }, 1000)
+                return this.valor % 2 === 0 ? "Par" : "Impar"
+
+            }
+        }
+    }).mount("#app")
+
+    createApp({
+        data() {
+            return {
+                corFundo: '#ff9012',
+                corFundo1: '#22fabc',
+                qtdClick: 0,
+                cor: '',
+                valor: 0
+            }
+        },
+        methods: {
+            trocaCor() {
+                let aux = this.corFundo;
+                this.corFundo = this.corFundo1;
+                this.corFundo1 = aux;
+                this.qtdClick += 1
+            },
+            parImpar() {
+                setTimeout(() => {
+                    this.valor += 1
+                    if (this.valor % 2 === 0){
+                        this.cor = "red"
+                    } else {
+                        this.cor = "green"
+                    }
+                }, 1000)
+                return this.valor % 2 === 0 ? "Par" : "Impar"
+
+            }
+        }
+    }).mount("#app2")
+
+
+</script>
