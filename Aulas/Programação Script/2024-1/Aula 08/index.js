@@ -5,7 +5,9 @@ createApp({
         return {
             nome: "",
             sobrenome: "",
-            status: false
+            status: false,
+            interruptor: '',
+            ultimoEstado: 'apagada'
         }
     },
     methods: {
@@ -15,6 +17,11 @@ createApp({
 
         onOff() {
             this.status = !this.status
+        },
+        verificaEstado: function () {
+            if(this.interruptor === 'acesa' || this.interruptor === 'apagada'){
+                this.ultimoEstado = this.interruptor;
+            }
         }
     }
 }).mount("#app")

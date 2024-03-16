@@ -18,11 +18,17 @@
     <input type="text" v-model="sobrenome">
 
     <hr>
-    <label> Interruptor </label>
-    <input type="text" v-model="interruptor">
+
     <button @click="onOff()">Ligar/Desligar</button>
     <img v-if="!status" src="off.png" width="250px">
     <img v-else src="on.png" width="250px">
+
+    <hr>
+    <label> Interruptor </label>
+    <input type="text" v-model="interruptor" @input="verificaEstado">
+
+    <img v-if="ultimoEstado == 'acesa'" src="on.png" width="250px">
+    <img v-else-if="ultimoEstado == 'apagada'" src="off.png" width="250px">
 
 </div>
 </body>
