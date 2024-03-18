@@ -1,0 +1,45 @@
+body {
+    font-size: 20px;
+    font-family: "Comic Sans MS";
+}
+
+label {
+    margin-bottom: 20px;
+    display: block;
+}
+
+select {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+input[type=number] {
+    display: block;
+    margin: 10px 0;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #4CAF50;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+    line-height: 150px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-orange {
+    color: orange;
+}
+
