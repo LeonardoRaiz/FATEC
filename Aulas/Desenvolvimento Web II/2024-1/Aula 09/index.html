@@ -17,10 +17,11 @@
     <input type="text" v-model="lastName">
     <hr>
 
-    <input type="button" value="Ligar">
+    <input type="button" value="Ligar" @click="onOff()">
+    <input type="text" v-model="interruptor">
     <br>
-    <img src="off.png" width="250px">
-    <img src="on.png" width="250px">
+    <img v-if="status == false" src="off.png" width="250px">
+    <img v-else-if="status == true" src="on.png" width="250px">
 </div>
 </body>
 </html>
