@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>V-Model e V-IF</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <h1> {{ fullName() }}</h1>
+    <hr>
+
+    <label>Primeiro Nome</label>
+    <input type="text" v-model="firstName">
+    <label>Sobrenome</label>
+    <input type="text" v-model="lastName">
+    <hr>
+
+    <input type="button" value="Ligar">
+    <br>
+    <img src="off.png" width="250px">
+    <img src="on.png" width="250px">
+</div>
+</body>
+</html>
+
+<script src="index.js"></script>
