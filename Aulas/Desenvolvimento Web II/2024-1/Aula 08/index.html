@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculadora - Em Vue</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<!--    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>-->
+    <script src="vue.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,31 +14,31 @@
                 {{ display }}
             </div>
             <div class="linha">
-                <button class="operador" @click="">C</button>
+                <button class="operador" @click="lidarBotao('C')">C</button>
             </div>
             <div class="linha">
-                <button @click="">7</button>
-                <button @click="">8</button>
-                <button @click="">9</button>
-                <button class="operador" @click="">/</button>
+                <button @click="lidarBotao('7')">7</button>
+                <button @click="lidarBotao('8')">8</button>
+                <button @click="lidarBotao('9')">9</button>
+                <button class="operador" @click="lidarBotao('/')">/</button>
             </div>
             <div class="linha">
-                <button @click="">4</button>
-                <button @click="">5</button>
-                <button @click="">6</button>
-                <button class="operador" @click="">x</button>
+                <button @click="lidarBotao('4')">4</button>
+                <button @click="lidarBotao('5')">5</button>
+                <button @click="lidarBotao('6')">6</button>
+                <button class="operador" @click="lidarBotao('*')">x</button>
             </div>
             <div class="linha">
-                <button @click="">1</button>
-                <button @click="">2</button>
-                <button @click="">3</button>
-                <button class="operador" @click="">-</button>
+                <button @click="lidarBotao('1')">1</button>
+                <button @click="lidarBotao('2')">2</button>
+                <button @click="lidarBotao('3')">3</button>
+                <button class="operador" @click="lidarBotao('-')">-</button>
             </div>
             <div class="linha">
-                <button class="decimal" @click="">.</button>
-                <button @click="">0</button>
-                <button class="igual" @click="">=</button>
-                <button class="operador" @click="">+</button>
+                <button class="decimal" @click="lidarBotao('.')">.</button>
+                <button @click="lidarBotao('0')">0</button>
+                <button class="igual" @click="lidarBotao('=')">=</button>
+                <button class="operador" @click="lidarBotao('+')">+</button>
             </div>
         </div>
     </div>
