@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Herói vs Vilão</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        #app {
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        .personagem {
+            background-color: #fff;
+            border: 2px solid #000;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+        }
+        .acoes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        .barra-vida {
+            height: 20px;
+            background-color: #ff4949;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .sprite {
+            height: 100px;
+            margin-bottom: 20px;
+            background-color: #ddd; /* Placeholder for sprites */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="personagem">
+        <div class="barra-vida" :style="{width: heroi.vida + '%'}">{{ heroi.vida }}%</div>
+        <div class="sprite"></div>
+        <h2>Herói</h2>
+        <div class="acoes">
+            <button @click="atacar(true)">Atacar</button>
+            <button @click="defender(true)">Defender</button>
+            <button @click="usarPocao(true)">Poção</button>
+            <button @click="correr(true)">Correr</button>
+        </div>
+    </div>
+    <div class="personagem">
+        <div class="barra-vida" :style="{width: vilao.vida + '%'}">{{ vilao.vida }}%</div>
+        <div class="sprite"></div>
+        <h2>Vilão</h2>
+    </div>
+</div>
+
+<script>
+    const { createApp } = Vue;
+
+    createApp({
+        data() {
+            return {
+                heroi: { vida: 100 },
+                vilao: { vida: 100 }
+            }
+        },
+        methods: {
+            atacar(isHeroi) {
+                if(isHeroi) {
+                    this.vilao.vida -= 10;
+                    this.acaoVilao();
+                } else {
+                    this.heroi.vida -= 10;
+                }
+            },
+            defender(isHeroi) {
+                this.acaoVilao();
+            },
+            usarPocao(isHeroi) {
+                if(isHeroi) {
+                    this.heroi.vida += 10;
+                    if(this.heroi.vida > 100) this.heroi.vida = 100;
+                    this.acaoVilao();
+                }
+            },
+            correr(isHeroi) {
+                this.acaoVilao();
+            },
+            acaoVilao() {
+                const acoes = ['atacar', 'defender', 'usarPocao', 'correr'];
+                const acaoAleatoria = acoes[Math.floor(Math.random() * acoes.length)];
+                this[acaoAleatoria](false);
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>
