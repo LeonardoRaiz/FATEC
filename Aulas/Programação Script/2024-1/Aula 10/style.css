@@ -1,0 +1,42 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #cbdff1;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #8fb4d7;
+}
+
+li span.nome {
+    font-weight: bold;
+    color: #650238;
+}
+
+li span.idade {
+    font-style: italic;
+    color: #410627;
+}
+
+.detalhes {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #650238;
+    border-radius: 5px;
+}
+
+li.expanded {
+    background-color: #650238;
+}
+
+li.expanded .detalhes {
+    display: block;
+}
