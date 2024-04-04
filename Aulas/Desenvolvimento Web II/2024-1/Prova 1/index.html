@@ -9,18 +9,18 @@
 <body>
 <div id="app">
     <div class="personagem" >
-        <div class="barra-vida">{{ heroi.vida }}</div>
+        <div class="barra-vida" :style="{width: heroi.vida + '%'}">{{ heroi.vida }}</div>
         <div class="sprite">Placeholder Imagem</div>
         <h1>Herói</h1>
         <div class="acoes">
             <button @click="atacar(true)">Atacar</button>
-            <button>Defender</button>
-            <button>Usar Poção</button>
-            <button>Correr</button>
+            <button @click="defender(true)>Defender</button>
+            <button @click="usarPocao(true)>Usar Poção</button>
+            <button @click="correr(true)>Correr</button>
         </div>
     </div>
     <div class="personagem" >
-        <div class="barra-vida">{{ vilao.vida }}</div>
+        <div class="barra-vida" :style="{width: vilao.vida + '%'}">{{ vilao.vida }}</div>
         <div class="sprite">Placeholder Imagem</div>
         <h1>Vilão</h1>
     </div>
