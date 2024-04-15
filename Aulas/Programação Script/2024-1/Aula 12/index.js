@@ -1,0 +1,50 @@
+const { createApp } = Vue;
+
+createApp({
+    data() {
+        return {
+            pokemons: [],
+            loading: true,
+            searchText: '',
+            nextPage: 1
+        }
+    },
+    computed: {
+
+    },
+    created() {
+
+    },
+    destroyed() {
+
+    },
+    methods: {
+        async fetchPokemons() {
+            try {
+                const response = await fetch(`https://pokeapi.co/api/v2/pokemon?offset=${(this.nextPage - 1) * 60}&limit=60`)
+                const data = await response.json();
+                const pokemonDetailsPromises = data.results.map(async pokemon => this.fetchPokemonData(pokemon.url))
+                console.log(pokemonDetailsPromises)
+            } catch (error) {
+                console.error(error)
+            }
+        },
+        async fetchPokemonData(url){
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                return {
+                    id: data.id,
+                    name: data.name,
+                    weight: data.weight,
+                    types: data.types,
+                    sprite: data.sprites,
+                    showDetails: false,
+                }
+            } catch (error) {
+                console.error(error)
+            }
+        }
+    }
+
+}).mount("#app");
