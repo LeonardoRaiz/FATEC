@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Aula 11 - Componentes Dinâmicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <button @click="alterarComponente">Alterar componente</button>
+    <transition name="fade" mode="out-in">
+        <component :is="componenteAtual"></component>
+    </transition>
+</div>
+</body>
+</html>
+
+<script src="index.js"></script>
