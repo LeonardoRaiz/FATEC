@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 11 - Computed</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="app">
+    <label><input type="checkbox" v-model="ehRoxo">Roxo</label>
+    <input type="number" v-model="tamanho">
+    <input type="number" v-model="valor">
+    <select v-model="selecionarCor">
+        <option value="">Branco</option>
+        <option value="texto-laranja">Laranja</option>
+        <option value="texto-preto">Preto</option>
+    </select>
+    <div class="circulo"
+         :class="[circuloRoxo, selecionarCor]"
+         :style="{
+            width: tamanho + 'px',
+            height: tamanho + 'px',
+            lineHeight: tamanho + 'px',
+            transform: `rotate(${valor}deg)`
+        }">
+        Olá
+    </div>
+
+
+
+</div>
+</body>
+</html>
+<script src="index.js"></script>

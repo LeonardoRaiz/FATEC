@@ -1,0 +1,42 @@
+body {
+    font-size: 32px;
+    font-family: "Comic Sans MS";
+}
+
+label {
+    margin: 10px;
+    display: block;
+}
+
+select {
+    margin-bottom: 32px;
+}
+
+input[type=number] {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.circulo {
+    width: 150px;
+    height: 150px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    line-height: 150px;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.roxo {
+    background-color: #4b0f80;
+}
+
+.texto-laranja{
+    color: #e16b15;
+}
+
+.texto-preto {
+    color: black;
+}

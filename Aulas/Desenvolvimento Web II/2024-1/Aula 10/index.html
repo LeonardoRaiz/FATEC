@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>V-FOR</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<ul>
+    <li v-for="hero in heros" :key="hero.id" @click="expandirItem(hero)">
+        <span class="nome">{{ hero.nome }}</span> -
+        <span class="idade">{{ hero.idade}}</span>
+        <div v-show="hero.expanded" class="detalhes">
+            {{hero.email}}
+        </div>
+    </li>
+</ul>
+</div>
+</body>
+</html>
+<script src="index.js"></script>

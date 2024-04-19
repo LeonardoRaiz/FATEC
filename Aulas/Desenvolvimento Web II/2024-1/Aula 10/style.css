@@ -1,0 +1,44 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #caeccb;
+    margin: 8px 0;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #afeeb2;
+}
+
+li span.nome {
+    font-weight: bold;
+    color: #333333;
+}
+
+li span.idade {
+    font-style: italic;
+    color: #555555;
+}
+
+.detalhes {
+    margin-top: 8px;
+    padding: 16px;
+    background-color: rgba(144, 192, 144, 0.52);
+    border-radius: 8px;
+    border: 1px solid #4CAF50;
+}
+
+li.expanded {
+    background-color: #d3d3d3;
+}
+
+li.expanded .detalhes {
+    display: block;
+}
+
