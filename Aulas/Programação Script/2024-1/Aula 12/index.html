@@ -8,7 +8,19 @@
 </head>
 <body>
 <div id="app" v-cloak>
-<button @click="fetchPokemons"> Teste</button>
+    <button @click="fetchPokemons">Chamar pokemons</button>
+    <ul>
+        <li v-for="pokemon in pokemons" :key="pokemon.id">
+            <div class="pokemon-card">
+                <img :src="pokemon.sprite.front_default" alt="pokemon-image">
+                <p class="pokemon-name">{{pokemon.name.toUpperCase()}}</p>
+                <div v-if="pokemon.showDetails" class="details">
+                    <p>Tipo: {{pokemon.types[0].type.name}}</p>
+                    <p>Peso: {{pokemon.weight}}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
 </body>
 </html>
