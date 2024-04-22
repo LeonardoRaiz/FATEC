@@ -26,7 +26,7 @@ createApp({
                 const pokemonDetailsPromises = data.results.map(async pokemon => this.fetchPokemonData(pokemon.url))
                 const pokemonDetails = await Promise.all(pokemonDetailsPromises)
                 this.pokemons = [... this.pokemons, ... pokemonDetails];
-
+                this.nextPage++
             } catch (error) {
                 console.error(error)
             }
