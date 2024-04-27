@@ -46,6 +46,30 @@ createApp({
             } catch (error) {
                 console.error(error)
             }
+        },
+        getTypeClass(type) {
+            const typeClassMap = {
+                fire: 'fire',
+                grass: 'grass',
+                water: 'water',
+                bug: 'bug',
+                normal: 'normal',
+                poison: 'poison',
+                electric: 'electric',
+                fairy: 'fairy',
+                fighting: 'fighting',
+                ground: 'ground',
+                rock: 'rock',
+                ghost: 'ghost',
+                dragon: 'dragon',
+                ice: 'ice',
+                psychic: 'psychic',
+                steel: 'steel',
+                dark: 'dark',
+                flying: 'flying'
+            }
+
+            return typeClassMap[type] || ''
         }
     }
 
