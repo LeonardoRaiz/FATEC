@@ -13,10 +13,11 @@ createApp({
 
     },
     created() {
-
+        this.fetchPokemons();
+        window.addEventListener('scroll', this.handleScroll)
     },
     destroyed() {
-
+        window.removeEventListener('scroll', this.handleScroll)
     },
     methods: {
         async fetchPokemons() {
@@ -26,7 +27,8 @@ createApp({
                 const pokemonDetailsPromises = data.results.map(async pokemon => this.fetchPokemonData(pokemon.url))
                 const pokemonDetails = await Promise.all(pokemonDetailsPromises)
                 this.pokemons = [... this.pokemons, ... pokemonDetails];
-                this.nextPage++
+                this.nextPage++;
+                this.loading = false;
             } catch (error) {
                 console.error(error)
             }
@@ -70,6 +72,16 @@ createApp({
             }
 
             return typeClassMap[type] || ''
+        },
+        handleScroll() {
+            const bottomOfWindow =
+                document.documentElement.scrollTop + window.innerHeight ===
+                document.documentElement.offsetHeight;
+
+            if (bottomOfWindow && !this.loading) {
+                this.loading = true;
+                this.fetchPokemons();
+            }
         }
     }
 

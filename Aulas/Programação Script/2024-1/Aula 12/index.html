@@ -9,18 +9,22 @@
 <body>
 <div id="app" v-cloak>
     <button @click="fetchPokemons">Chamar pokemons</button>
-    <ul>
-        <li v-for="pokemon in pokemons" :key="pokemon.id" :class="getTypeClass(pokemon.types[0].type.name)">
-            <div class="pokemon-card">
-                <img :src="pokemon.sprite.front_default" alt="pokemon-image">
-                <p class="pokemon-name">{{pokemon.name.toUpperCase()}}</p>
-                <div v-if="pokemon.showDetails" class="details">
-                    <p>Tipo: {{pokemon.types[0].type.name}}</p>
-                    <p>Peso: {{pokemon.weight}}</p>
+    <div class="pokemon-container">
+        <ul>
+            <li v-for="pokemon in pokemons" :key="pokemon.id" :class="getTypeClass(pokemon.types[0].type.name)">
+                <div class="pokemon-card">
+                    <img :src="pokemon.sprite.front_default" alt="pokemon-image">
+                    <p class="pokemon-name">{{pokemon.name.toUpperCase()}}</p>
+                    <div v-if="pokemon.showDetails" class="details">
+                        <p>Tipo: {{pokemon.types[0].type.name}}</p>
+                        <p>Peso: {{pokemon.weight}}</p>
+                    </div>
                 </div>
-            </div>
-        </li>
-    </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div v-if="loading" >Loading... </div>
 </div>
 </body>
 </html>
