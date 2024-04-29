@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="app" v-cloak>
-    <button @click="fetchPokemons">Chamar pokemons</button>
+
     <div class="pokemon-container">
         <ul>
             <li v-for="pokemon in pokemons" :key="pokemon.id" :class="getTypeClass(pokemon.types[0].type.name)">
