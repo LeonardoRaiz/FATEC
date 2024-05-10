@@ -8,7 +8,22 @@
 </head>
 <body>
 <div id="app">
-<button @click="fetchPokemons">Chamar pokemons</button>
+    <button @click="fetchPokemons">Chamar Pokemon</button>
+    <input type="text">
+    <div class="pokemon-container">
+        <ul>
+            <li v-for="pokemon in pokemons" :key="pokemon.id" :class="getTypeClass(pokemon.types[0].type.name)">
+                <div class="pokemon-card">
+                    <img :src="pokemon.sprites.front_default" alt="">
+                    <p>{{pokemon.name}}</p>
+                    <div v-if="pokemon.showDetails" class="details">
+                        <p>{{pokemon.types[0].type.name}}</p>
+                        <p>{{pokemon.weight}}</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
 </body>
 </html>
