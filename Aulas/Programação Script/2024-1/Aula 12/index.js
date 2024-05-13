@@ -10,7 +10,9 @@ createApp({
         }
     },
     computed: {
-
+        filtredPokemons(){
+            return this.pokemons.filter(pokemon => pokemon.name.toLowerCase().includes(this.searchText.toLowerCase()))
+        }
     },
     created() {
         this.fetchPokemons();

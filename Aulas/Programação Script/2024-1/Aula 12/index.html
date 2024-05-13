@@ -8,10 +8,12 @@
 </head>
 <body>
 <div id="app" v-cloak>
-
+    <div class="search-bar">
+        <input type="text" v-model="searchText" placeholder="Procure um pokémon">
+    </div>
     <div class="pokemon-container">
         <ul>
-            <li v-for="pokemon in pokemons" :key="pokemon.id" :class="getTypeClass(pokemon.types[0].type.name)">
+            <li v-for="pokemon in filtredPokemons" :key="pokemon.id" :class="getTypeClass(pokemon.types[0].type.name)">
                 <div class="pokemon-card">
                     <img :src="pokemon.sprite.front_default" alt="pokemon-image">
                     <p class="pokemon-name">{{pokemon.name.toUpperCase()}}</p>
