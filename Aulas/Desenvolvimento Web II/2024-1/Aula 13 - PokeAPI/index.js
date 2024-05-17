@@ -9,6 +9,11 @@ createApp({
             nextPage: 1
         }
     },
+    computed: {
+        filteredPokemons() {
+            return this.pokemons.filter(pokemon => pokemon.name.toLowerCase().includes(this.searchText.toLowerCase()))
+        }
+    },
     methods: {
         async fetchPokemons() {
             try{
