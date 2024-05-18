@@ -4,35 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e39d615-a2d3-4069-8439-5cdeaf694ed6" name="Changes" comment="Final Pokémon API">
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/components/TheWelcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/components/WelcomeItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/components/icons/IconCommunity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/components/icons/IconDocumentation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/components/icons/IconEcosystem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/components/icons/IconSupport.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/components/icons/IconTooling.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-1/Aula 14/vite.config.js" afterDir="false" />
+    <list default="true" id="1e39d615-a2d3-4069-8439-5cdeaf694ed6" name="Changes" comment="SPA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -76,6 +61,11 @@
     "settings.editor.selected.configurable": "terminal",
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -96,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715984298722</updated>
-      <workItem from="1715984299855" duration="3752000" />
+      <workItem from="1715984299855" duration="4729000" />
     </task>
     <task id="LOCAL-00001" summary="Final Pokémon API">
       <option name="closed" value="true" />
@@ -106,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715985568251</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SPA">
+      <option name="closed" value="true" />
+      <created>1715989262767</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715989262767</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Final Pokémon API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Pokémon API" />
+    <MESSAGE value="SPA" />
+    <option name="LAST_COMMIT_MESSAGE" value="SPA" />
   </component>
 </project>
