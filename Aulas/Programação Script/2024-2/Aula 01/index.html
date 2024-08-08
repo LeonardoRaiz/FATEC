@@ -8,6 +8,10 @@
 <body>
     <div id="app">
         <p>{{titulo}}</p>
+        <h1>{{numero1}} + {{numero2}} = {{numero1 + numero2}}</h1>
+        <h1>{{numero1}} - {{numero2}} = {{sub(numero1, numero2)}}</h1>
+        <h1>{{multi()}}</h1>
+        <h1>Timer: {{timer()}}</h1>
     </div>
 </body>
 </html>
@@ -17,7 +21,25 @@
     createApp({
         data() {
             return {
-                titulo: "Olá Vue!"
+                titulo: "Olá Vue!",
+                numero1: 0,
+                numero2: 12
+            }
+        },
+        methods: {
+            sub(x, y) {
+                return x - y
+            },
+            multi() {
+                x = this.numero1
+                y = this.numero2
+                return x * y
+            },
+            timer() {
+                setTimeout(() => {
+                    this.numero1 += 1
+                }, 1000)
+                return this.numero1
             }
         }
     }).mount("#app")
