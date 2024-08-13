@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 02 - V-BIND</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>{{timer()}}</h1>
+    <h1 :style="{color: corLetra}">
+      {{numero % 2 === 0 ? 'Par' : 'Impar'}}</h1>
+
+    <h1>{{texto}}</h1>
+    <button @click="change">Trocar texto</button>
+  </div>
+</body>
+</html>
+<script>
+  const { createApp } = Vue;
+  createApp({
+    data() {
+      return {
+        numero: 0,
+        corLetra: 'red',
+        texto: "Olá, Turma!",
+        aux: true
+      }
+    },
+    methods: {
+      timer(){
+        setTimeout(() =>{
+          this.numero += 1;
+        },1000)
+        this.corLetra = this.numero % 2 === 0 ? 'green' : 'blue'
+        return this.numero
+      },
+      change() {
+        this.texto = this.aux ? "Estamos aprendendo VUE.JS" : 'Olá, Turma!'
+        this.aux = !this.aux
+      }
+    }
+  }).mount("#app");
+</script>
