@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <div class="calculadora">
+        <div class="display">
+            {{display}}
+        </div>
+        <div class="linha">
+            <button class="ac">AC</button>
+        </div>
+        <div class="linha">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operador">/</button>
+        </div>
+        <div class="linha">
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operador">x</button>
+        </div>
+        <div class="linha">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operador">-</button>
+        </div>
+        <div class="linha">
+            <button>.</button>
+            <button>0</button>
+            <button>=</button>
+            <button class="operador">+</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

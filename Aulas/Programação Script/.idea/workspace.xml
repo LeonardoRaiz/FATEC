@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 07/08">
-      <change afterPath="$PROJECT_DIR$/2024-2/Aula 02/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/Aula 03/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/Aula 03/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/Aula 03/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -39,6 +43,9 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2kIUD1ZOkkUTmDXt9fxdCkZs42S" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,11 +56,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Programação Script",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor",
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -76,6 +85,9 @@
       <workItem from="1722970462964" duration="6000" />
       <workItem from="1723076005341" duration="3418000" />
       <workItem from="1723508086744" duration="3267000" />
+      <workItem from="1723511863515" duration="2000" />
+      <workItem from="1723680777283" duration="219000" />
+      <workItem from="1723681002745" duration="3297000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
