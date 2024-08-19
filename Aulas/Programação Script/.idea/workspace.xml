@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 07/08">
-      <change afterPath="$PROJECT_DIR$/2024-2/Aula 03/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/Aula 03/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/Aula 03/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 14/08" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +82,7 @@
       <workItem from="1723508086744" duration="3267000" />
       <workItem from="1723511863515" duration="2000" />
       <workItem from="1723680777283" duration="219000" />
-      <workItem from="1723681002745" duration="3297000" />
+      <workItem from="1723681002745" duration="3875000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
@@ -97,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723079085725</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Aula 14/08">
+      <option name="closed" value="true" />
+      <created>1723684879403</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723684879403</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Aula 07/08" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 07/08" />
+    <MESSAGE value="Aula 14/08" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 14/08" />
   </component>
 </project>
