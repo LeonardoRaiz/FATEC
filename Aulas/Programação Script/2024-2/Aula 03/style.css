@@ -1,6 +1,9 @@
 .calculadora {
     width: 265px;
-    background: rgba(26, 26, 26, 0.14);
+    background: rgba(26, 26, 26, 0.63);
+    border-radius: 5px;
+    overflow: hidden;
+
 }
 
 .linha {
@@ -29,6 +32,7 @@ button:active {
 
 .operador {
     background-color: #f2a014;
+    margin-left: 1px;
 }
 
 .operador:active {
@@ -39,12 +43,14 @@ button:active {
     display: flex;
     justify-content: end;
     align-items: center;
-    height: 50px;
+    height: 80px;
     background-color: rgba(26, 26, 26, 0.48);
     font-size: 23px;
     color: whitesmoke;
+
 }
 
 .ac {
     width: 100%;
+    margin-top: 2px;
 }
