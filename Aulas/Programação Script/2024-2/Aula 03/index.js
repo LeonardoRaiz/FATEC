@@ -30,8 +30,35 @@ createApp({
                     this.lidarNumero(botao);
             }
         },
+        lidarIgual() {
+            console.log("lidarIgual")
+        },
+        lidarOperador(operador) {
+            //console.log("lidarOperador", operador);
+
+        },
+        lidarDecimal() {
+            //console.log("lidarDecimal");
+            if(!this.display.includes(".")) {
+                this.display += ".";
+            }
+        },
+        lidarClear() {
+            //console.log("lidarClear");
+            this.display = '0'
+            this.numeroAtual = ''
+            this.numeroAnterior = ''
+            this.operador = null
+        },
         lidarNumero(numero) {
-            console.log(numero);
+            //console.log(numero);
+            if (this.display === '0')
+            {
+                this.display = numero;
+            } else
+            {
+                this.display += numero
+            }
         }
     }
 }).mount("#app")

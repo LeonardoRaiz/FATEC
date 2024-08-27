@@ -13,31 +13,31 @@
             {{display}}
         </div>
         <div class="linha">
-            <button class="ac">AC</button>
+            <button class="ac" @click="lidarBotao('AC')">AC</button>
         </div>
         <div class="linha">
             <button @click="lidarBotao('7')">7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operador">/</button>
+            <button @click="lidarBotao('8')">8</button>
+            <button @click="lidarBotao('9')">9</button>
+            <button class="operador" @click="lidarBotao('/')">/</button>
         </div>
         <div class="linha">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operador">x</button>
+            <button @click="lidarBotao('4')">4</button>
+            <button @click="lidarBotao('5')">5</button>
+            <button @click="lidarBotao('6')">6</button>
+            <button class="operador" @click="lidarBotao('*')">x</button>
         </div>
         <div class="linha">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operador">-</button>
+            <button @click="lidarBotao('1')">1</button>
+            <button @click="lidarBotao('2')">2</button>
+            <button @click="lidarBotao('3')">3</button>
+            <button class="operador" @click="lidarBotao('-')">-</button>
         </div>
         <div class="linha">
-            <button>.</button>
-            <button>0</button>
-            <button>=</button>
-            <button class="operador">+</button>
+            <button @click="lidarBotao('.')">.</button>
+            <button @click="lidarBotao('0')">0</button>
+            <button @click="lidarBotao('=')">=</button>
+            <button class="operador" @click="lidarBotao('+')">+</button>
         </div>
     </div>
 </div>
