@@ -31,11 +31,19 @@ createApp({
             }
         },
         lidarIgual() {
-            console.log("lidarIgual")
+            //console.log("lidarIgual")
+            this.numeroAtual = this.display;
+            switch (this.operador) {
+                case "*":
+                    this.display = parseFloat(this.numeroAnterior) * parseFloat(this.numeroAtual);
+                    break;
+            }
         },
         lidarOperador(operador) {
             //console.log("lidarOperador", operador);
-
+            this.numeroAnterior = this.display;
+            this.operador = operador;
+            this.display = '0';
         },
         lidarDecimal() {
             //console.log("lidarDecimal");

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 19/08">
+    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 26/08">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024-2/Aula 03/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/Aula 03/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2024-2/Aula 03/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/Aula 03/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +88,7 @@
       <workItem from="1723681002745" duration="3875000" />
       <workItem from="1724102350388" duration="1041000" />
       <workItem from="1724112572289" duration="3863000" />
-      <workItem from="1724716360693" duration="2389000" />
+      <workItem from="1724716360693" duration="3908000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
@@ -123,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724115175707</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Aula 26/08">
+      <option name="closed" value="true" />
+      <created>1724718854886</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724718854886</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +151,7 @@
     <MESSAGE value="Aula 07/08" />
     <MESSAGE value="Aula 14/08" />
     <MESSAGE value="Aula 19/08" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 19/08" />
+    <MESSAGE value="Aula 26/08" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 26/08" />
   </component>
 </project>
