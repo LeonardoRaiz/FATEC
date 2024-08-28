@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 26/08">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024-2/Aula 03/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/Aula 03/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 26/08" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +86,7 @@
       <workItem from="1724102350388" duration="1041000" />
       <workItem from="1724112572289" duration="3863000" />
       <workItem from="1724716360693" duration="3908000" />
+      <workItem from="1724720469601" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
@@ -130,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724718854886</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Aula 26/08">
+      <option name="closed" value="true" />
+      <created>1724720475744</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724720475744</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
