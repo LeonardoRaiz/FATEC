@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 04 - V-MODEL e V-IF</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1>V-MODEL e V-IF</h1>
+    <label>Nome:</label>
+    <input type="text" v-model="nome">
+    <br>
+    <label>Sobrenome: </label>
+    <input type="text" v-model="sobrenome">
+
+    <h1 v-if="!nome">Olá, Fulano</h1>
+    <h1 v-else-if="sobrenome">Olá, {{nome}}</h1>
+
+    <button @click="onOff()">Ligar/Desligar</button>
+    <img v-if="!luz" src="off.png" width="250px">
+    <img v-else src="on.png" width="250px">
+
+    <input type="text" >
+</div>
+</body>
+</html>
+<script src="index.js"></script>
