@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>V-FOR e V-SHOW</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="item in nomes"
+            :key="item.id"
+            @click="expandedItem(item)">
+            <span>NOME: {{item.nome}}</span>
+            <br>
+            <span>IDADE: {{item.idade}}</span>
+            <div v-show="item.expanded" class="detalhes">
+                E-MAIL: {{item.email}}
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+
+<script src="index.js"></script>

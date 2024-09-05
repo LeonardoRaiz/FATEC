@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 28/08" />
+    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 28/08">
+      <change afterPath="$PROJECT_DIR$/2024-2/Aula 05/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/Aula 05/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/Aula 05/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -97,6 +102,8 @@
       <workItem from="1724720469601" duration="25000" />
       <workItem from="1724887198789" duration="1555000" />
       <workItem from="1724888870615" duration="2934000" />
+      <workItem from="1724940559156" duration="1000" />
+      <workItem from="1725321537977" duration="4225000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />

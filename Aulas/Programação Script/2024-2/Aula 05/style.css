@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;
+    padding: 0 ;
+}
+
+li {
+    background-color: #c7e8b2;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #85daae;
+}
+
+.detalhes {
+    margin: 10px 0;
+    padding: 10px;
+    border: solid 1px #37692f;
+    border-radius: 5px;
+}
+
+li.expanded {
+    background-color: #469180;
+}
+
+li.expanded .detalhes {
+    display: block;
+}
