@@ -1,0 +1,180 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>A Linguagem de Programação do Visualg (1)</title>
+</head>
+
+<body>
+
+<p><font face="Arial" size="4">A Linguagem de Programação do VisuAlg (1)&nbsp;</font></p>
+<p><font face="Arial" size="2"><b>Introdução</b></font></p>
+<p><font face="Arial" size="2">A linguagem que o VisuAlg interpreta é bem
+simples: é uma versão portuguesa dos pseudocódigos largamente utilizados nos livros de introdução à
+programação, conhecida como &quot;Portugol&quot;. Tomei a liberdade de acrescentar-lhe
+alguns comandos novos,
+com o intuito de criar facilidades específicas para o ensino de técnicas de
+elaboração de algoritmos. Inicialmente, pensava em criar uma sintaxe muito simples e
+&quot;liberal&quot;, para que o usuário se preocupasse apenas com a lógica da
+resolução dos problemas e não com as palavras-chave, pontos e vírgulas, etc.
+No entanto, cheguei depois à conclusão de que alguma formalidade seria não só
+necessária como útil, para criar um sentido de disciplina na elaboração do
+&quot;código-fonte&quot;.</font></p>
+<p><font face="Arial" size="2">A linguagem do VisuAlg permite apenas <b> um comando
+por linha</b>: desse modo, não há necessidade de <i>tokens</i> separadores de
+estruturas, como o ponto e vírgula em Pascal. Também não existe o conceito de
+blocos de comandos (que correspondem ao <i>begin</i>
+e <i>end</i> do Pascal e ao </font><font face="Courier New" size="2">{</font><font face="Arial" size="2">
+e </font><font face="Courier New" size="2">}</font><font face="Arial" size="2">
+do C), nem comandos de desvio incondicional como o <i>goto</i>. Na versão atual do
+VisuAlg, com exceção das rotinas de entrada e saída, <b> não</b> há nenhum
+subprograma embutido, tal como <i>Inc()</i>, <i>Sqr()</i>, <i>Ord()</i>,
+<i>Chr()</i>, <i>Pos()</i>, <i>Copy()</i> ou outro.</font></p>
+<p><font face="Arial" size="2"><b>Importante:</b> para facilitar a digitação e
+evitar confusões,
+todas as palavras-chave do VisuAlg foram implementadas sem acentos, cedilha, etc.
+Portanto, o tipo de dados <i>lógico</i> é definido como </font><font face="Courier New" size="2">logico</font><font face="Arial" size="2">, o
+comando <i>se..então..senão</i> é definido como </font><font face="Courier New" size="2">se..entao..senao</font><font face="Arial" size="2">, e assim por diante. O
+VisuAlg também não distingue maiúsculas e minúsculas no reconhecimento
+de palavras-chave e nomes de variáveis.</font></p>
+<p><font face="Arial" size="2"><b>Formato Básico do Pseudocódigo e Inclusão
+de Comentários</b></font></p>
+<p><font face="Arial" size="2">O formato básico do nosso pseudocódigo é o seguinte:</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2"><u><a name="formato"></a>algoritmo</u> "semnome"<br>
+  // Função :<br>
+  // Autor :<br>
+  // Data :&nbsp;<br>
+  // Seção de Declarações&nbsp;<br>
+  <u>inicio</u><br>
+  // Seção de Comandos&nbsp;<br>
+  <u>fimalgoritmo</u></font></p>
+</blockquote>
+<p><font face="Arial" size="2">A primeira linha é composta pela
+palavra-chave </font><font face="Courier New" size="2">algoritmo</font><font face="Arial" size="2">
+seguida do seu nome delimitado por aspas duplas. Este nome será usado como
+título nas janelas de leitura de dados (nas futuras versões do VisuAlg, talvez utilizemos este dado de outras formas). A seção que se segue é a de
+declaração de variáveis, que termina com a linha que contém a palavra-chave </font><font face="Courier New" size="2">inicio</font><font face="Arial" size="2">.
+Deste ponto em diante está a seção de comandos, que continua até a linha em
+que se encontre a palavra-chave </font><font face="Courier New" size="2">fimalgoritmo</font><font face="Arial" size="2">.
+Esta última linha marca o final do pseudocódigo: todo texto existente a
+partir dela é ignorado pelo interpretador.</font></p>
+<p><font face="Arial" size="2">O VisuAlg permite a inclusão de comentários: qualquer texto precedido de &quot;//&quot; é
+ignorado, até se atingir o final da sua linha. Por este motivo, os comentários não
+se estendem por mais de uma linha: quando se deseja escrever comentários mais longos,
+que ocupem várias linhas, cada uma delas deverá começar por &quot;//&quot;.</font></p>
+<p><font face="Arial" size="2"><b><a name="tipos"></a>Tipos de Dados</b></font></p>
+<p><font face="Arial" size="2">O VisuAlg prevê quatro tipos de dados: <b>inteiro</b>,
+<b>real</b>, <b>cadeia de caracteres</b> e <b>lógico</b> (ou <i>booleano</i>). As palavras-chave que os definem são as
+seguintes (observe que elas não têm acentuação):</font></p>
+<blockquote>
+  <ul>
+    <li><font face="Courier New" size="2">inteiro</font><font face="Arial" size="2">: define variáveis
+  numéricas do tipo inteiro, ou seja, sem casas decimais.</font></li>
+    <li><font face="Courier New" size="2">real</font><font face="Arial" size="2">: define variáveis
+  numéricas do tipo real, ou seja, com casas decimais.</font></li>
+    <li><font face="Courier New" size="2">caractere</font><font face="Arial" size="2">: define variáveis do tipo
+  <i>string</i>, ou seja, cadeia de caracteres.
+  </font></li>
+    <li><font face="Courier New" size="2">logico</font><font face="Arial" size="2">: define variáveis do tipo
+  <i> booleano</i>, ou seja, com valor VERDADEIRO ou FALSO.</font></li>
+  </ul>
+</blockquote>
+<p><font face="Arial" size="2"><a name="vetor"></a>O VisuAlg permite também a
+declaração de variáveis estruturadas através da palavra-chave </font><font size="2" face="Courier New">vetor</font><font face="Arial" size="2">,
+como será explicado a seguir.</font></p>
+<p><font face="Arial" size="2"><b><a name="var"></a>Nomes de Variáveis e sua
+Declaração</b></font></p>
+<p><font face="Arial" size="2">Os nomes das variáveis devem começar por uma
+letra e depois conter letras, números ou <i>underline</i>, até um limite de 30
+caracteres. As variáveis podem ser simples ou estruturadas (na versão atual,
+os vetores podem ser de uma ou duas dimensões). Não pode haver duas variáveis com o
+mesmo nome, com a natural exceção dos elementos de um mesmo vetor.</font></p>
+<p><font face="Arial" size="2">A seção de declaração de variáveis começa
+com a palavra-chave </font><font size="2" face="Courier New">var</font><font face="Arial" size="2">,
+e continua com as </font><font face="Arial" size="2"> seguintes sintaxes:</font></p>
+<blockquote>
+  <p><font size="2" face="Courier New"><i>&lt;lista-de-variáveis&gt;</i> : <i>
+  &lt;tipo-de-dado&gt;</i></font><font size="2" face="Courier New"><i><br>
+  &lt;lista-de-variáveis&gt;</i> : vetor &quot;[&quot;<i>&lt;lista-de-intervalos&gt;&quot;</i>]&quot;
+  de <i>&lt;tipo-de-dado&gt;</i></font></p>
+</blockquote>
+<p><font face="Arial" size="2">Na </font><font size="2" face="Courier New"><i>&lt;lista-de-variáveis&gt;</i></font><font face="Arial" size="2">,
+os nomes das variáveis estão separados por vírgulas. Na </font><font face="Courier New" size="2"><i>&lt;lista-de-intervalos&gt;</i></font><font face="Arial" size="2">,
+os </font><font face="Courier New" size="2"><i>&lt;intervalo&gt;</i></font><font face="Arial" size="2">
+são separados por vírgulas, e têm a seguinte sintaxe:</font></p>
+<blockquote>
+  <p><font size="2" face="Courier New"><i>&lt;intervalo&gt;</i>: <i>&lt;valor-inicial&gt;</i>
+  .. <i>&lt;valor-final&gt;</i>&nbsp;</font></p>
+</blockquote>
+<p><font size="2" face="Arial">Na versão atual do VisuAlg, tanto </font><i><font size="2" face="Courier New">&lt;valor-inicial&gt;</font></i><font size="2" face="Arial">
+como </font><i><font size="2" face="Courier New">&lt;valor-final&gt;</font></i><font size="2" face="Arial">
+devem ser inteiros. Além disso, exige-se evidentemente que </font><font size="2" face="Courier New"><i>&lt;valor-final&gt;</i></font><font size="2" face="Arial">
+seja maior do que </font><i><font size="2" face="Courier New">&lt;valor-inicial&gt;</font></i><font size="2" face="Arial">.</font></p>
+<p><font face="Arial" size="2">
+Exemplos:</font></p>
+<blockquote>
+  <p><font size="2" face="Courier New">var a: inteiro<br>
+  &nbsp;&nbsp;&nbsp; Valor1, Valor2: real<br>
+  &nbsp;&nbsp;&nbsp; vet: vetor [1..10] de real<br>
+  &nbsp;&nbsp;&nbsp; matriz: vetor [0..4,8..10] de inteiro<br>
+  &nbsp;&nbsp;&nbsp; nome_do_aluno: caractere<br>
+  &nbsp;&nbsp;&nbsp; sinalizador: logico</font></p>
+</blockquote>
+<p><font face="Arial" size="2">Note que não há a necessidade de ponto e
+vírgula após cada declaração: basta pular linha. A declaração de vetores
+é análoga à linguagem Pascal: a variável </font><font face="Courier New" size="2"> vet</font><font face="Arial" size="2"> acima tem 10 elementos, com os índices de
+[1] a [10], enquanto </font><font face="Courier New" size="2"> matriz</font><font face="Arial" size="2"> corresponde a 15 elementos com índices [0,8], [0,9],
+[0,10], [1,8], [1,9], [1,10], ... até [4,10]. O número total de variáveis suportado pelo
+VisuAlg é 500 (cada
+elemento de um vetor é contado individualmente).</font></p>
+<p><font face="Arial" size="2"><b><a name="constantes"></a>Constantes e Comando de Atribuição</b></font></p>
+<p><font face="Arial" size="2">O VisuAlg tem três tipos de constantes:</font></p>
+<blockquote>
+  <ul>
+    <li><font face="Arial" size="2"><i>Numéricos</i>: são valores numéricos escritos na
+  forma usual das linguagens de programação. Podem ser inteiros ou reais.
+  Neste último caso, o separador de decimais é o
+  ponto e não a vírgula, independente da configuração regional do computador
+  onde o VisuAlg está sendo executado. O VisuAlg também não suporta
+  separadores de milhares.</font></li>
+    <li><font face="Arial" size="2">
+  <i>
+  Caracteres</i>: qualquer cadeia de caracteres delimitada por aspas duplas
+  (&quot;).</font></li>
+    <li><font face="Arial" size="2">
+  <i>
+  Lógicos</i>: admite os valores VERDADEIRO ou FALSO.</font></li>
+  </ul>
+</blockquote>
+<p><font face="Arial" size="2">A atribuição de valores a variáveis é feita
+com o operador </font><font size="2" face="Courier New">&lt;-</font><font face="Arial" size="2">.
+Do seu lado esquerdo fica a variável à qual está sendo atribuído o
+valor, e à sua direita pode-se colocar qualquer expressão (constantes, variáveis,
+expressões numéricas), desde que seu resultado tenha tipo igual ao da variável.</font></p>
+<p><font face="Arial" size="2">Alguns exemplos de atribuições, usando as variáveis declaradas
+acima:</font></p>
+<blockquote>
+  <p><font size="2" face="Courier New">a &lt;- 3<br>
+  Valor1 &lt;- 1.5<br>
+  Valor2 &lt;- Valor1 + a<br>
+  vet[1] &lt;- vet[1] + (a * 3)<br>
+  matriz[3,9] &lt;- a/4 - 5<br>
+  nome_do_aluno &lt;- &quot;José da Silva&quot;<br>
+  sinalizador &lt;- FALSO</font></p>
+</blockquote>
+
+<p><font face="Arial" size="2"><a href="linguagem2.htm">Próxima</a></font></p>
+
+<p align="center"><font face="Arial" size="2">&nbsp; <a href="objetivos.htm">Objetivos</a>&nbsp;&nbsp;&nbsp;
+<a href="telaprin.htm">Tela principal</a>&nbsp;&nbsp;&nbsp;</font> <font face="Arial" size="2"><a href="menu.htm">Menu</a></font>&nbsp;&nbsp;&nbsp;
+<a href="linguagem.htm"><font face="Arial" size="2">A linguagem do VisuAlg</font></a>&nbsp;&nbsp;&nbsp;
+<a href="refer.htm"><font face="Arial" size="2">Referências da linguagem do VisuAlg</font></a><font face="Arial" size="2">&nbsp;&nbsp; </font> <font face="Arial" size="2"><a href="autocomp.htm">Mais
+recursos</a></font></p>
+
+</body>
+
+</html>

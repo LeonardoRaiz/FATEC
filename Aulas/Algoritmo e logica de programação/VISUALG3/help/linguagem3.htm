@@ -1,0 +1,272 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>A Linguagem de Programação do Visualg (3)</title>
+</head>
+
+<body>
+
+<p><font face="Arial" size="4">A Linguagem de Programação do VisuAlg (3)</font></p>
+<p><font face="Arial" size="2"><b>Comandos de Repetição</b></font></p>
+<p><font face="Arial" size="2">O VisuAlg implementa as três estruturas de
+repetição usuais nas linguagens de programação: o laço contado </font><font face="Courier New" size="2">para...ate...faca</font><font face="Arial" size="2">
+(similar ao </font><i><font face="Arial" size="2">for...to...do</font></i><font face="Arial" size="2">
+do Pascal), e os laços condicionados </font><font face="Courier New" size="2">enquanto...faca</font><font face="Arial" size="2">
+(similar ao </font><i><font face="Arial" size="2">while...do</font></i><font face="Arial" size="2">)
+e </font><font face="Courier New" size="2">repita...ate</font><font face="Arial" size="2">
+(similar ao </font><i><font face="Arial" size="2">repeat...until</font></i><font face="Arial" size="2">).
+A sintaxe destes comandos é explicada a seguir.</font></p>
+<p><font face="Arial" size="2"><b><a name="para"></a>Para ... faça</b></font></p>
+<p><font face="Arial" size="2">Esta estrutura repete uma seqüência de comandos um determinado
+número de vezes.</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">para <i> &lt;variável&gt;</i> de <i> &lt;valor-inicial&gt;</i> ate
+  <i> &lt;valor-limite&gt;</i> [passo <i> &lt;incremento&gt;</i>] faca<br>
+  </font><font face="Courier New" size="2">
+&nbsp;&nbsp; <i>&lt;seqüência-de-comandos&gt;</i><br>
+  fimpara</font></p>
+</blockquote>
+<table border="1" width="100%">
+  <tr>
+    <td width="23%" align="center"><font face="Courier New" size="2">&lt;<i>variável</i> &gt;</font></td>
+    <td width="77%"><font face="Arial" size="2">É a variável contadora que controla o número de repetições do laço.
+      Na versão atual, deve ser necessariamente uma variável do tipo </font><font face="Courier New" size="2">inteiro</font><font face="Arial" size="2">,
+      como todas as expressões deste comando.</font></td>
+  </tr>
+  <tr>
+    <td width="23%" align="center"><font face="Courier New" size="2"><i>&lt;valor-inicial&gt;</i> </font></td>
+    <td width="77%"><font face="Arial" size="2">É
+uma expressão que especifica o valor de inicialização da variável contadora antes da primeira
+      repetição do laço.</font></td>
+  </tr>
+  <tr>
+    <td width="23%" align="center"><font face="Courier New" size="2"><i>
+&lt;valor-limite &gt;</i> </font></td>
+    <td width="77%"><font face="Arial" size="2">É uma
+expressão que especifica o valor máximo que a variável contadora pode alcançar.</font></td>
+  </tr>
+  <tr>
+    <td width="23%" align="center"><font face="Courier New" size="2"><i>&lt;incremento &gt;</i></font></td>
+    <td width="77%"><font face="Arial" size="2">É opcional. Quando presente,
+      precedida pela palavra </font><font face="Courier New" size="2">passo</font><font face="Arial" size="2">, é uma expressão que
+      especifica o incremento que será acrescentado à variável contadora em cada repetição do
+      laço. Quando esta opção não é utilizada, o valor padrão de <i>&lt;</i></font><font face="Courier New" size="2"><i>incremento&gt;</i> </font><font face="Arial" size="2">é
+      1. Vale a pena ter em conta que também é possível especificar valores
+      negativos para </font><i><font face="Courier New" size="2">&lt;incremento&gt;</font></i><font face="Arial" size="2">.
+      Por outro lado, se a avaliação da expressão </font><font face="Courier New" size="2"> &lt;<i>incremento</i> &gt;</font><font face="Arial" size="2">
+      </font><font face="Arial" size="2">resultar em valor nulo, a execução do
+      algoritmo será interrompida, com a impressão de uma mensagem de erro.</font></td>
+  </tr>
+  <tr>
+    <td width="23%" align="center"><font face="Courier New" size="2">fimpara </font></td>
+    <td width="77%"><font face="Arial" size="2">Indica o fim da seqüência de comandos a serem repetidos. Cada vez que o programa
+chega neste ponto, é acrescentado à variável contadora o valor de </font><font face="Courier New" size="2"> &lt;<i>incremento</i> &gt;</font><font face="Arial" size="2">, e
+comparado a </font><font face="Courier New" size="2"><i>
+&lt;valor-limite &gt;</i></font><font face="Arial" size="2">. Se for menor ou igual (ou maior ou igual,
+      quando </font><font face="Courier New" size="2"><i>&lt;incremento &gt;</i></font><font face="Arial" size="2"> for negativo), a
+      seqüência de comandos
+será executada mais uma vez; caso contrário, a execução prosseguirá a
+      partir do primeiro
+comando que esteja após o </font><font face="Courier New" size="2">fimpara</font><font face="Arial" size="2">.</font></td>
+  </tr>
+</table>
+<p><i><font face="Courier New" size="2">&lt;valor-inicial &gt;</font><font face="Arial" size="2">,</font><font face="Courier New" size="2">
+</font></i><i><font face="Courier New" size="2">
+&lt;valor-limite &gt; </font><font face="Arial" size="2">e</font><font face="Courier New" size="2">
+</font></i><font face="Courier New" size="2"><i>&lt;incremento &gt;</i></font><font face="Arial" size="2">
+são avaliados uma <b>única vez</b> antes da execução da primeira repetição, e
+<b> não se alteram
+durante a execução do laço</b>, mesmo que variáveis eventualmente presentes
+nessas expressões tenham seus valores alterados.</font></p>
+<p><font face="Arial" size="2">No exemplo a seguir, os números de 1 a 10 são
+exibidos em ordem crescente.</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">algoritmo &quot;Números de 1 a 10&quot;<br>
+  var j: inteiro<br>
+  inicio<br>
+  para j de 1 ate 10 faca<br>
+  &nbsp;&nbsp; escreva (j:3)<br>
+  fimpara<br>
+  fimalgoritmo</font></p>
+</blockquote>
+<p><font face="Arial" size="2"><b>Importante:</b> Se, logo no início da primeira
+repetição, </font><font face="Courier New" size="2"><i>&lt;valor-inicial &gt;</i> </font><font face="Arial" size="2">
+for maior que </font><font face="Courier New" size="2"><i>
+&lt;valor-limite &gt;</i> </font><font face="Arial" size="2"> (ou menor, quando </font><i><font face="Courier New" size="2">&lt;incremento&gt;</font></i><font face="Arial" size="2"> for negativo), o laço não será
+executado nenhuma vez. O exemplo a seguir não imprime nada.</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">algoritmo &quot;Numeros de 10 a 1 (não
+  funciona)&quot;<br>
+  var j: inteiro<br>
+  inicio<br>
+  para j de 10 ate 1 faca<br>
+  &nbsp;&nbsp;   escreva (j:3)<br>
+  fimpara<br>
+  fimalgoritmo</font></p>
+</blockquote>
+<p><font face="Arial" size="2">Este outro exempo, no entanto, funcionará por causa
+  do <b>passo -1</b>:</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">algoritmo &quot;Numeros de 10 a 1 (este
+  funciona)&quot;<br>
+  var j: inteiro<br>
+  inicio<br>
+  para j de 10 ate 1 passo -1 faca<br>
+  &nbsp;&nbsp;   escreva (j:3)<br>
+  fimpara<br>
+  fimalgoritmo</font></p>
+</blockquote>
+<p><font face="Arial" size="2"><b><a name="enquanto"></a>Enquanto ... faça</b></font></p>
+<p><font face="Arial" size="2">Esta estrutura repete uma seqüência de comandos enquanto uma
+determinada condição (especificada através de uma expressão lógica) for satisfeita.</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">enquanto</font><font face="Courier New" size="2">
+  <i>
+  &lt;expressão-lógica&gt;</i> faca<br>
+  </font><font face="Courier New" size="2">
+&nbsp;&nbsp; <i>&lt;seqüência-de-comandos&gt;</i><br>
+  fimenquanto</font></p>
+</blockquote>
+<table border="1" width="100%">
+  <tr>
+    <td width="28%" align="center"><font face="Courier New" size="2"><i>&lt;expressão-lógica&gt;</i> </font></td>
+    <td width="72%"><font face="Arial" size="2">Esta expressão
+que é avaliada antes de cada repetição do laço. Quando seu resultado for
+VERDADEIRO, </font><font face="Courier New" size="2"><i> &lt;seqüência-de-comandos&gt;</i></font><font face="Arial" size="2"> é executada.</font></td>
+  </tr>
+  <tr>
+    <td width="28%" align="center"><font face="Courier New" size="2">
+fimenquanto </font></td>
+    <td width="72%"><font face="Arial" size="2">Indica o fim da </font><font face="Courier New" size="2"><i> &lt;seqüência-de-comandos&gt;</i></font><font face="Arial" size="2">&nbsp;
+      que será repetida. Cada vez que
+      a execução atinge este ponto, volta-se
+ao início do laço para que </font><font face="Courier New" size="2"><i>
+  &lt;expressão-lógica&gt;</i>
+  </font><font face="Arial" size="2"> seja avaliada novamente. Se o resultado
+      desta avaliação for VERDADEIRO, a </font><font face="Courier New" size="2"><i> &lt;seqüência-de-comandos&gt;</i></font><font face="Arial" size="2">&nbsp;
+      será
+executada mais uma vez; caso contrário, a execução prosseguirá a partir do primeiro comando
+após </font><font face="Courier New" size="2">fimenquanto</font><font face="Arial" size="2">.</font></td>
+  </tr>
+</table>
+<p><font face="Arial" size="2">&nbsp;O mesmo exemplo anterior pode ser resolvido
+com esta estrutura de repetição: </font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">algoritmo "Números de 1 a 10 (com enquanto...faca)"<br>
+  var j: inteiro<br>
+  inicio<br>
+  j &lt;- 1<br>
+  enquanto j &lt;= 10 faca<br>
+  &nbsp;&nbsp; escreva (j:3)<br>
+  &nbsp;&nbsp; j &lt;- j + 1<br>
+  fimenquanto<br>
+  fimalgoritmo</font></p>
+</blockquote>
+<p><font face="Arial" size="2"><b>Importante:</b> Como o laço </font><font face="Courier New" size="2">enquanto...faca</font><font face="Arial" size="2">
+testa sua condição de parada <b> antes</b> de executar sua seqüência de comandos,
+esta seqüência poderá ser executada <b>zero ou mais vezes</b>.</font></p>
+<p><font face="Arial" size="2"><b><a name="repita"></a>Repita ... até</b></font></p>
+<p><font face="Arial" size="2">Esta estrutrura repete uma seqüência de comandos até que uma
+determinada condição (especificada através de uma expressão lógica) seja
+satisfeita.</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">repita<br>
+  </font><font face="Courier New" size="2">
+&nbsp;&nbsp; <i>&lt;seqüência-de-comandos&gt;</i><br>
+  </font><font face="Courier New" size="2">ate</font><font face="Courier New" size="2">
+  <i>
+  &lt;expressão-lógica&gt;</i></font></p>
+</blockquote>
+<table border="1" width="100%">
+  <tr>
+    <td width="25%" align="center"><font face="Courier New" size="2">repita </font></td>
+    <td width="75%"><font face="Arial" size="2">Indica o início do laço.</font></td>
+  </tr>
+  <tr>
+    <td width="25%" align="center">
+<font face="Courier New" size="2">ate</font> <font face="Courier New" size="2">&lt;<i>expressão-lógica</i>&gt; </font></td>
+    <td width="75%"><font face="Arial" size="2">Indica o
+fim da </font><font face="Courier New" size="2"><i> &lt;seqüência-de-comandos&gt;
+      </i></font><font face="Arial" size="2">a serem repetidos. Cada vez que o programa chega
+neste ponto, </font><font face="Courier New" size="2"><i>&lt;expressão-lógica&gt;</i></font><font face="Arial" size="2"> é avaliada: se seu resultado for FALSO,
+      os comandos presentes entre esta linha e a linha </font><font face="Courier New" size="2">repita</font><font face="Arial" size="2">
+      são executados; caso contrário, a execução prosseguirá a partir do primeiro comando após esta
+linha.</font></td>
+  </tr>
+</table>
+<p><font face="Arial" size="2">Considerando ainda o mesmo exemplo:</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">algoritmo "Números de 1 a 10 (com repita)&quot;<br>
+  var j: inteiro<br>
+  inicio<br>
+  j &lt;- 1<br>
+  repita<br>
+  &nbsp;&nbsp; escreva (j:3)<br>
+  &nbsp;&nbsp;   j &lt;- j + 1<br>
+  ate j &gt; 10<br>
+  fimalgoritmo</font></p>
+</blockquote>
+<p><font face="Arial" size="2"><b>Importante:</b> Como o laço </font><font face="Courier New" size="2">repita...ate</font><font face="Arial" size="2">
+testa sua condição de parada <b>depois</b> de executar sua seqüência de comandos,
+esta seqüência poderá ser executada <b>uma ou mais vezes</b>.</font></p>
+  <p><font face="Arial" size="2"><b><a name="interrompa"></a>Comando Interrompa</b></font></p>
+  <p><font face="Arial" size="2">As três estruturas de repetição acima permitem
+  o uso do comando </font><font face="Courier New" size="2">interrompa</font><font face="Arial" size="2">,
+  que causa uma saída imediata do laço. Embora esta técnica esteja de certa forma em desacordo com os
+  princípios da programação estruturada, o comando </font><font face="Courier New" size="2">interrompa</font><font face="Arial" size="2">
+  foi incluído no VisuAlg por ser encontrado na literatura de introdução à
+  programação e mesmo em linguagens como o Object Pascal (Delphi/Kylix), Clipper, VB, etc.
+  Seu uso é exemplificado a seguir:</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">algoritmo &quot;Números de 1 a 10 (com
+  interrompa)&quot;<br>
+  var x: inteiro<br>
+  inicio<br>
+  x &lt;- 0<br>
+  repita<br>
+  &nbsp;&nbsp; x &lt;- x + 1<br>
+  &nbsp;&nbsp; escreva (x:3)<br>
+  &nbsp;&nbsp; se x = 10 entao<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interrompa<br>
+  &nbsp;&nbsp; fimse<br>
+  ate falso<br>
+  fimalgoritmo</font></p>
+</blockquote>
+<p><font face="Arial" size="2">O VisuAlg permite ainda uma forma alternativa do
+comando </font><font face="Courier New" size="2">repita...ate</font><font face="Arial" size="2">,
+com a seguinte sintaxe:</font></p>
+
+<blockquote>
+  <p><font face="Courier New" size="2">algoritmo &quot;Números de 1 a 10 (com interrompa) II&quot;<br>
+  var x: inteiro<br>
+  inicio<br>
+  x &lt;- 0<br>
+  <b>
+  repita</b><br>
+  &nbsp;&nbsp; x &lt;- x + 1<br>
+  &nbsp;&nbsp; escreva (x:3)<br>
+  &nbsp;&nbsp; se x = 10 entao<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interrompa<br>
+  &nbsp;&nbsp; fimse<br>
+  <b>fimrepita</b><br>
+  fimalgoritmo</font></p>
+
+</blockquote>
+<p><font face="Arial" size="2">Com esta sintaxe alternativa, o uso do </font><font face="Courier New" size="2">interrompa</font><font face="Arial" size="2">
+é obrigatório, pois é a única maneira de se sair do laço </font><font face="Courier New" size="2">repita...fimrepita</font><font face="Arial" size="2">;
+caso contrário, este laço seria executado indeterminadamente.</font></p>
+
+  <p><a href="linguagem2.htm"><font face="Arial" size="2">Anterior</font></a> <font size="2" face="Arial"><a href="linguagem4.htm">Próxima</a></font></p>
+
+<p align="center"><font face="Arial" size="2">&nbsp; <a href="objetivos.htm">Objetivos</a>&nbsp;&nbsp;&nbsp;
+<a href="telaprin.htm">Tela principal</a>&nbsp;&nbsp;&nbsp;</font> <font face="Arial" size="2"><a href="menu.htm">Menu</a></font>&nbsp;&nbsp;&nbsp;
+<a href="linguagem.htm"><font face="Arial" size="2">A linguagem do VisuAlg</font></a>&nbsp;&nbsp;&nbsp;
+<a href="refer.htm"><font face="Arial" size="2">Referências da linguagem do VisuAlg</font></a><font face="Arial" size="2">&nbsp;&nbsp; </font> <font face="Arial" size="2"><a href="autocomp.htm">Mais
+recursos</a></font></p>
+
+</body>
+
+</html>

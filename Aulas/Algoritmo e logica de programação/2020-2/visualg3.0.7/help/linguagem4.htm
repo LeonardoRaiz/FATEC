@@ -1,0 +1,312 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>A Linguagem de Programação do Visualg (4)</title>
+</head>
+
+<body>
+
+<p><font face="Arial" size="4">A Linguagem de Programação do VisuAlg (4)</font></p>
+
+<p><font face="Arial" size="2"><i><span lang="PT-BR" style="font-weight: normal; text-decoration: none; text-underline: none">Subprograma</span></i><span lang="PT-BR" style="font-weight: normal; text-decoration: none; text-underline: none">
+é um programa que auxilia o programa principal através da realização de uma
+determinada subtarefa. Também costuma receber os nomes de <i>sub-rotina</i>, <i>procedimento,
+método</i> ou <i>módulo</i>.<o:p>
+</o:p>
+ </span></font><font face="Arial" size="2"><span lang="PT-BR" style="text-decoration: none; text-underline: none">Os
+subprogramas são chamados dentro do corpo do programa principal como se fossem <i>comandos</i>.
+Após seu término, a execução continua a partir do ponto onde foi chamado. É
+importante compreender que a chamada de um subprograma simplesmente gera um <b>desvio
+provisório no fluxo de execução</b>.<o:p>
+</o:p>
+</span></font></p>
+
+<p><font face="Arial" size="2"><span lang="PT-BR" style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">Há
+um caso particular de subprograma que recebe o nome de <i>função</i>. Uma <i>função</i>,
+além de executar uma determinada tarefa, retorna um valor para quem a chamou,
+que é o resultado da sua execução. Por este motivo, a chamada de uma função
+aparece no corpo do programa principal como uma <i>expressão</i>, e não como
+um comando.</span></font></p>
+
+<p><font face="Arial" size="2"><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA" lang="PT-BR">Cada
+subprograma, além de ter acesso às variáveis do programa que o chamou (são
+as variáveis <i>globais</i>), pode ter suas próprias variáveis (são as variáveis
+<i>locais</i>), que existem apenas durante sua chamada.</span></font></p>
+
+<p><font face="Arial" size="2"><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA" lang="PT-BR">Ao
+se chamar um subprograma, também é possível passar-lhe determinadas informações
+que recebem o nome de <i>parâmetros</i> (são valores que, na linha de chamada,
+ficam entre os parênteses
+e que estão separados por vírgulas). A quantidade dos parâmetros, sua seqüência
+e respectivos tipos não podem mudar: devem estar de acordo com o que foi
+especificado na sua correspondente declaração.</span></font></p>
+
+<p><font size="2" face="Arial"><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA" lang="PT-BR">Para
+se criar subprogramas, é preciso descrevê-los após a declaração das variáveis
+e antes do corpo do programa principal.</span><span style="font-weight: normal; text-decoration: none; text-underline: none" lang="PT-BR">
+</span>O VisuAlg possibilita declaração e chamada de subprogramas
+nos moldes da linguagem Pascal, ou seja, procedimentos e funções com passagem
+de parâmetros por valor ou referência. Isso será explicado a seguir.</font></p>
+
+<p><font face="Arial" size="2"><b><a name="proced"></a>Procedimentos</b></font></p>
+
+<p><font face="Arial" size="2">Em VisuAlg, procedimento é um subprograma que não retorna
+nenhum valor (corresponde ao <i>procedure</i> do Pascal). Sua
+declaração, que deve estar entre o final da declaração de
+variáveis e a linha </font><font size="2" face="Courier New">inicio</font><font face="Arial" size="2">
+do programa principal, segue a sintaxe abaixo:</font></p>
+
+<blockquote>
+  <p><font face="Courier New" size="2">procedimento <i>&lt;nome-de-procedimento&gt;</i>
+  [(<i>&lt;seqüência-de-declarações-de-parâmetros&gt;</i>)]<br>
+  </font><font face="Courier New" size="2">
+  // Seção de Declarações</font><font face="Courier New" size="2"> Internas<br>
+  inicio<br>
+  </font><font face="Courier New" size="2">
+  // Seção de Comandos</font><font face="Courier New" size="2"><br>
+  fimprocedimento</font></p>
+
+</blockquote>
+<p><font size="2" face="Arial">O </font><font face="Courier New" size="2"><i>&lt;nome-de-procedimento&gt;</i></font><font size="2" face="Arial">
+obedece as mesmas regras de nomenclatura das variáveis. Por
+outro lado, a </font><font face="Courier New" size="2"><i>&lt;seqüência-de-declarações-de-parâmetros&gt;</i>
+</font><font face="Arial" size="2">é uma seqüência de</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">[var] <i>&lt;seqüência-de-parâmetros&gt;</i>:<i>
+  &lt;tipo-de-dado&gt;</i></font></p>
+</blockquote>
+<p><font face="Arial" size="2">separadas por ponto e vírgula. A presença
+(opcional) da palavra-chave </font><font size="2" face="Courier New">var</font><font face="Arial" size="2">
+indica passagem de parâmetros por referência; caso contrário, a passagem
+será por valor.&nbsp;</font></p>
+<p><font face="Arial" size="2">Por sua vez, </font><font face="Courier New" size="2"><i>&lt;seqüência-de-parâmetros&gt;</i></font><font face="Arial" size="2">
+é uma seqüência de nomes de parâmetros (também obedecem a mesma regra de
+nomenclatura de variáveis) separados por vírgulas.</font></p>
+<p><font face="Arial" size="2">De modo análogo ao programa principal, a seção de declaração
+internas começa
+com a palavra-chave </font><font size="2" face="Courier New">var</font><font face="Arial" size="2">,
+e continua com a seguinte sintaxe: </font></p>
+<blockquote>
+  <p><font size="2" face="Courier New"><i>&lt;lista-de-variáveis&gt;</i> : <i>
+  &lt;tipo-de-dado&gt;</i></font></p>
+</blockquote>
+<p><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA" lang="PT-BR"><font size="2" face="Arial"><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">Nos
+próximos exemplos, através de um subprograma </span></font><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA"><font size="2" face="Courier New">soma</font></span><font size="2" face="Arial"><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">,
+será calculada a soma entre os valores </span><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">4</span><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">
+e </span><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">–9</span><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">
+(ou seja, será obtido o resultado </span><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">13</span><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">)
+que o programa principal imprimirá em seguida. No primeiro caso, um <b>procedimento
+sem parâmetros</b> utiliza uma variável local </span></font><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA"><font size="2" face="Courier New">aux</font></span><font size="2" face="Arial"><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">
+para armazenar provisoriamente o resultado deste cálculo (evidentemente, esta
+variável é desnecessária, mas está aí apenas para ilustrar o exemplo),
+antes de atribuí-lo à variável global </span></font><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA"><font size="2" face="Courier New">res</font></span><font size="2" face="Arial"><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">:</span></font></span></p>
+
+<blockquote>
+  <p class="MsoNormal"><span lang="PT-BR" style="font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">procedimento soma<br>
+  var aux: inteiro<br>
+  inicio<br>
+  </span><font face="Courier New">// <span lang="PT-BR" style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt">n,
+  m e res são variáveis globais</span><span lang="PT-BR" style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt"><br>
+  </span></font><span lang="PT-BR" style="font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">aux &lt;- n + m<br>
+  res &lt;- aux<br>
+  fimprocedimento<o:p>
+  </o:p>
+  </span></p>
+  <p class="MsoNormal"><span lang="PT-BR"><font face="Arial" size="2">No
+  programa principal deve haver os seguintes comandos:<br>
+  </font><font size="2" face="Courier New">n &lt;- 4<br>
+  m &lt;- -9<br>
+  soma<br>
+  escreva(res)</font></span></p>
+</blockquote>
+<p class="MsoNormal"><span lang="PT-BR"><font size="2" face="Arial">A mesma
+tarefa poderia ser executada através de um <b>procedimento com parâmetros</b>,
+como descrito abaixo:</font></span></p>
+<blockquote>
+  <p class="MsoNormal"><span lang="PT-BR" style="font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">procedimento soma (x,y: inteiro)<br>
+  inicio<br>
+  </span><font face="Courier New">// <span lang="PT-BR" style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt">res
+  é variável global</span><span lang="PT-BR" style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt"><br>
+  </span></font><span lang="PT-BR" style="font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">res &lt;- x + y<br>
+  fimprocedimento<o:p>
+  </o:p>
+  </span></p>
+  <p class="MsoNormal"><span lang="PT-BR"><font face="Arial" size="2">No
+  programa principal deve haver os seguintes comandos:<br>
+  </font><font size="2" face="Courier New">n &lt;- 4<br>
+  m &lt;- -9<br>
+  soma(n,m)<br>
+  escreva(res)</font></span></p>
+</blockquote>
+<p><font size="2" face="Arial"><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA" lang="PT-BR">A
+passagem de parâmetros do exemplo acima chama-se <b>passagem por valor</b>.
+Neste caso, o subprograma simplesmente recebe um valor que utiliza durante sua
+execução. Durante essa execução, os parâmetros passados por valor são análogos
+às suas variáveis locais, mas com uma única diferença: receberam um valor
+inicial no momento em que o subprograma foi chamado.</span></font></p>
+
+<p><font face="Arial" size="2"><b><a name="funcao"></a>Funções</b></font></p>
+
+<p><font face="Arial" size="2">Em VisuAlg, função é um subprograma que retorna 
+  um valor (corresponde ao <i>function</i> do Pascal). De modo análogo aos procedimentos, 
+  sua declaração deve estar entre o final da declaração de variáveis e a linha 
+  </font><font size="2" face="Courier New">inicio</font><font face="Arial" size="2"> 
+  do programa principal, e segue a sintaxe abaixo:</font></p>
+
+<blockquote>
+  <p><font face="Courier New" size="2">funcao <i>&lt;nome-de-função&gt;</i>
+  [(<i>&lt;seqüência-de-declarações-de-parâmetros&gt;</i>)]: <i>&lt;tipo-de-dado&gt;</i><br>
+  // Seção de Declarações Internas<br>
+  inicio<br>
+  // Seção de Comandos<br>
+  fimfuncao</font></p>
+
+</blockquote>
+<p><font size="2" face="Arial">O </font><font face="Courier New" size="2"><i>&lt;nome-de-função&gt;</i></font><font size="2" face="Arial"> obedece as mesmas regras de nomenclatura das variáveis. Por
+outro lado, a </font><font face="Courier New" size="2"><i>&lt;seqüência-de-declarações-de-parâmetros&gt;</i>
+</font><font face="Arial" size="2">é uma seqüência de</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">[var] <i>&lt;seqüência-de-parâmetros&gt;</i>:<i>
+  &lt;tipo-de-dado&gt;</i></font></p>
+</blockquote>
+<p><font face="Arial" size="2">separadas por ponto e vírgula. A presença
+(opcional) da palavra-chave </font><font size="2" face="Courier New">var</font><font face="Arial" size="2">
+indica passagem de parâmetros por referência; caso contrário, a passagem
+será por valor.&nbsp;</font></p>
+<p><font face="Arial" size="2">Por sua vez, </font><font face="Courier New" size="2"><i>&lt;seqüência-de-parâmetros&gt;</i></font><font face="Arial" size="2">
+é uma seqüência de nomes de parâmetros (também obedecem a mesma regra de
+nomenclatura de
+variáveis) separados por vírgulas.</font></p>
+<p><font face="Arial" size="2">O valor retornado pela função será do tipo </font><font face="Arial" size="2">especificado
+na sua declaração (logo após os dois pontos). Em alguma parte da função (de
+modo geral, no seu final), este valor deve ser retornado através do comando </font><font size="2" face="Courier New"><a name="retorne"></a>retorne</font><font face="Arial" size="2">.</font></p>
+<p><font face="Arial" size="2">De modo análogo ao programa principal, a seção de declaração
+internas começa
+com a palavra-chave </font><font size="2" face="Courier New">var</font><font face="Arial" size="2">,
+e continua com a seguinte sintaxe: </font></p>
+<blockquote>
+  <p><font size="2" face="Courier New"><i>&lt;lista-de-variáveis&gt;</i> : <i>
+  &lt;tipo-de-dado&gt;</i></font></p>
+</blockquote>
+<p><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA" lang="PT-BR"><font size="2" face="Arial"><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">Voltando
+ao exemplo anterior, no qual calculamos e imprimimos a soma entre os valores </span><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">4</span><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">
+e </span><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">–9</span>,
+vamos mostrar como isso poderia ser feito através de <span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">uma
+<b>função sem parâmetros</b>. Ela também utiliza uma variável local </span></font><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA"><font size="2" face="Courier New">aux</font></span><font size="2" face="Arial"><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">
+para armazenar provisoriamente o resultado deste cálculo, antes de atribuí-lo
+à variável global </span></font><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA"><font size="2" face="Courier New">res</font></span><font size="2" face="Arial"><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA">:</span></font></span></p>
+
+<blockquote>
+  <p class="MsoNormal"><span style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt; font-family: Courier New" lang="PT-BR">funcao</span><span lang="PT-BR" style="font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;"> soma: inteiro<br>
+  var aux: inteiro<br>
+  inicio<br>
+  </span><font face="Courier New">// <span lang="PT-BR" style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt">n,
+  m e res são variáveis globais</span><span lang="PT-BR" style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt"><br>
+  </span></font><span lang="PT-BR" style="font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">aux &lt;- n + m<br>
+  retorne aux<br>
+  fimfuncao<o:p>
+  </o:p>
+  </span></p>
+  <p class="MsoNormal"><span lang="PT-BR"><font face="Arial" size="2">No
+  programa principal deve haver os seguintes comandos:<br>
+  </font><font size="2" face="Courier New">n &lt;- 4<br>
+  m &lt;- -9<br>
+  res &lt;- soma<br>
+  escreva(res)</font></span></p>
+</blockquote>
+<p class="MsoNormal"><span lang="PT-BR"><font size="2" face="Arial">Se
+realizássemos essa mesma tarefa com uma <b>função com parâmetros passados
+por valor</b>, poderia ser do seguinte modo:</font></span></p>
+<blockquote>
+  <p class="MsoNormal"><span style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt; font-family: Courier New" lang="PT-BR">funcao</span><span lang="PT-BR" style="font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;"> soma (x,y: inteiro): inteiro<br>
+  inicio<br>
+  retorne x + y<br>
+  fimfuncao<o:p>
+  </o:p>
+  </span></p>
+  <p class="MsoNormal"><span lang="PT-BR"><font face="Arial" size="2">No
+  programa principal deve haver os seguintes comandos:<br>
+  </font><font size="2" face="Courier New">n &lt;- 4<br>
+  m &lt;- -9<br>
+  res &lt;- soma(n,m)<br>
+  escreva(res)</font></span></p>
+</blockquote>
+<p><font face="Arial" size="2"><b>Passagem de Parâmetros por Referência</b></font></p>
+
+<p class="MsoNormal"><font size="2" face="Arial"><span style="font-weight: normal; text-decoration: none; text-underline: none" lang="PT-BR"><span style="font-weight: normal; text-decoration: none; text-underline: none">Há
+ainda uma outra forma de passagem de parâmetros para subprogramas: é a
+passagem por referência. Neste caso, o subprograma não recebe apenas um valor,
+mas sim o </span></span><span style="text-decoration: none; text-underline: none" lang="PT-BR"><b>endereço
+</b></span><span style="font-weight: normal; text-decoration: none; text-underline: none" lang="PT-BR"><span style="font-weight: normal; text-decoration: none; text-underline: none">de
+uma variável global. Portanto, qualquer modificação que for realizada no
+conteúdo deste parâmetro afetará também a variável global que está
+associada a ele. Durante a execução do subprograma, os parâmetros passados
+por referência são análogos às variáveis globais. No VisuAlg, de forma
+análoga a Pascal, essa passagem é feita através da palavra </span></span></font><span style="font-weight: normal; text-decoration: none; text-underline: none" lang="PT-BR"><span style="mso-bidi-font-size: 12.0pt; font-weight: normal; text-decoration: none; text-underline: none"><font size="2" face="Courier New">var</font></span><font size="2" face="Arial"><span style="font-weight: normal; text-decoration: none; text-underline: none">
+na declaração do parâmetro.<o:p>
+</o:p>
+</span></font></span></p>
+<p class="MsoNormal"><span lang="PT-BR"><font size="2" face="Arial">Voltando ao
+exemplo da soma, o procedimento abaixo realiza a mesma tarefa utilizando
+passagem de parâmetros por referência:</font></span></p>
+<blockquote>
+  <p class="MsoNormal"><span lang="PT-BR" style="font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Courier New&quot;">procedimento soma (x,y: inteiro; var
+  result: inteiro)<br>
+  inicio<br>
+  result &lt;- x + y<br>
+  fimprocedimento<o:p>
+  </o:p>
+  </span></p>
+  <p class="MsoNormal"><span lang="PT-BR"><font face="Arial" size="2">No
+  programa principal deve haver os seguintes comandos:<br>
+  </font><font size="2" face="Courier New">n &lt;- 4<br>
+  m &lt;- -9<br>
+  soma(n,m,res)<br>
+  escreva(res)</font></span></p>
+</blockquote>
+<p><font face="Arial" size="2"><b>Recursão e Aninhamento</b></font></p>
+
+<p class="MsoNormal"><span lang="PT-BR"><font size="2" face="Arial">A atual
+versão do VisuAlg permite recursão, isto é, a possibilidade de que um
+subprograma possa chamar a si mesmo. A função do exemplo abaixo calcula
+recursivamente o fatorial do número inteiro que recebe como parâmetro:</font></span></p>
+<blockquote>
+  <p class="MsoNormal"><font face="Courier New" size="2">funcao fatorial (v:
+  inteiro): inteiro<br>
+  inicio<br>
+  se v &lt;= 2 entao<br>
+   retorne v<br>
+  senao<br>
+   retorne v * fatorial(v-1)<br>
+  fimse<br>
+  fimfuncao</font></p>
+</blockquote>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: PT-BR; mso-fareast-language: PT-BR; mso-bidi-language: AR-SA" lang="PT-BR">Em
+Pascal, é permitido o aninhamento de subprogramas, isto é, cada subprograma
+também pode ter seus próprios subprogramas. No entanto, esta característica
+dificulta a elaboração dos compiladores e, na prática, não é muito
+importante. Por este motivo, ela não é permitida na maioria das linguagens de
+programação (como C, por exemplo), e o VisuAlg não a implementa.</span></font></p>
+
+<p><a href="linguagem3.htm"><font face="Arial" size="2">Anterior</font></a> <font size="2" face="Arial"><a href="linguagem5.htm">Próxima</a></font></p>
+
+<p align="center"><font face="Arial" size="2">&nbsp; <a href="objetivos.htm">Objetivos</a>&nbsp;&nbsp;&nbsp;
+<a href="telaprin.htm">Tela principal</a>&nbsp;&nbsp;&nbsp;</font> <font face="Arial" size="2"><a href="menu.htm">Menu</a></font>&nbsp;&nbsp;&nbsp;
+<a href="linguagem.htm"><font face="Arial" size="2">A linguagem do VisuAlg</font></a>&nbsp;&nbsp;&nbsp;
+<a href="refer.htm"><font face="Arial" size="2">Referências da linguagem do VisuAlg</font></a><font face="Arial" size="2">&nbsp;&nbsp; </font> <font face="Arial" size="2"><a href="autocomp.htm">Mais
+recursos</a></font></p>
+
+</body>
+
+</html>

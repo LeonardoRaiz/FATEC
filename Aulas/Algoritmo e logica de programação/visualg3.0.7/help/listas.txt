@@ -1,0 +1,348 @@
+4
+MESES
+12
+Janeiro
+Fevereiro
+Março
+Abril
+Maio
+Junho
+Julho
+Agosto
+Setembro
+Outubro
+Novembro
+Dezembro
+DIAS DA SEMANA
+7
+Segunda-feira
+Terça-feira
+Quarta-feira
+Quinta-feira
+Sexta-feira
+Sábado
+Domingo
+ESTADOS
+27
+Acre
+Alagoas
+Amazonas
+Amapá
+Bahia
+Ceará
+Distrito Federal
+Espírito Santo
+Goiás
+Maranhão
+Mato Grosso
+Mato Grosso do Sul
+Minas Gerais
+Pará
+Paraíba
+Paraná
+Pernambuco
+Piauí
+Rio de Janeiro
+Rondônia
+Rio Grande do Norte
+Roraima
+Rio Grande do Sul
+Santa Catarina
+Sergipe
+São Paulo
+Tocantins
+CIDADES DE SANTA CATARINA
+293
+Abdon Batista
+Abelardo Luz
+Agrolandia
+Agronomica
+Agua Doce
+Aguas Frias
+Aguas Mornas
+Aguas de Chapeco
+Alfredo Wagner
+Alto Bela Vista
+Anchieta
+Angelina
+Anita Garibaldi
+Anitapolis
+Antonio Carlos
+Apiuna
+Arabuta
+Araquari
+Ararangua
+Armazem
+Arroio Trinta
+Arvoredo
+Ascurra
+Atalanta
+Aurora
+Balneario Arroio do Silva
+Balneario Barra do Sul
+Balneario Camboriu
+Balneario Gaivota
+Bandeirante
+Barra Bonita
+Barra Velha
+Bela Vista do Toldo
+Belmonte
+Benedito Novo
+Biguacu
+Blumenau
+Bocaina do Sul
+Bom Jardim da Serra
+Bom Jesus do Oeste
+Bom Jesus
+Bom Retiro
+Bombinhas
+Botuvera
+Braco do Norte
+Braco do Trombudo
+Brunopolis
+Brusque
+Cacador
+Caibi
+Calmon
+Camboriu
+Campo Alegre
+Campo Belo do Sul
+Campo Ere
+Campos Novos
+Canelinha
+Canoinhas
+Capao Alto
+Capinzal
+Capivari de Baixo
+Catanduvas
+Caxambu do Sul
+Celso Ramos
+Cerro Negro
+Chapadao do Lageado
+Chapeco
+Cocal do Sul
+Concordia
+Cordilheira Alta
+Coronel Freitas
+Coronel Martins
+Correia Pinto
+Corupa
+Criciuma
+Cunha Pora
+Cunhatai
+Curitibanos
+Descanso
+Dionisio Cerqueira
+Dona Emma
+Doutor Pedrinho
+Entre Rios
+Ermo
+Erval Velho
+Faxinal dos Guedes
+Flor do Sertao
+Florianopolis
+Formosa do Sul
+Forquilhinha
+Fraiburgo
+Frei Rogerio
+Galvao
+Garopaba
+Garuva
+Gaspar
+Governador Celso Ramos
+Grao Para
+Gravatal
+Guabiruba
+Guaraciaba
+Guaramirim
+Guaruja do Sul
+Guatambu
+Herval d'Oeste
+Ibiam
+Ibicare
+Ibirama
+Icara
+Ilhota
+Imarui
+Imbituba
+Imbuia
+Indaial
+Iomere
+Ipira
+Ipora do Oeste
+Ipuacu
+Ipumirim
+Iraceminha
+Irani
+Irati
+Irineopolis
+Ita
+Itaiopolis
+Itajai
+Itapema
+Itapiranga
+Itapoa
+Ituporanga
+Jabora
+Jacinto Machado
+Jaguaruna
+Jaragua do Sul
+Jardinopolis
+Joacaba
+Joinville
+Jose Boiteux
+Jupia
+Lacerdopolis
+Lages
+Laguna
+Lajeado Grande
+Laurentino
+Lauro Muller
+Lebon Regis
+Leoberto Leal
+Lindoia do Sul
+Lontras
+Luiz Alves
+Luzerna
+Macieira
+Mafra
+Major Gercino
+Major Vieira
+Maracaja
+Maravilha
+Marema
+Massaranduba
+Matos Costa
+Meleiro
+Mirim Doce
+Modelo
+Mondai
+Monte Carlo
+Monte Castelo
+Morro Grande
+Morro da Fumaca
+Navegantes
+Nova Erechim
+Nova Itaberaba
+Nova Trento
+Nova Veneza
+Novo Horizonte
+Orleans
+Otacilio Costa
+Ouro Verde
+Ouro
+Paial
+Painel
+Palhoca
+Palma Sola
+Palmeira
+Palmitos
+Papanduva
+Paraiso
+Passo de Torres
+Passos Maia
+Paulo Lopes
+Pedras Grandes
+Penha
+Peritiba
+Petrolandia
+Picarras
+Pinhalzinho
+Pinheiro Preto
+Piratuba
+Planalto Alegre
+Pomerode
+Ponte Alta do Norte
+Ponte Alta
+Ponte Serrada
+Porto Belo
+Porto Uniao
+Pouso Redondo
+Praia Grande
+Presidente Castelo Branco
+Presidente Getulio
+Presidente Nereu
+Princesa
+Quilombo
+Rancho Queimado
+Rio Fortuna
+Rio Negrinho
+Rio Rufino
+Rio d'Oeste
+Rio das Antas
+Rio do Campo
+Rio do Sul
+Rio dos Cedros
+Riqueza
+Rodeio
+Romelandia
+Salete
+Saltinho
+Salto Veloso
+Sangao
+Santa Cecilia
+Santa Helena
+Santa Rosa de Lima
+Santa Rosa do Sul
+Santa Terezinha do Progresso
+Santa Terezinha
+Santiago do Sul
+Santo Amaro da Imperatriz
+Sao Bento do Sul
+Sao Bernardino
+Sao Bonifacio
+Sao Carlos
+Sao Cristovao do Sul
+Sao Domingos
+Sao Francisco do Sul
+Sao Joao Batista
+Sao Joao do Itaperiu
+Sao Joao do Oeste
+Sao Joao do Sul
+Sao Joaquim
+Sao Jose do Cedro
+Sao Jose do Cerrito
+Sao Jose
+Sao Lourenco d'Oeste
+Sao Ludgero
+Sao Martinho
+Sao Miguel d'Oeste
+Sao Miguel da Boa Vista
+Sao Pedro de Alcantara
+Saudades
+Schroeder
+Seara
+Serra Alta
+Sideropolis
+Sombrio
+Sul Brasil
+Taio
+Tangara
+Tigrinhos
+Tijucas
+Timbe do Sul
+Timbo Grande
+Timbo
+Tres Barras
+Treviso
+Treze Tilias
+Treze de Maio
+Trombudo Central
+Tubarao
+Tunapolis
+Turvo
+Uniao do Oeste
+Urubici
+Urupema
+Urussanga
+Vargeao
+Vargem Bonita
+Vargem
+Vidal Ramos
+Videira
+Vitor Meireles
+Witmarsum
+Xanxere
+Xavantina
+Xaxim
+Zortea

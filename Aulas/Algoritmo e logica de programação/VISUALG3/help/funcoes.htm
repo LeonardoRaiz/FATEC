@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>Fun&ccedil;&otilde;es do Visualg</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<p><font face="Arial" size="4">As Fun&ccedil;&otilde;es do Visualg Vers&atilde;o 
+  2.0</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Toda linguagem de programa&ccedil;&atilde;o 
+  j&aacute; vem com um grupo de fun&ccedil;&otilde;es que facilitam a vida do 
+  programador. Estas fun&ccedil;&otilde;es realizam os c&aacute;lculos aritm&eacute;ticos, 
+  trigonom&eacute;tricos e de manipula&ccedil;&atilde;o e convers&atilde;o de 
+  dados mais comuns; assim, o programador n&atilde;o tem que reinventar a roda 
+  a cada programa que faz. A este grupo de fun&ccedil;&otilde;es d&aacute;-se 
+  &agrave;s vezes o nome de biblioteca. </font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Como usar uma fun&ccedil;&atilde;o? 
+  Em termos simples, uma fun&ccedil;&atilde;o pode ser usada em qualquer lugar 
+  onde uma vari&aacute;vel tamb&eacute;m pode, a n&atilde;o ser, naturalmente, 
+  no &quot;lado esquerdo da seta&quot; em um comando de atribui&ccedil;&atilde;o 
+  - uma fun&ccedil;&atilde;o produz (diz-se no linguajar dos programadores <i>retorna</i>) 
+  um valor, e n&atilde;o o recebe.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="4">Fun&ccedil;&otilde;es num&eacute;ricas, 
+  alg&eacute;bricas e trigonom&eacute;tricas</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>Abs( express&atilde;o)</b> 
+  - Retorna o valor absoluto de uma express&atilde;o do tipo inteiro ou real. 
+  Equivale a <b>| express&atilde;o |</b> na &aacute;lgebra.<br>
+  <b>ArcCos( express&atilde;o)</b> - Retorna o &acirc;ngulo (em radianos) cujo 
+  co-seno &eacute; representado por express&atilde;o.<br>
+  <b>ArcSen( express&atilde;o)</b> - Retorna o &acirc;ngulo (em radianos) cujo 
+  seno &eacute; representado por express&atilde;o.<br>
+  <b>ArcTan( express&atilde;o)</b> - Retorna o &acirc;ngulo (em radianos) cuja 
+  tangente &eacute; representada por express&atilde;o.<br>
+  <b>Cos( express&atilde;o)</b> - Retorna o co-seno do &acirc;ngulo (em radianos) 
+  representado por express&atilde;o.<br>
+  <b>CoTan( express&atilde;o)</b> - Retorna a co-tangente do &acirc;ngulo (em 
+  radianos) representado por express&atilde;o.<br>
+  <b>Exp( base, expoente)</b> - Retorna o valor de base elevado a expoente, sendo 
+  ambos express&otilde;es do tipo real.<br>
+  <b>GraupRad( express&atilde;o)</b> - Retorna o valor em radianos correspondente 
+  ao valor em graus representado por express&atilde;o.<br>
+  <b>Int( express&atilde;o)</b> - Retorna a parte inteira do valor representado 
+  por express&atilde;o.<br>
+  <b>Log( express&atilde;o)</b> - Retorna o logaritmo na base 10 do valor representado 
+  por express&atilde;o.<br>
+  <b>LogN( express&atilde;o)</b> - Retorna o logaritmo neperiano (base e) do valor 
+  representado por express&atilde;o.<br>
+  <b>Pi</b> - Retorna o valor 3.141592.<br>
+  <b>Quad( express&atilde;o)</b> - Retorna quadrado do valor representado por 
+  express&atilde;o.<br>
+  <b>RadpGrau( express&atilde;o)</b> - Retorna o valor em graus correspondente 
+  ao valor em radianos representado por express&atilde;o.<br>
+  <b>RaizQ( express&atilde;o)</b> - Retorna a raiz quadrada do valor representado 
+  por express&atilde;o.<br>
+  <b>Rand</b> - Retorna um n&uacute;mero real gerado aleatoriamente, maior ou 
+  igual a zero e menor que um.<br>
+  <b>RandI( limite)</b> - Retorna um n&uacute;mero inteiro gerado aleatoriamente, 
+  maior ou igual a zero e menor que limite.<br>
+  <b>Sen( express&atilde;o)</b> - Retorna o seno do &acirc;ngulo (em radianos) 
+  representado por express&atilde;o.<br>
+  <b>Tan( express&atilde;o)</b> - Retorna a tangente do &acirc;ngulo (em radianos) 
+  representado por express&atilde;o.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Os valores que est&atilde;o 
+  entre par&ecirc;nteses, representados pelas palavras como <i>express&atilde;o</i>, 
+  <i>base</i> e <i>expoente</i>, s&atilde;o os par&acirc;metros, ou como dizem 
+  alguns autores, os argumentos que passamos para a fun&ccedil;&atilde;o para 
+  que realize seus c&aacute;lculos e retorne um outro, que usaremos no programa. 
+  Algumas fun&ccedil;&otilde;es, como Pi e Rand, n&atilde;o precisam de par&acirc;metros, 
+  mas a maioria tem um ou mais. O valor dos par&acirc;metros naturalmente altera 
+  o valor retornado pela fun&ccedil;&atilde;o.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">A seguir temos alguns exemplos 
+  que ilustram o uso destas fun&ccedil;&otilde;es.</font></p>
+<p><font face="Courier New, Courier, mono" size="2">algoritmo &quot;exemplo_funcoes&quot;<br>
+  </font></p>
+<p><font face="Courier New, Courier, mono" size="2">var a, b, c : real<br>
+  </font></p>
+<p><font face="Courier New, Courier, mono" size="2">inicio<br>
+  </font></p>
+<blockquote>
+  <p><font face="Courier New, Courier, mono" size="2">a &lt;- 2<br>
+    b &lt;- 9<br>
+    escreval( b - a ) // ser&aacute; escrito 7 na tela<br>
+    escreval( abs( a - b ) ) // tamb&eacute;m ser&aacute; escrito 7 na tela<br>
+    c &lt;- raizq( b ) // c recebe 3, a raiz quadrada de b, que &eacute; 9 <br>
+    // A f&oacute;rmula da &aacute;rea do c&iacute;rculo &eacute; pi (3.1416) 
+    vezes raio ao quadrado...<br>
+    escreval(&quot;A &aacute;rea do circulo com raio &quot; , c , &quot; &eacute; 
+    &quot; , pi * quad(c) )<br>
+    // Um pouco de trigonometria...<br>
+    escreval(&quot;Um &acirc;ngulo de 90 graus tem &quot; , grauprad(90) , &quot; 
+    radianos&quot; ) <br>
+    escreval( exp(a,b) ) // escreve 2 elevado &agrave; 9&ordf;, que &eacute; 512<br>
+    // escreve 1, que &eacute; a parte inteira de 1.8, resultado de 9/(3+2)<br>
+    escreval( int( b / ( a + c ) ) )<br>
+    </font></p>
+</blockquote>
+<p><font face="Courier New, Courier, mono" size="2">fimalgoritmo</font><font face="Arial, Helvetica, sans-serif" size="2"><br>
+  </font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="4">Fun&ccedil;&otilde;es para 
+  manipula&ccedil;&atilde;o de cadeias de caracteres (strings)</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><b>Asc (s : caracter)</b> 
+  : Retorna um inteiro com o c&oacute;digo ASCII do primeiro caracter da express&atilde;o.<br>
+  <b>Carac (c : inteiro)</b> : Retorna o caracter cujo c&oacute;digo ASCII corresponde 
+  &agrave; express&atilde;o.<br>
+  <b>Caracpnum (c : caracter)</b> : Retorna o inteiro ou real representado pela 
+  express&atilde;o. Corresponde a StrToTin() ou StrToFloat() do Delphi, Val() 
+  do Basic ou Clipper, etc.<br>
+  <b>Compr (c : caracter)</b> : Retorna um inteiro contendo o comprimento (quantidade 
+  de caracteres) da express&atilde;o. <br>
+  <b>Copia (c : caracter ; p, n : inteiro)</b> : Retorna um valor do tipo caracter 
+  contendo uma c&oacute;pia parcial da express&atilde;o, a partir do caracter 
+  p, contendo n caracteres. Os caracteres s&atilde;o numerados da esquerda para 
+  a direita, come&ccedil;ando de 1. Corresponde a Copy() do Delphi, Mid$() do 
+  Basic ou Substr() do Clipper.<br>
+  <b>Maiusc (c : caracter)</b> : Retorna um valor caracter contendo a express&atilde;o 
+  em mai&uacute;sculas.<br>
+  <b>Minusc (c : caracter)</b> : Retorna um valor caracter contendo a express&atilde;o 
+  em min&uacute;sculas.<br>
+  <b>Numpcarac (n : inteiro ou real)</b> : Retorna um valor caracter contendo 
+  a representa&ccedil;&atilde;o de n como uma cadeia de caracteres. Corresponde 
+  a IntToStr() ou FloatToStr() do Delphi, Str() do Basic ou Clipper.<br>
+  <b>Pos (subc, c : caracter)</b> : Retorna um inteiro que indica a posi&ccedil;&atilde;o 
+  em que a cadeia subc se encontra em c, ou zero se subc n&atilde;o estiver contida 
+  em c. Corresponde funcionalmente a Pos() do Delphi, Instr() do Basic ou At() 
+  do Clipper, embora a ordem dos par&acirc;metros possa ser diferente em algumas 
+  destas linguagens.<br>
+  </font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">A seguir temos alguns exemplos 
+  que ilustram o uso destas fun&ccedil;&otilde;es.</font></p>
+<p><font face="Courier New, Courier, mono" size="2">algoritmo &quot;exemplo_funcoes2&quot;<br>
+  </font></p>
+<p><font face="Courier New, Courier, mono" size="2">var<br>
+  a, b, c : caracter<br>
+  </font></p>
+<p><font face="Courier New, Courier, mono" size="2">inicio</font></p>
+<blockquote>
+  <p><font face="Courier New, Courier, mono" size="2"><br>
+    a &lt;- &quot;2&quot;<br>
+    b &lt;- &quot;9&quot;<br>
+    escreval( b + a ) // ser&aacute; escrito &quot;92&quot; na tela<br>
+    escreval( caracpnum(b) + caracpnum(a) ) // ser&aacute; escrito 11 na tela<br>
+    escreval( numpcarac(3+3) + a ) // ser&aacute; escrito &quot;62&quot; na tela<br>
+    c &lt;- &quot;Brasil&quot;<br>
+    escreval(maiusc(c)) // ser&aacute; escrito &quot;BRASIL&quot; na tela<br>
+    escreval(compr(c)) // ser&aacute; escrito 6 na tela<br>
+    b &lt;- &quot;O melhor do Brasil&quot;<br>
+    escreval(pos(c,b)) // ser&aacute; escrito 13 na tela<br>
+    escreval(asc(c)) // ser&aacute; escrito 66 na tela - c&oacute;digo ASCII de 
+    &quot;B&quot;<br>
+    a &lt;- carac(65) + carac(66) + carac(67)<br>
+    escreval(a) // ser&aacute; escrito &quot;ABC&quot; na tela<br>
+    </font></p>
+</blockquote>
+<p><font face="Courier New, Courier, mono" size="2">fimalgoritmo</font><font face="Courier New, Courier, mono"><br>
+  </font> </p>
+<p>&nbsp; </p>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>A Linguagem de Programação do Visualg (4)</title>
+</head>
+
+<body>
+
+<p><font face="Arial" size="4">A Linguagem de Programação do VisuAlg (5)</font></p>
+
+<p><font face="Arial" size="2">O VisuAlg implementa algumas extensões às
+linguagens &quot;tradicionais&quot; de programação, com o intuito
+principal de ajudar o seu uso como ferramenta de ensino. Elas são mostradas a
+seguir.</font></p>
+
+<p><font face="Arial" size="2"><b><a name="aleatorio" href="#aleatorio"></a>Comando Aleatório</b></font></p>
+
+<p><font face="Arial" size="2">Muitas vezes a digitação de dados para o teste
+de um
+programa torna-se uma tarefa entediante. Com o uso do comando </font><font face="Courier New" size="2">aleatorio</font><font face="Arial" size="2"> do
+VisuAlg, sempre que um comando </font><font face="Courier New" size="2"> leia</font><font face="Arial" size="2"> for encontrado,
+a digitação de valores numéricos e/ou
+caracteres é substituída por uma geração aleatória. Este comando não afeta a leitura de variáveis
+lógicas: com
+certeza, uma coisa pouco usual em programação...&nbsp;</font></p>
+
+<p><font face="Arial" size="2">Este comando tem as seguintes
+sintaxes:</font></p>
+
+<table border="1" width="100%">
+  <tr>
+    <td width="35%" align="center"><font face="Courier New" size="2">aleatorio [on]</font><font face="Arial" size="2"> </font></td>
+    <td width="65%"><font face="Arial" size="2">Ativa a geração de valores aleatórios
+      que substituem a digitação de
+dados. A palavra-chave </font><font face="Courier New" size="2">on</font><font face="Arial" size="2">
+      é opcional.</font><font face="Arial" size="2"> A faixa padrão de valores
+      gerados é de 0 a 100 inclusive. </font><font face="Arial" size="2">Para a geração de dados do tipo
+      caractere, não há uma faixa pré-estabelecida: os dados gerados serão sempre
+      <i>strings</i> de 5 letras maiúsculas.</font></td>
+  </tr>
+  <tr>
+    <td width="35%" align="center"><font face="Courier New" size="2">aleatorio <i> &lt;valor1 &gt;</i> [,<i> &lt;valor2
+&gt;</i> ] </font></td>
+    <td width="65%"><font face="Arial" size="2">Ativa a geração de
+dados numéricos aleatórios estabelecendo uma faixa de valores mínimos e
+máximos. Se apenas </font><i><font face="Courier New" size="2">&lt; valor1&gt; </font></i><font face="Arial" size="2"> for fornecido, a faixa será de 0 a </font><i><font face="Courier New" size="2">&lt;valor1&gt; </font></i><font face="Arial" size="2"> inclusive;
+      caso contrário, a faixa será
+de </font><font face="Courier New"><i><font size="2">&lt;</font><font size="2">valor1&gt;</font></i></font><font face="Arial" size="2">
+a </font><font face="Courier New"><i><font size="2">&lt;</font><font size="2">valor2&gt;</font></i></font><font face="Arial" size="2">
+inclusive. Se </font><font face="Courier New"><i><font size="2">&lt;</font><font size="2">valor2&gt;</font></i></font><font face="Arial" size="2">
+for menor que </font><font face="Courier New"><i><font size="2">&lt;</font><font size="2">valor1&gt;</font></i></font><font face="Arial" size="2">,
+o VisuAlg os trocará para que a faixa fique correta.&nbsp;&nbsp;<b><br>
+      Importante:</b>  </font><font face="Courier New"><i><font size="2">&lt;</font><font size="2">valor1&gt;</font></i></font><font face="Arial" size="2">
+e </font><font face="Courier New"><i><font size="2">&lt;</font><font size="2">valor2&gt;</font></i></font><font face="Arial" size="2">
+devem ser <b>constantes numéricas</b>, e não expressões.</font></td>
+  </tr>
+  <tr>
+    <td width="35%" align="center"><font face="Courier New" size="2">aleatorio off</font></td>
+    <td width="65%"><font face="Arial"><font size="2">Desativa</font><font size="2">
+a </font></font><font face="Arial" size="2"> geração de valores aleatórios. A palavra-chave </font><font face="Courier New" size="2">off</font><font face="Arial" size="2">
+é obrigatória.</font></td>
+  </tr>
+</table>
+
+<p><font face="Arial" size="2"><b><br>
+<a name="arquivo" href="#arquivo"></a>
+Comando Arquivo</b></font></p>
+<p><font face="Arial" size="2">Muitas vezes é necessário repetir os testes de um
+programa com uma série igual de dados. Para casos como este, o VisuAlg permite
+o armazenamento de dados em um arquivo-texto, obtendo deles os dados ao executar
+os comandos </font><font face="Courier New" size="2">leia</font><font face="Arial" size="2">.&nbsp;<br>
+ Esta característica funciona da seguinte maneira:<br>
+&nbsp;&nbsp;&nbsp; 1) Se <b>não existir</b> o arquivo com nome especificado, o
+VisuAlg fará uma leitura de dados através da digitação, armazenando os dados
+lidos neste
+arquivo, na ordem em que forem fornecidos.<br>
+&nbsp;&nbsp;&nbsp; 2) Se o arquivo <b>existir</b>, o VisuAlg obterá os dados
+deste arquivo até chegar ao seu fim. Daí em diante, fará as leituras de dados
+através da digitação.<br>
+&nbsp;&nbsp;&nbsp; 3) Somente um comando </font><font face="Courier New" size="2"> arquivo</font><font face="Arial" size="2"> pode ser empregado
+em cada pseudocódigo, e ele deverá estar na seção de declarações (dependendo do
+&quot;sucesso&quot; desta característica, em futuras versões ela poderá ser
+melhorada...).<br>
+&nbsp;&nbsp;&nbsp; 4) Caso não seja fornecido um caminho, o VisuAlg irá procurar
+este arquivo na pasta de trabalho corrente (geralmente, é a pasta onde o
+programa VISUALG.EXE está). Este comando não prevê uma
+extensão padrão; portanto, a especificação do nome do arquivo deve ser
+completa, inclusive com sua extensão (por exemplo, .txt, .dat, etc.).</font></p>
+<p><font face="Arial" size="2">A sintaxe do comando é:</font></p>
+<p><font face="Courier New" size="2">arquivo <i> &lt;nome-de-arquivo&gt;</i></font></p>
+<p><font face="Courier New" size="2"><i>&lt;nome-de-arquivo&gt;</i></font><font size="2">
+é uma constante </font><font face="Arial" size="2">
+caractere (entre aspas duplas). Veja o exemplo a seguir:</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">algoritmo &quot;lendo do arquivo&quot;<br>
+  arquivo &quot;teste.txt&quot;<br>
+  var x,y: inteiro<br>
+  inicio<br>
+  para x de 1 ate 5 faca<br>
+  &nbsp;&nbsp; leia (y)<br>
+  fimpara<br>
+  fimalgoritmo</font></p>
+</blockquote>
+<p><font face="Arial" size="2"><b><a name="timer"></a>Comando Timer</b></font></p>
+<p><font face="Arial" size="2">Embora o VisuAlg seja um interpretador de
+pseudocódigo, seu desempenho é muito bom: o tempo gasto para interpretar cada linha
+digitada é apenas uma fração de segundo. Entretanto,
+por motivos educacionais, pode ser conveniente exibir o fluxo de execução do
+pseudocódigo comando por
+comando, em &quot;câmera lenta&quot;. O comando </font><font face="Courier New" size="2">timer</font><font face="Arial" size="2">
+serve para este propósito: insere um atraso (que pode ser especificado) antes da
+execução de cada linha. Além disso, realça em fundo
+azul o comando que está sendo executado, da mesma forma que na execução passo a
+passo.</font></p>
+<p><font face="Arial" size="2">Sua sintaxe é a seguinte:</font></p>
+<table border="1" width="100%">
+  <tr>
+    <td width="28%" align="center"><font face="Courier New" size="2">timer on </font></td>
+    <td width="72%"><font face="Arial" size="2">Ativa</font><font face="Arial" size="2">
+      o <i>timer</i>.</font></td>
+  </tr>
+  <tr>
+    <td width="28%" align="center"><font face="Courier New" size="2">timer <i> &lt;tempo-de-atraso&gt;</i> </font></td>
+    <td width="72%"><font face="Arial" size="2">Ativa o <i>timer</i> estabelecendo
+      seu tempo de atraso em milissegundos. O valor padrão é 500, que equivale a meio
+      segundo. O argumento <i>&lt;</i></font><i><font face="Courier New" size="2">tempo-de-atraso&gt;</font></i><font face="Arial" size="2">
+deve ser uma constante inteira com valor entre 0 e 10000. Valores
+menores que 0 são corrigidos para 0, e maiores que 10000 para 10000.</font></td>
+  </tr>
+  <tr>
+    <td width="28%" align="center"><font face="Courier New" size="2">timer off</font></td>
+    <td width="72%"><font size="2" face="Arial">Desativa o <i>timer.</i></font></td>
+  </tr>
+</table>
+<p><font face="Arial" size="2">Ao longo do pseudocódigo, pode haver vários comandos </font><font face="Courier New" size="2">timer</font><font face="Arial" size="2">.
+Todos eles devem estar na seção de comandos. Uma vez ativado, o atraso na execução dos comandos
+será mantido até se chegar ao final do pseudocódigo ou até ser encontrado um comando </font><font face="Courier New" size="2">timer</font><font face="Arial" size="2">
+</font><font face="Courier New" size="2">off</font><font face="Arial" size="2">.</font></p>
+<p><font face="Arial" size="2"><b>Comandos de Depuração</b></font></p>
+<p><font face="Arial" size="2">Nenhum ambiente de desenvolvimento está completo
+se não houver a possibilidade de se inserir pontos de interrupção (<i>breakpoints</i>)
+no pseudocódigo para fins de depuração. VisuAlg implementa dois comandos que
+auxiliam a
+depuração ou análise de um pseudocódigo: o comando </font><font face="Courier New" size="2">pausa</font><font face="Arial" size="2">
+e o comando </font><font face="Courier New" size="2">debug</font><font face="Arial" size="2">.</font></p>
+<p><font face="Arial" size="2"><b><a name="pausa"></a>Comando Pausa</b></font></p>
+<p><font face="Arial" size="2">Sua sintaxe é simplesmente:</font></p>
+<p><font face="Courier New" size="2">pausa</font></p>
+<p><font face="Arial" size="2">Este comando insere uma interrupção incondicional no
+pseudocódigo. Quando ele é encontrado, o VisuAlg pára a execução do
+pseudocódigo e espera alguma ação do programador. Neste momento, é
+possível: analisar os
+valores das variáveis ou das saídas produzidas até o momento; executar o
+pseudocódigo passo a passo (com F8); prosseguir sua execução normalmente (com F9);
+ou simplesmente terminá-lo (com Ctrl-F2). Com exceção da alteração do texto
+do pseudocódigo, todas as funções do VisuAlg estão
+disponíveis.</font></p>
+<p><font face="Arial" size="2"><b><a name="debug"></a>Comando Debug</b></font></p>
+<p><font face="Arial" size="2">Sua sintaxe é:</font></p>
+<p><font face="Courier New" size="2">debug &lt;<i>expressão-lógica</i>&gt;</font></p>
+<p><font size="2" face="Arial">Se a avaliação de </font><font face="Courier New" size="2">&lt;<i>expressão-lógica</i>&gt;</font><font size="2" face="Arial">
+</font><font face="Arial" size="2">resultar em valor VERDADEIRO, a execução do
+pseudocódigo será interrompida como no comando </font><font face="Courier New" size="2">pausa</font><font face="Arial" size="2">.
+Dessa forma, é possível a inserção de um <i>breakpoint</i> condicional no
+pseudocódigo.</font></p>
+<p><font face="Arial" size="2"><b><a name="eco"></a>Comando Eco</b></font></p>
+<p><font face="Arial" size="2">Sua sintaxe é:&nbsp;</font></p>
+<p><font face="Courier New" size="2">eco on | off&nbsp;&nbsp; </font></p>
+<p><font face="Arial" size="2">Este comando ativa (</font><font face="Courier New" size="2">eco</font><font face="Arial" size="2">
+</font><font face="Courier New" size="2">on</font><font face="Arial" size="2">)
+ou desativa (</font><font face="Courier New" size="2">eco</font><font face="Arial" size="2">
+</font><font face="Courier New" size="2">off</font><font face="Arial" size="2">)
+a impressão dos dados de entrada na saída-padrão do VisuAlg, ou seja, na área à
+direita da parte inferior da tela. Esta característica pode ser útil quando houver
+uma grande quantidade de dados de entrada, e se deseja apenas analisar a saída produzida.
+Convém utilizá-la também quando os dados de entrada provêm de um arquivo já
+conhecido.</font></p>
+<p><font face="Arial" size="2"><b><a name="cronometro"></a>Comando Cronômetro</b></font></p>
+<p><font face="Arial" size="2">Sua sintaxe é:</font></p>
+<p><font face="Courier New" size="2">cronometro on | off&nbsp;&nbsp; </font></p>
+<p><font face="Arial" size="2">Este comando ativa (</font><font face="Courier New" size="2">cronometro 
+  on</font><font face="Arial" size="2">) ou desativa (</font><font face="Courier New" size="2">cronometro 
+  off</font><font face="Arial" size="2">) o cronômetro interno do VisuAlg. Quando 
+  o comando </font><font face="Courier New" size="2">cronometro on</font><font face="Arial" size="2"> 
+  é encontrado, o VisuAlg imprime na saída-padrão a informação &quot;Cronômetro 
+  iniciado.&quot;, e começa a contar o tempo em milissegundos. Quando o comando 
+  </font><font face="Courier New" size="2">cronometro off</font><font face="Arial" size="2"> 
+  é encontrado, o VisuAlg imprime na saída-padrão a informação &quot;Cronômetro 
+  terminado. Tempo decorrido: xx segundo(s) e xx ms&quot;. Este comando é útil 
+  na análise de desempenho de algoritmos (ordenação, busca, etc.).&nbsp;</font></p>
+<p><font face="Arial" size="2"><b><a name="limpatela"></a></b></font><font face="Arial, Helvetica, sans-serif" size="2"><b>Comando 
+  Limpatela</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Sua sintaxe &eacute;</font></p>
+<p><font face="Courier New, Courier, mono" size="2">limpatela</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Este comando simplesmente 
+  limpa a tela DOS do Visualg (a simula&ccedil;&atilde;o da tela do computador). 
+  Ele n&atilde;o afeta a &quot;tela&quot; que existe na parte inferior direita 
+  da janela principal do Visualg.</font></p>
+<p><a href="linguagem4.htm"><font face="Arial" size="2">Anterior</font></a></p>
+
+<p align="center"><font face="Arial" size="2">&nbsp; <a href="objetivos.htm">Objetivos</a>&nbsp;&nbsp;&nbsp;
+<a href="telaprin.htm">Tela principal</a>&nbsp;&nbsp;&nbsp;</font> <font face="Arial" size="2"><a href="menu.htm">Menu</a></font>&nbsp;&nbsp;&nbsp;
+<a href="linguagem.htm"><font face="Arial" size="2">A linguagem do VisuAlg</font></a>&nbsp;&nbsp;&nbsp;
+<a href="refer.htm"><font face="Arial" size="2">Referências da linguagem do VisuAlg</font></a><font face="Arial" size="2">&nbsp;&nbsp; </font> <font face="Arial" size="2"><a href="autocomp.htm">Mais
+recursos</a></font></p>
+
+</body>
+
+</html>

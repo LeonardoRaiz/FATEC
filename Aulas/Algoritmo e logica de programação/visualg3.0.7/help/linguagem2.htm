@@ -1,0 +1,266 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>A Linguagem de Programação do Visualg (2)</title>
+</head>
+
+<body>
+
+<p><font face="Arial" size="4">A Linguagem de Programação do VisuAlg (2)</font></p>
+<p><font face="Arial" size="2"><b><a name="oparim"></a>Operadores Aritméticos</b></font></p>
+<table border="1" width="100%">
+  <tr>
+    <td width="8%" align="center"><font size="2" face="Courier New">+,-</font></td>
+    <td width="92%"><font face="Arial" size="2">Operadores unários, isto é,
+      são aplicados a um único operando. São os operadores aritméticos de
+      maior precedência. Exemplos: </font><font size="2" face="Courier New">-3,
+      +x</font><font size="2" face="Arial">. Enquanto o operador unário </font><font size="2" face="Courier New">-</font><font size="2" face="Arial">
+      inverte o sinal do seu operando, o operador </font><font size="2" face="Courier New">+</font><font size="2" face="Arial">
+      não altera o valor em nada o seu valor.</font></td>
+  </tr>
+  <tr>
+    <td width="8%" align="center"><font face="Courier New" size="2">\ </font></td>
+    <td width="92%"><font face="Arial" size="2">Operador
+de divisão inteira. Por exemplo, 5 \ 2 = 2. Tem a mesma precedência do
+operador de divisão tradicional.</font></td>
+  </tr>
+  <tr>
+    <td width="8%" align="center"><font face="Courier New" size="2">+,-,*,/ </font></td>
+    <td width="92%"><font face="Arial" size="2">Operadores
+aritméticos tradicionais de adição, subtração, multiplicação e
+divisão. Por convenção, </font><font face="Courier New" size="2"> *</font><font face="Arial" size="2"> e
+</font><font face="Courier New" size="2"> /</font><font face="Arial" size="2"> têm precedência sobre
+</font><font face="Courier New" size="2"> +</font><font face="Arial" size="2">
+e </font><font face="Courier New" size="2">-</font><font face="Arial" size="2">. Para modificar a ordem de
+avaliação das operações, é necessário usar
+parênteses como em qualquer expressão aritmética.</font></td>
+  </tr>
+  <tr>
+    <td width="8%" align="center"><font face="Courier New" size="2">MOD ou %</font></td>
+    <td width="92%"><font face="Arial" size="2">Operador de módulo (isto é, resto 
+      da divisão inteira). Por exemplo, <font face="Courier New, Courier, mono">8 
+      MOD 3 = 2</font>. Tem a mesma precedência do operador de divisão tradicional.</font></td>
+  </tr>
+  <tr>
+    <td width="8%" align="center"><font face="Courier New" size="2">^ </font></td>
+    <td width="92%"><font face="Arial" size="2">Operador
+de potenciação. Por exemplo, 5 ^ 2 = 25. Tem a maior precedência entre os
+operadores aritméticos binários (aqueles que têm dois operandos).</font></td>
+  </tr>
+</table>
+<p><font face="Arial" size="2"><b>Operadores de Caracteres</b></font></p>
+<table border="1" width="100%">
+  <tr>
+    <td width="8%" align="center"><font size="2" face="Courier New">+ </font></td>
+    <td width="92%"><font face="Arial" size="2">Operador de concatenação de
+<i> strings</i> (isto é, cadeias de caracteres), quando
+usado com dois valores (variáveis ou constantes) do tipo &quot;caractere&quot;. Por exemplo: </font><font size="2" face="Courier New">&quot;Rio
+&quot; + &quot; de Janeiro&quot; = &quot;Rio de Janeiro&quot;</font><font size="2" face="Arial">.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Arial"><b>Operadores Relacionais</b></font></p>
+<table border="1" width="100%">
+  <tr>
+    <td width="8%" align="center"><font size="2" face="Courier New">=, &lt;, &gt;, &lt;=, &gt;=, &lt;&gt;&nbsp; </font></td>
+    <td width="92%"><font size="2" face="Arial">Respectivamente: igual,
+menor que, maior
+que, menor ou igual a, maior ou igual a, diferente de. São utilizados em
+expressões lógicas para se testar a relação entre dois valores do mesmo tipo.
+Exemplos: </font><font size="2" face="Courier New">3 = 3</font><font size="2" face="Arial">
+( 3 é igual a 3?) resulta em </font><font size="2" face="Courier New">VERDADEIRO</font><font size="2" face="Arial">
+; </font><font size="2" face="Courier New">&quot;A&quot; &gt; &quot;B&quot;</font><font size="2" face="Arial">
+(&quot;A&quot; está depois de &quot;B&quot; na ordem alfabética?) resulta
+em </font><font size="2" face="Courier New">FALSO</font><font size="2" face="Arial">.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Arial"><b>Importante:</b> No VisuAlg, as comparações
+entre <i>strings</i> <b>não diferenciam </b>as letras maiúsculas das minúsculas. Assim, </font><font size="2" face="Courier New">&quot;ABC&quot;</font><font size="2" face="Arial">
+é igual a </font><font size="2" face="Courier New">&quot;abc&quot;</font><font size="2" face="Arial">.
+Valores lógicos obedecem à seguinte ordem:</font><font size="2" face="Courier New">
+FALSO &lt; VERDADEIRO</font><font size="2" face="Arial">.</font></p>
+<p><font size="2" face="Arial"><b><a name="oplog"></a>Operadores Lógicos</b></font></p>
+<table border="1" width="100%">
+  <tr>
+    <td width="8%" align="center"><font size="2" face="Courier New">nao </font></td>
+    <td width="92%"><font size="2" face="Arial">Operador
+unário de negação. </font><font size="2" face="Courier New">nao VERDADEIRO =
+FALSO</font><font size="2" face="Arial">, e </font><font size="2" face="Courier New">nao
+FALSO = VERDADEIRO</font><font size="2" face="Arial">. Tem a maior precedência
+entre os operadores lógicos. Equivale ao </font><font size="2" face="Courier New">
+NOT</font><font size="2" face="Arial"> do Pascal.</font></td>
+  </tr>
+  <tr>
+    <td width="8%" align="center"><font size="2" face="Courier New">ou </font></td>
+    <td width="92%"><font size="2" face="Arial">Operador
+que resulta </font><font size="2" face="Courier New">VERDADEIRO</font><font size="2" face="Arial">
+quando um dos seus operandos lógicos for verdadeiro. Equivale ao </font><font size="2" face="Courier New">
+OR</font><font size="2" face="Arial"> do Pascal.</font></td>
+  </tr>
+  <tr>
+    <td width="8%" align="center"><font size="2" face="Courier New">e </font></td>
+    <td width="92%"><font size="2" face="Arial">Operador que resulta
+</font><font size="2" face="Courier New">VERDADEIRO</font><font size="2" face="Arial">
+somente se seus dois operandos lógicos forem verdadeiros. Equivale ao </font><font size="2" face="Courier New">
+AND</font><font size="2" face="Arial"> do Pascal.</font></td>
+  </tr>
+  <tr>
+    <td width="8%" align="center"><font size="2" face="Courier New">xou</font></td>
+    <td width="92%"><font size="2" face="Arial">Operador
+que resulta </font><font size="2" face="Courier New">VERDADEIRO</font><font size="2" face="Arial">
+se seus dois operandos lógicos forem diferentes, e </font><font size="2" face="Courier New">FALSO</font><font size="2" face="Arial">
+se forem iguais. Equivale ao</font><font size="2" face="Courier New"> XOR</font><font size="2" face="Arial">
+do Pascal.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Arial"><b>Comandos de Saída de Dados</b></font></p>
+<p><font face="Courier New" size="2"><a name="escreva"></a>escreva (&lt;<i>lista-de-expressões&gt;</i>)</font></p>
+<p><font size="2" face="Arial">Escreve no dispositivo de
+saída padrão (isto é, na área à direita da metade inferior da tela do VisuAlg) o
+conteúdo de cada uma das expressões que compõem</font>   <font face="Courier New" size="2"><i>&lt;lista-de-expressões&gt;</i></font><font size="2" face="Arial">.&nbsp;
+As expressões dentro desta lista devem estar separadas por vírgulas; depois de
+serem avaliadas, seus resultados são impressos na ordem indicada. É
+equivalente ao comando </font><font size="2" face="Arial"><i>write</i></font><font size="2" face="Arial">
+do Pascal.</font></p>
+<p><font size="2" face="Arial">De modo semelhante a Pascal, é possível especificar o número de espaços no
+qual se deseja escrever um determinado valor. Por exemplo, o comando </font><font size="2" face="Courier New">escreva(x:5)</font><font size="2" face="Arial">
+escreve o valor da variável </font><font size="2" face="Courier New">x</font><font size="2" face="Arial">
+em 5 espaços, alinhado-o à direita. Para variáveis reais, pode-se também
+especificar o número de casas fracionárias que serão exibidas. Por exemplo,
+considerando </font><font size="2" face="Courier New">y</font><font size="2" face="Arial">
+como uma variável real, o comando </font><font size="2" face="Courier New">escreva(y:6:2)</font><font size="2" face="Arial">escreve seu valor em 6
+espaços colocando 2 casas decimais.&nbsp;</font></p>
+<p><font face="Courier New" size="2"><a name="escreval"></a>escreval (<i>&lt;lista-de-expressões&gt;</i>)</font><font face="Arial" size="2">.&nbsp;</font></p>
+<p><font face="Arial" size="2">
+Idem ao anterior, com a única diferença que pula uma linha em seguida. É
+equivalente ao </font><font face="Arial" size="2"><i>writeln</i></font><font face="Arial" size="2">
+do Pascal.</font></p>
+<p> <font size="2" face="Arial">Exemplos:</font></p>
+<blockquote>
+  <p><font face="Courier New" size="2">algoritmo "exemplo"<br>
+  var x: real<br>
+  &nbsp;&nbsp;&nbsp; y: inteiro<br>
+  &nbsp;&nbsp;&nbsp; a: caractere<br>
+  &nbsp;&nbsp;&nbsp; l: logico<br>
+  inicio<br>
+  x &lt;- 2.5<br>
+  y &lt;- 6<br>
+  a &lt;- "teste"<br>
+  l &lt;- VERDADEIRO<br>
+  escreval ("x", x:4:1, y+3:4)  // Escreve: x 2.5&nbsp;&nbsp;&nbsp; 9<br>
+  escreval (a, "ok")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  // Escreve: testeok   (e depois pula linha)<br>
+  escreval (a, " ok")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Escreve: teste ok  (e depois pula linha)<br>
+  escreval (a + " ok")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Escreve: teste ok  (e depois pula linha)<br>
+  escreva (l)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  // Escreve: VERDADEIRO<br>
+  fimalgoritmo</font></p>
+</blockquote>
+<p><font size="2" face="Arial">Note que o VisuAlg separa expressões do tipo
+numérico e lógico com um espaço à esquerda, mas não as expressões do tipo caractere, para
+que assim possa haver a concatenação. Quando se deseja separar expressões
+do tipo caractere, é necessário acrescentar espaços nos locais adequados.</font></p>
+<p><font size="2" face="Arial"><b>Comando de Entrada de Dados</b></font></p>
+<p><font face="Courier New" size="2"><a name="leia"></a>leia (<i>&lt;lista-de-variáveis&gt;</i>)
+</font></p>
+<p><font size="2" face="Arial">Recebe valores digitados pelos usuário, atribuindo-os às
+variáveis cujos nomes estão em </font><font face="Courier New" size="2"><i>&lt;lista-de-variáveis&gt;</i></font><font size="2" face="Arial">
+(é respeitada a ordem especificada nesta lista).&nbsp;É análogo ao comando <i>read</i>
+do Pascal.</font></p>
+<p><font size="2" face="Arial"> Veja no
+exemplo abaixo o resultado:</font></p>
+<p><font face="Courier New" size="2">algoritmo &quot;exemplo 1&quot;</font><img border="0" src="leiax1.jpg" align="right" width="342" height="157"><font face="Courier New" size="2"><br>
+var x: inteiro;</font><font face="Courier New" size="2"><br>
+inicio</font><font face="Courier New" size="2"><br>
+leia (x)<br>
+escreva (x)<br>
+fimalgoritmo</font></p>
+<p><font size="2" face="Arial">O comando de leitura acima irá exibir uma janela
+como a que se vê ao lado, com a mensagem padrão:</font><font face="Courier New" size="2"><br>
+&nbsp;&quot;Entre com o valor de <i>&lt;nome-de-variável&gt;&quot;</i></font></p>
+<p>&nbsp;</p>
+<p><font size="2" face="Arial">Se você clicar em <i> Cancelar</i> ou teclar <i>Esc</i> durante
+a leitura de dados, o programa será imediatamente interrompido.</font></p>
+<p><font size="2" face="Arial"><b>Comando de Desvio Condicional</b></font></p>
+<p><font size="2" face="Courier New"><a name="se"></a>se <i> &lt;expressão-lógica&gt;</i>
+entao<br>
+&nbsp;&nbsp;&nbsp; <i>&lt;seqüência-de-comandos&gt;</i><br>
+fimse</font></p>
+<p><font size="2" face="Arial">Ao encontrar este comando, o VisuAlg analisa a </font><font size="2" face="Courier New"><i>&lt;expressão-lógica&gt;</i></font><font size="2" face="Arial">. Se o seu
+resultado for </font><font size="2" face="Courier New">VERDADEIRO</font><font size="2" face="Arial">,
+todos os comandos da </font><i><font size="2" face="Courier New">&lt;seqüência-de-comandos&gt;</font><font size="2" face="Arial">
+</font></i><font size="2" face="Arial">(</font><font size="2" face="Arial">entre esta linha e a linha com </font><font size="2" face="Courier New">fimse</font><font size="2" face="Arial">)</font><font size="2" face="Arial">
+são executados. Se o resultado for </font><font size="2" face="Courier New">FALSO</font><font size="2" face="Arial">,
+estes comandos são desprezados e a execução do algoritmo continua a partir
+da primeira linha depois do </font><font size="2" face="Courier New">fimse</font><font size="2" face="Arial">.</font></p>
+<p><font size="2" face="Courier New">se <i> &lt;expressão-lógica&gt;</i>
+entao<br>
+&nbsp;&nbsp;&nbsp; <i>&lt;seqüência-de-comandos-1&gt;</i><br>
+senao<br>
+&nbsp;&nbsp;&nbsp; <i>&lt;seqüência-de-comandos-2&gt;</i><br>
+fimse</font></p>
+<p><font size="2" face="Arial">Nesta outra forma do comando, se o resultado da
+avaliação de </font><font size="2" face="Courier New"><i>&lt;expressão-lógica&gt;</i></font><font size="2" face="Arial">
+for </font><font size="2" face="Courier New">VERDADEIRO</font><font size="2" face="Arial">,
+todos os comandos da </font><font size="2" face="Courier New"><i>&lt;seqüência-de-comandos-1&gt;</i></font><font size="2" face="Arial">
+(entre esta linha e a linha com </font><font size="2" face="Courier New">senao</font><font size="2" face="Arial">)
+são executados, e a execução continua depois a partir da primeira linha
+depois do </font><font size="2" face="Courier New">fimse</font><font size="2" face="Arial">.
+Se o resultado for </font><font size="2" face="Courier New">FALSO</font><font size="2" face="Arial">,
+estes comandos são desprezados e o algoritmo continua a ser executado a partir
+da primeira linha depois do </font><font size="2" face="Courier New">senao</font><font size="2" face="Arial">,
+executando todos os comandos da </font><font size="2" face="Courier New"><i>&lt;seqüência-de-comandos-2&gt;</i></font><font size="2" face="Arial">
+(até a linha com </font><font size="2" face="Courier New">fimse</font><font size="2" face="Arial">).</font></p>
+<p><font size="2" face="Arial">Estes comandos equivalem ao</font>  <i> <font size="2" face="Arial">if...then</font> </i> e <font size="2" face="Arial"><i>if...then...else</i></font> <font size="2" face="Arial">do
+Pascal. Note que não há necessidade de delimitadores de bloco (como </font><font size="2" face="Arial"><i>begin</i></font><font size="2" face="Arial">
+e </font><i><font size="2" face="Arial">end</font></i><font size="2" face="Arial">),
+pois as seqüências de comandos já estão delimitadas pelas palavras-chave </font><font size="2" face="Courier New">senao</font><font size="2" face="Arial">
+e </font><font size="2" face="Courier New">fimse</font><font size="2" face="Arial">.
+O VisuAlg permite o aninhamento desses comandos de desvio condicional.</font></p>
+<p><font size="2" face="Arial"><b>Comando de Seleção
+Múltipla</b></font></p>
+<p><font size="2" face="Arial">O VisuAlg implementa (com certas variações) o
+comando </font><i><font size="2" face="Arial">case</font></i><font size="2" face="Arial">
+do Pascal. A sintaxe é a seguinte:</font></p>
+<p><font face="Courier New" size="2"><a name="escolha"></a>escolha <i> &lt;expressão-de-seleção&gt;</i><br>
+caso <i> &lt;exp11&gt;, &lt;exp12&gt;, ..., &lt;exp1n&gt;</i><br>
+&nbsp;&nbsp; <i>&lt;seqüência-de-comandos-1&gt;</i><br>
+caso <i> &lt;exp21&gt;, &lt;exp22&gt;, ..., &lt;exp2n&gt;</i><br>
+&nbsp;&nbsp; <i>&lt;seqüência-de-comandos-2&gt;</i><br>
+...<br>
+outrocaso<br>
+&nbsp;&nbsp; <i>&lt;seqüência-de-comandos-extra&gt;</i><br>
+fimescolha</font></p>
+<p><font size="2" face="Arial">Veja o exemplo a seguir, que ilustra bem o que
+faz este comando:</font></p>
+<blockquote>
+<p><font face="Courier New" size="2">algoritmo &quot;Times&quot;<br>
+var time: caractere<br>
+inicio<br>
+escreva (&quot;Entre com o nome de um time de futebol: &quot;)</font><font face="Courier New" size="2"><br>
+leia (time)<br>
+escolha time<br>
+caso "Flamengo", "Fluminense", "Vasco", "Botafogo"<br>
+&nbsp;&nbsp; escreval ("É um time carioca.")<br>
+caso "São Paulo", "Palmeiras", "Santos", "Corínthians"<br>
+&nbsp;&nbsp; escreval ("É um time paulista.")<br>
+outrocaso<br>
+&nbsp;&nbsp; escreval ("É de outro estado.")<br>
+fimescolha<br>
+fimalgoritmo</font></p>
+</blockquote>
+<p>&nbsp;</p>
+
+<p><a href="linguagem.htm"><font face="Arial" size="2">Anterior</font></a> <font size="2" face="Arial"><a href="linguagem3.htm">Próxima</a></font></p>
+
+<p align="center"><font face="Arial" size="2">&nbsp; <a href="objetivos.htm">Objetivos</a>&nbsp;&nbsp;&nbsp;
+<a href="telaprin.htm">Tela principal</a>&nbsp;&nbsp;&nbsp;</font> <font face="Arial" size="2"><a href="menu.htm">Menu</a></font>&nbsp;&nbsp;&nbsp;
+<a href="linguagem.htm"><font face="Arial" size="2">A linguagem do VisuAlg</font></a>&nbsp;&nbsp;&nbsp;
+<a href="refer.htm"><font face="Arial" size="2">Referências da linguagem do VisuAlg</font></a><font face="Arial" size="2">&nbsp;&nbsp; </font> <font face="Arial" size="2"><a href="autocomp.htm">Mais
+recursos</a></font></p>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Menu do Visualg</title>
+</head>
+
+<body>
+
+<p><font face="Arial" size="4">Menu do VisuAlg</font></p>
+<p><font face="Arial" size="2">Este menu compõe-se de 7 partes:</font></p>
+<p><font face="Arial" size="2"><b>Arquivo:&nbsp;</b> Possui os comandos para se
+abrir, salvar e imprimir algoritmos:</font></p>
+<blockquote>
+  <p><font face="Arial" size="2"><b>Novo: </b></font><font face="Arial" size="2">Cria um novo
+&quot;esqueleto&quot; de pseudocódigo, substituindo o texto existente no editor. Se
+este texto anterior tiver sido modificado, o VisuAlg pedirá sua confirmação para salvá-lo
+antes que seja sobreposto.</font><font face="Arial" size="2"><br>
+  <b>Abrir</b></font><b></b><font face="Arial" size="2"><b>: </b>Abre o texto
+  de um pseudocódigo anteriormente gravado, substituindo o
+texto existente no editor. Se este tiver sido modificado, o VisuAlg pedirá sua
+confirmação para salvá-lo antes que seja sobreposto.</font><font face="Arial" size="2"><br>
+  <b>Salvar: </b></font><font face="Arial" size="2">Salva imediatamente o texto
+  presente no editor. Caso seja a
+primeira vez que um novo texto é gravado, o VisuAlg pedirá o nome do arquivo e
+  sua localização.</font><font face="Arial" size="2"><br>
+  <b>Salvar como: </b>Permite salvar o texto presente no editor exibindo antes
+  uma
+  janela na qual se pode escolher o nome do arquivo e sua localização.<br>
+  <b>Enviar por email: </b>Permite o envio por email do texto presente no
+  editor.<br>
+  <b>Imprimir: </b>Permite a impressão do algoritmo corrente, mostrando
+  antes a janela de configuração de impressão (o correspondente botão da barra de
+  tarefas imprime imediatamente o texto do pseudocódigo na impressora padrão).<br>
+  <b>Sair: </b>Abandona o VisuAlg.<br>
+  <br>
+  Além destes comandos, há ainda a lista dos 5 últimos algoritmos utilizados,
+  que podem ser abertos diretamente ao se escolher o seu nome.</font></p>
+</blockquote>
+<p><font face="Arial" size="2"><b>Editar: </b>Além dos conhecidos comandos de
+um editor de texto (copiar, cortar, colar, desfazer, refazer, selecionar tudo,
+localizar, localizar de novo, substituir), há também as seguintes opções:</font></p>
+<blockquote>
+  <p><font face="Arial" size="2"><b>Corrigir indentação: </b>Corrige automaticamente a
+  <i>indentação</i> do pseudocódigo, tabulando cada comando interno com espaços à
+  esquerda.<br>
+  <b>Gravar bloco de texto: </b>Permite a gravação em arquivo de um texto selecionado
+  no editor. A extensão sugerida para o nome do arquivo é <i>.inc</i>.<br>
+  <b>Inserir bloco de texto: </b>Permite a inserção do conteúdo de um arquivo. A
+  extensão sugerida para o nome do arquivo é <i>.inc</i>.</font></p>
+</blockquote>
+<p><font face="Arial" size="2"><b>Exibir: </b>Possui os comandos para ativar/desativar as seguintes características:</font></p>
+<blockquote>
+  <p><font face="Arial" size="2"><b>Número de linhas: </b>Ativa/desativa a exibição
+  da numeração das linhas na
+área à esquerda do editor. A numeração corrente da posição do cursor também
+  é mostrada na primeira parte da barra de
+status, situada na parte inferior da tela. Por motivos técnicas, a numeração
+  é desativada durante a execução do pseudocódigo, voltando à situação
+  anterior logo em seguida. </font><font face="Arial" size="2"><br>
+  <b>Variáveis modificadas: </b>Ativa/desativa a exibição da variável que
+  está sendo modificada. Como o número de variáveis pode ser grande, muitas
+  podem estar fora da janela de visualização; quando esta característica está
+  ativada, o VisuAlg rola a grade de exibição de modo que cada variável fique
+  visível no momento em está sendo modificada. Este recurso é especialmente
+  útil quando se executa um pseudocódigo passo a passo. Por questões de
+  desempenho, a configuração padrão desta característica é <i>desativada,</i>
+  quando o pseudocódigo está sendo executado automaticamente. No entanto,
+  basta clicar este botão para executá-lo automaticamente com a exibição
+  ativada. No final da execução, a configuração volta a ser <i>desativada</i>.</font></p>
+</blockquote>
+<p><font face="Arial" size="2"><b>Pseudocódigo: </b>Contém os comandos relativos
+à execução do algoritmo:</font></p>
+<blockquote>
+  <p><font face="Arial" size="2">
+<b>Executar: </b>Inicia (ou continua) a execução automática do pseudocódigo.<br>
+<b>Passo a passo: </b>Inicia (ou continua) a execução linha por linha do
+  pseudocódigo, dando ao usuário a oportunidade de acompanhar o fluxo de
+  execução, os valores das variáveis e a pilha de ativação dos
+  subprogramas.<br>
+  <b>Executar com <i> timer</i>: </b>Insere um atraso (que pode ser especificado) antes da
+execução de cada linha. Também realça em fundo
+azul o comando que está sendo executado, da mesma forma que na execução passo a
+passo.</font><font face="Arial" size="2"><br>
+<b>Parar: </b>Termina imediatamente a execução do pseudocódigo. Evidentemente,
+  este item fica desabilitado quando o pseudocódigo não está sendo executado.<br>
+  <b>Liga/desliga <i>breakpoint</i>:</b> Insere/remove um ponto de parada na
+  linha em que esteja o cursor. Estes pontos de parada são úteis para a
+  depuração e acompanhamento da execução dos pseudocódigos, pois permitem a
+  verificação dos valores das variáveis e da pilha de ativação de
+  subprogramas.<br>
+  <b>Desmarcar todos os <i>breakpoints</i>: </b>Desativa todos os <i> breakpoints</i>
+  que estejam ativados naquele momento.<br>
+  <b>Executar em modo DOS: </b>Com esta opção ativada, tanto a entrada como a
+  saída-padrão passa a ser uma janela que imita o DOS, simulando a execução
+  de um programa neste ambiente.<br>
+  <b>Gerar valores aleatórios: </b></font><font face="Arial" size="2">Ativa a geração de valores aleatórios
+      que substituem a digitação de
+dados. A faixa padrão de valores
+      gerados é de 0 a 100 inclusive, mas pode ser modificada. Para a geração de dados do tipo
+      caractere, não há uma faixa pré-estabelecida: os dados gerados serão sempre
+  <i>strings</i> de 5 letras maiúsculas.</font><font face="Arial" size="2"><br>
+<b>Perfil: </b>Após a execução de um pseudocódigo, exibe o número de vezes
+  que cada umas das suas linhas foi executada. É útil para a análise de eficiência
+  (por exemplo, nos métodos de ordenação).<br>
+  <b>Pilha de ativação: </b>Exibe a pilha de subprogramas ativados num dado
+  momento. Convém utilizar este comando em
+  conjunto com <i>breakpoints</i> ou com a execução passo a passo.</font></p>
+</blockquote>
+<p><font face="Arial" size="2"><b>Linguagens: </b>Permite a tradução
+automático do pseudocódigo presente no editor para outras linguagens de
+programação. Atualmente, apenas a tradução para Pascal está implementada,
+mas ainda em fase de testes.</font></p>
+<p><font face="Arial" size="2"><b>Ferramentas: </b>Neste menu, é possível
+configurar algumas opções do VisuAlg: cores e tipos de letras na exibição do
+pseudocódigo, número de espaços para indentação automática, etc.</font></p>
+
+<p><font face="Arial" size="2"><b>Ajuda: </b>Entre outras coisas, possibilita acesso às páginas de
+ajuda e às informações sobre o VisuAlg.</font></p>
+
+<p align="center"><font face="Arial" size="2">&nbsp; <a href="objetivos.htm">Objetivos</a>&nbsp;&nbsp;&nbsp;
+<a href="telaprin.htm">Tela principal</a>&nbsp;&nbsp;&nbsp;</font> <font face="Arial" size="2"><a href="menu.htm">Menu</a></font>&nbsp;&nbsp;&nbsp;
+<a href="linguagem.htm"><font face="Arial" size="2">A linguagem do VisuAlg</font></a>&nbsp;&nbsp;&nbsp;
+<a href="refer.htm"><font face="Arial" size="2">Referências da linguagem do VisuAlg</font></a><font face="Arial" size="2">&nbsp;&nbsp; </font> <font face="Arial" size="2"><a href="autocomp.htm">Mais
+recursos</a></font></p>
+
+</body>
+
+</html>

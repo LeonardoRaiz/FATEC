@@ -1,0 +1,126 @@
+Algoritmo "NUMEROS_REPETIDOS"
+// Disciplina  : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Acha a quantidade de números repetidos num vetor
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 28/06/2017
+Var
+   // Seção de Declarações das variáveis
+   vetx,VETd,VETE : vetor[1..11] de inteiro
+   ELEMENTO,ACUMULA,TEMP,TAM:INTEIRO
+   ELEMTEMP,KCONTAR,INDICE: inteiro
+
+FUNÇÃO PESQUISA(VEM: INTEIRO):LOGICO
+VAR RET : LOGICO
+   II  : INTEIRO
+INICIO
+   RET <- FALSO
+   PARA II DE 1 ATÉ TAM FAÇA
+      SE (VETE[II] = VEM) ENTÃO
+         RET <- VERDADEIRO
+      FIMSE
+   FIMPARA
+   RETORNE RET
+FIMFUNÇÃO
+
+PROCEDIMENTO ORDENAR
+VAR II,JJ : INTEIRO
+   VTEMP : INTEIRO
+INICIO
+   PARA II DE 1 ATÉ TAM FAÇA
+      PARA JJ DE II ATÉ TAM FAÇA
+         SE VETX[II] > VETX[JJ] ENTÃO
+            VTEMP   <- VETX[II]
+            VETX[II]<- VETX[JJ]
+            VETX[JJ]<- VTEMP
+         FIMSE
+      FIMPARA
+   FIMPARA
+FIMPROCEDIMENTO
+
+
+PROCEDIMENTO GERADOR(VEM:INTEIRO)
+VAR  II,RR : INTEIRO
+INICIO
+
+   SE (VEM <> 0) ENTÃO
+      PARA II DE 1 ATÉ TAM FAÇA
+         RR <- 0
+         ENQUANTO RR = 0 FAÇA
+             RR <- RANDI(VEM)
+         FIMENQUANTO
+         VETX[II] <- RR
+      FIMPARA
+   FIMSE
+FIMPROCEDIMENTO
+
+
+PROCEDIMENTO DISPLAY
+VAR  II : INTEIRO
+INICIO
+   PARA II DE 1 ATÉ TAM FAÇA
+      SE VETX[II] <> 0 ENTÃO
+         ESCREVA(VETX[II]," ")
+      FIMSE
+   FIMPARA
+FIMPROCEDIMENTO
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   TAM <- 10
+
+   MUDACOR("AMARELO","FRENTE")
+   LIMPATELA
+   GERADOR(15)
+   ESCREVAL("GERANDO OS NÚMEROS AUTOMÁTICAMENTE")
+   DISPLAY
+   ORDENAR
+   ESCREVAL
+   ESCREVAL
+   ESCREVAL("* COLOCANDO OS NÚMEROS EM ORDEM *" )
+   DISPLAY
+   ESCREVAL
+   ESCREVAL
+   ESCREVAL("MOSTRANDO OS NÚMEROS ACUMULADOS")
+   ESCREVAL
+// ACUMULAR
+   ACUMULA <- 0
+   KCONTAR <- 0
+   TEMP <- 1
+   INDICE <- 1
+   ENQUANTO INDICE <= TAM FAÇA
+
+      ELEMENTO<- VETX[indice] // ELEMENTO DO VETOR
+      ACUMULA <- 1
+
+      SE (NÃO PESQUISA(ELEMENTO)) ENTÃO
+         KCONTAR <- KCONTAR + 1  // CONTADOR DE VETOR DE ELEMENTOS
+         VETE[KCONTAR] <- ELEMENTO  // VETOR DE ELEMENTOS DESTACADO
+         VETD[KCONTAR] <- ACUMULA  // VETOR COM A QUANTIDADE DE ELEMENTOS
+      Fimse
+
+      TEMP <- INDICE + 1
+      ELEMTEMP <- VETX[TEMP]
+      //    AQUI ESTÁ O SEGREDO
+      SE (ELEMENTO = ELEMTEMP) E (ELEMENTO <> 0) ENTÃO
+         ENQUANTO (ELEMENTO = ELEMTEMP)  FAÇA
+            TEMP <- TEMP + 1
+            ELEMTEMP<- VETX[TEMP]
+            ACUMULA <- ACUMULA + 1
+         FIMENQUANTO
+      SENÃO
+         ACUMULA <- 1
+      FIMSE
+      VETD[KCONTAR] <- ACUMULA  { COM A QUANTIDADE DE ELEMENTOS}
+      INDICE <- TEMP
+
+   FIMENQUANTO
+// MOSTRAR OS NUMEROS ACUMULADOS
+   PARA INDICE DE 1 ATÉ TAM FAÇA
+      SE VETD[INDICE] <> 0 ENTÃO
+         ESCREVAL(VETE[INDICE],":",VETD[INDICE])
+      FIMSE
+   FIMPARA
+
+
+Fimalgoritmo
