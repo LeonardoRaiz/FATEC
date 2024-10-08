@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 30/09">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024-2/Aula 06/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/Aula 06/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024-2/Aula 06/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/Aula 06/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 07/10" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +101,7 @@
       <workItem from="1725321537977" duration="4225000" />
       <workItem from="1725494833859" duration="4036000" />
       <workItem from="1727740735154" duration="4591000" />
-      <workItem from="1728345460715" duration="4304000" />
+      <workItem from="1728345460715" duration="4530000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
@@ -195,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727744658816</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Aula 07/10">
+      <option name="closed" value="true" />
+      <created>1728349783267</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728349783267</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +226,7 @@
     <MESSAGE value="Aula 02/09" />
     <MESSAGE value="Aula 04/09" />
     <MESSAGE value="Aula 30/09" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 30/09" />
+    <MESSAGE value="Aula 07/10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 07/10" />
   </component>
 </project>
