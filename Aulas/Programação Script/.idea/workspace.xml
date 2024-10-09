@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 07/10" />
+    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 07/10">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2024-2/Aula 06/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/Aula 06/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2024-2/Aula 06/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/Aula 06/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,6 +106,7 @@
       <workItem from="1725494833859" duration="4036000" />
       <workItem from="1727740735154" duration="4591000" />
       <workItem from="1728345460715" duration="4530000" />
+      <workItem from="1728515935056" duration="2241000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />

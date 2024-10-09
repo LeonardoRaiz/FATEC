@@ -16,7 +16,9 @@
             <li v-for="pokemon in pokemons" :key="pokemon.id">
                 <div class="pokemon-card">
                     <p>{{ pokemon.name}}</p>
-                    <img :src="pokemon.sprites.other.showdown.front_default">
+                    <div class="pokemon-img">
+                        <img :src="pokemon.sprites.other.showdown.front_default">
+                    </div>
                     <p>{{pokemon.types[0].type.name}}</p>
                     <p v-if="pokemon.types.length > 1">{{pokemon.types[1].type.name}}</p>
                 </div>
