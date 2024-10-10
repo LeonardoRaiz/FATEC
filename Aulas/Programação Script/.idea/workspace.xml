@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 07/10">
+    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 09/10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2024-2/Aula 06/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/Aula 06/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024-2/Aula 06/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/Aula 06/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2024-2/Aula 06/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/Aula 06/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,7 @@
       <workItem from="1725494833859" duration="4036000" />
       <workItem from="1727740735154" duration="4591000" />
       <workItem from="1728345460715" duration="4530000" />
-      <workItem from="1728515935056" duration="2241000" />
+      <workItem from="1728515935056" duration="3391000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
@@ -204,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728349783267</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Aula 09/10">
+      <option name="closed" value="true" />
+      <created>1728518362797</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728518362797</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +240,7 @@
     <MESSAGE value="Aula 04/09" />
     <MESSAGE value="Aula 30/09" />
     <MESSAGE value="Aula 07/10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 07/10" />
+    <MESSAGE value="Aula 09/10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 09/10" />
   </component>
 </project>

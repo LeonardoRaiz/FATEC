@@ -58,6 +58,30 @@ createApp({
                 this.callAPI();
             }
 
+        },
+        getTypeClass(type) {
+            const classTypeMap = {
+                fire: 'fire',
+                grass: 'grass',
+                water: 'water',
+                bug: 'bug',
+                normal: 'normal',
+                poison: 'poison',
+                electric: 'electric',
+                ground: 'ground',
+                ghost: 'ghost',
+                fighting: 'fighting',
+                psychic: 'psychic',
+                rock: 'rock',
+                ice: 'ice',
+                steel: 'steel',
+                dark: 'dark',
+                flying: 'flying',
+                fairy: 'fairy',
+                dragon: 'dragon',
+            }
+
+            return classTypeMap[type] || '';
         }
     }
 }).mount("#app");

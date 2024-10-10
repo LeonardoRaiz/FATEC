@@ -13,7 +13,7 @@
     </div>
     <div class="pokemon-container">
         <ul>
-            <li v-for="pokemon in pokemons" :key="pokemon.id">
+            <li v-for="pokemon in pokemons" :key="pokemon.id" :class="getTypeClass(pokemon.types[0].type.name)">
                 <div class="pokemon-card">
                     <p>{{ pokemon.name}}</p>
                     <div class="pokemon-img">
