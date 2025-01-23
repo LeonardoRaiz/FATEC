@@ -5,50 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 21/10">
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/componentes/estilo.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/tabuleiro/components/Linha.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/tabuleiro/components/Subdivisao.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/tabuleiro/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/tabuleiro/styles/Linha.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/tabuleiro/styles/Subdivisao.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/components/Estilo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/components/Filho.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/components/Pai.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/estado/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/indireta/components/FilhoIndireta.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/indireta/components/PaiIndireta.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/indireta/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/desafio/components/Display.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/desafio/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/condicional/components/If.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/condicional/components/Item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/condicional/components/Lista.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/condicional/components/SomentePar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/condicional/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/repeticao/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/data/listaProdutos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/eslint.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/model/produto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/next.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/public/file.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/public/globe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/public/next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/public/vercel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/public/window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/components/Botoes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/components/Display.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/components/useCalculadora.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/css/botoes.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/css/calculadora.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/css/display.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024-2/react/aula-01/app/componentes/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/componentes/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024-2/react/aula-01/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +165,7 @@
       <workItem from="1737471056556" duration="2787000" />
       <workItem from="1737474317985" duration="7087000" />
       <workItem from="1737550322450" duration="11274000" />
-      <workItem from="1737637087324" duration="10240000" />
+      <workItem from="1737637087324" duration="17441000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
