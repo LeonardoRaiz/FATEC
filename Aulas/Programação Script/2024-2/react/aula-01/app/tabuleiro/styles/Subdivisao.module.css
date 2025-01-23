@@ -1,0 +1,30 @@
+.subdivisao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: #00BFFF;
+}
+
+.peca {
+    background-color: #0a96ee;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #0a2b56;
+}
+.peca:hover {
+    background-color: #0b679d;
+}
+
+.peca1 {
+    background-color: #00ffc4;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #0d4d4a;
+}
+.peca1:hover {
+    background-color: #067a5f;
+}

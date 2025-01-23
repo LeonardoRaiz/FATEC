@@ -5,30 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 21/10">
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/blog/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/blog/post/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/componentes/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/exemplo/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/components/Titulo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/components/TituloProps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/eslint.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/next.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/public/file.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/public/globe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/public/next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/public/vercel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/public/window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/componentes/estilo.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/tabuleiro/components/Linha.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/tabuleiro/components/Subdivisao.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/tabuleiro/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/tabuleiro/styles/Linha.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/tabuleiro/styles/Subdivisao.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-01/components/Estilo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/components/Filho.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/components/Pai.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/estado/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/indireta/components/FilhoIndireta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/indireta/components/PaiIndireta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/indireta/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/desafio/components/Display.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/desafio/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/condicional/components/If.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/condicional/components/Item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/condicional/components/Lista.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/condicional/components/SomentePar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/condicional/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/repeticao/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/data/listaProdutos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/eslint.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/model/produto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/next.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/public/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/public/globe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/public/window.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2024-2/react/aula-01/app/componentes/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/componentes/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2024-2/react/aula-01/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/2024-2/react/aula-01/app/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +59,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="Vue Composition API Component" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -78,31 +98,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Programação Script&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Programação Script",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.start.executor": "Debug",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.start">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/2024-2/react/aula-01/package.json" />
@@ -174,7 +199,9 @@
       <workItem from="1737469339118" duration="1625000" />
       <workItem from="1737470971131" duration="33000" />
       <workItem from="1737471056556" duration="2787000" />
-      <workItem from="1737474317985" duration="6981000" />
+      <workItem from="1737474317985" duration="7087000" />
+      <workItem from="1737550322450" duration="11274000" />
+      <workItem from="1737637087324" duration="10240000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
