@@ -5,13 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 21/10">
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/components/Botoes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/components/Display.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/components/useCalculadora.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/css/botoes.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/css/calculadora.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/css/display.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/calculadora/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-02/app/render/controlado/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/app/classe/components/Contador.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/app/classe/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/app/desafioMega/components/Display.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/app/desafioMega/functions/mega.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/app/desafioMega/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/app/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/app/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/app/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/app/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/eslint.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/next.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/public/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/public/globe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024-2/react/aula-03/public/window.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +82,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "Node.js.mega.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Programação Script",
@@ -92,7 +109,10 @@
       <recent name="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Node.js.mega.js">
+    <configuration name="mega.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/2024-2/react/aula-03/app/desafioMega/functions/mega.js" working-dir="$PROJECT_DIR$/2024-2/react/aula-03/app/desafioMega/functions">
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/2024-2/react/aula-01/package.json" />
       <command value="run" />
@@ -115,6 +135,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.mega.js" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.dev" />
       </list>
@@ -165,7 +186,8 @@
       <workItem from="1737471056556" duration="2787000" />
       <workItem from="1737474317985" duration="7087000" />
       <workItem from="1737550322450" duration="11274000" />
-      <workItem from="1737637087324" duration="17441000" />
+      <workItem from="1737637087324" duration="17605000" />
+      <workItem from="1737722625984" duration="9123000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
