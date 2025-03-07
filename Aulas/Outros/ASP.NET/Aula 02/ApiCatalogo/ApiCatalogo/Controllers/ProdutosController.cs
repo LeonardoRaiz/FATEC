@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ApiCatalogo.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ProdutosController : ControllerBase
     {
@@ -15,6 +15,28 @@ namespace ApiCatalogo.Controllers
         public ProdutosController(AppDbContext context)
         {
             _context = context;
+        }
+        
+        [HttpGet("primeiro")] 
+        [HttpGet("teste")] 
+        [HttpGet("/primeiro")] // A / ignora o padrão do roteamento
+        public ActionResult<Produto> GetPrimeiro()
+        {
+            try
+            {
+                var produto = _context.Produtos.FirstOrDefault();
+                if (produto is null)
+                {
+                    return NotFound("Produtos não encontrados...");
+                }
+                return produto;
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Ocorreu um erro ao trazer este produto...");
+            }
+            
         }
         
         //Primeiro metodo Action GET

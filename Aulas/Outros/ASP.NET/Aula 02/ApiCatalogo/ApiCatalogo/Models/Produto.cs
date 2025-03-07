@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
 namespace ApiCatalogo.Models;
 
@@ -28,5 +29,6 @@ public class Produto
     public DateTime DataCadastro { get; set; }
     
     public int CategoriaId { get; set; }
+    [JsonIgnore]
     public Categoria? Categoria { get; set; }
 }
