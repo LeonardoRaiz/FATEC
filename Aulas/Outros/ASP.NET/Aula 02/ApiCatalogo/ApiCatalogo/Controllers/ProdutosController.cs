@@ -2,6 +2,7 @@ using ApiCatalogo.Context;
 using ApiCatalogo.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiCatalogo.Controllers
@@ -16,7 +17,7 @@ namespace ApiCatalogo.Controllers
         {
             _context = context;
         }
-        
+        //[HttpGet("{valor:alpha:lenght(5)}")] de A a Z
         [HttpGet("primeiro")] 
         [HttpGet("teste")] 
         [HttpGet("/primeiro")] // A / ignora o padrão do roteamento
@@ -39,20 +40,49 @@ namespace ApiCatalogo.Controllers
             
         }
         
+        [HttpGet("produtoAsync")]
+        public async Task<ActionResult<Produto>> GetPrimeiroAsync()
+        {
+            try
+            {
+                var produto = await _context.Produtos.FirstOrDefaultAsync();
+                if (produto is null)
+                {
+                    return NotFound("Produtos não encontrados...");
+                }
+                return produto;
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Ocorreu um erro ao trazer este produto...");
+            }
+            
+        }
+        
         //Primeiro metodo Action GET
         [HttpGet]
         public ActionResult<IEnumerable<Produto>> Get()
         {
-            var produtos = _context.Produtos.ToList();
-            if (produtos is null)
+            try
             {
-                return NotFound("Produtos não encontrados...");
+                var produtos = _context.Produtos.ToList();
+                if (produtos is null)
+                {
+                    return NotFound("Produtos não encontrados...");
+                }
+                return produtos;
             }
-            return produtos;
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Ocorreu um erro ao trazer este produto...");
+            }
+            
         }
         
         //Segundo metodo Action GET ID
-        [HttpGet("{id:int}", Name="ObterProduto")]
+        [HttpGet("{id:int:min(1)}", Name="ObterProduto")] //Restrição de rotas
         public ActionResult<Produto> Get(int id)
         {
             var produto = _context.Produtos.FirstOrDefault(p => p.ProdutoId == id);
@@ -62,6 +92,20 @@ namespace ApiCatalogo.Controllers
             }
             return produto;
         }
+        
+        //Segundo metodo Action GET ID
+        [HttpGet("produtodAsync/{id:int:min(1)}", Name="ObterProdutoAsync")] //Restrição de rotas
+        public async Task<ActionResult<Produto>> GetAsync([FromQuery]int id, [BindRequired] string nome)
+        {
+            var nomeProduto = nome;
+            var produto = await _context.Produtos.AsNoTracking().FirstOrDefaultAsync(p => p.ProdutoId == id);
+            if (produto is null)
+            {
+                return NotFound("Produto não encontrado...");
+            }
+            return produto;
+        }
+        
         
         //Terceiro metodo Action POST
         [HttpPost]
