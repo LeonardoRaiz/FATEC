@@ -1,0 +1,21 @@
+.subdivisao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.peca {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #85cede;
+}
+
+.peca1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #b3de85;
+}
