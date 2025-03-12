@@ -1,4 +1,5 @@
 using ApiCatalogo.Context;
+using ApiCatalogo.Filters;
 using ApiCatalogo.Models;
 using ApiCatalogo.Services;
 using Microsoft.AspNetCore.Http;
@@ -12,10 +13,25 @@ namespace ApiCatalogo.Controllers
     public class CategoriasController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly IConfiguration _configuration;
+        private readonly ILogger _logger;
 
-        public CategoriasController(AppDbContext context)
+        public CategoriasController(AppDbContext context, IConfiguration configuration, ILogger<CategoriasController> logger)
         {
+            _logger = logger;
             _context = context;
+            _configuration = configuration;
+        }
+
+        [HttpGet("LerArquivoConfiguracao")]
+        public string GetValores()
+        {
+            var valor1 = _configuration["chave1"];
+            var valor2 = _configuration["chave2"];
+            
+            var secao1 = _configuration["secao1:chave2"];
+
+            return $"Chave1 = {valor1} \nChave2 = {valor2} \nSeção 1 => Chave2 = {secao1}";
         }
 
         [HttpGet("UsandoFromServices/{nome}")]
@@ -35,6 +51,7 @@ namespace ApiCatalogo.Controllers
         {
             try
             {
+                _logger.LogInformation("============== GET api/categoprias/produtos ===============");
                 return _context.Categorias.Take(1).Include(p => p.Produtos).ToList();
             }
             catch (Exception e)
@@ -53,6 +70,21 @@ namespace ApiCatalogo.Controllers
             try
             {
                 return _context.Categorias.AsNoTracking().ToList(); //Otimizar a consulta sem rastreamento 
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Ocorreu um problema ao tratar a sua solicitação");
+            }
+        }
+        
+        [HttpGet("AsyncCategorias")]
+        [ServiceFilter(typeof(ApiLoggingFilter))]
+        public async Task<ActionResult<IEnumerable<Categoria>>> GetAsync()
+        {
+            try
+            {
+                return await _context.Categorias.AsNoTracking().ToListAsync();
             }
             catch (Exception e)
             {
