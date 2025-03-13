@@ -1,6 +1,7 @@
 using ApiCatalogo.Context;
 using ApiCatalogo.Filters;
 using ApiCatalogo.Models;
+using ApiCatalogo.Repositories;
 using ApiCatalogo.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,14 +13,15 @@ namespace ApiCatalogo.Controllers
     [ApiController]
     public class CategoriasController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        //private readonly AppDbContext _context;
+        private readonly ICategoriaRepository _repository;
         private readonly IConfiguration _configuration;
         private readonly ILogger _logger;
 
-        public CategoriasController(AppDbContext context, IConfiguration configuration, ILogger<CategoriasController> logger)
+        public CategoriasController(ICategoriaRepository repository, IConfiguration configuration, ILogger<CategoriasController> logger)
         {
             _logger = logger;
-            _context = context;
+            _repository = repository;
             _configuration = configuration;
         }
 
@@ -46,73 +48,83 @@ namespace ApiCatalogo.Controllers
             return meuServico.Saudacao(nome);
         }
         
-        [HttpGet("produtos")]
-        public ActionResult<IEnumerable<Categoria>> GetCategoriasProdutos()
-        {
-            try
-            {
-                _logger.LogInformation("============== GET api/categoprias/produtos ===============");
-                return _context.Categorias.Take(1).Include(p => p.Produtos).ToList();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
-            
-            
-        }
-        
+        // [HttpGet("produtos")]
+        // public ActionResult<IEnumerable<Categoria>> GetCategoriasProdutos()
+        // {
+        //     try
+        //     {
+        //         _logger.LogInformation("============== GET api/categoprias/produtos ===============");
+        //         return _context.Categorias.Take(1).Include(p => p.Produtos).ToList();
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         Console.WriteLine(e);
+        //         throw;
+        //     }
+        //     
+        //     
+        // }
         
         [HttpGet]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            try
-            {
-                return _context.Categorias.AsNoTracking().ToList(); //Otimizar a consulta sem rastreamento 
-            }
-            catch (Exception e)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Ocorreu um problema ao tratar a sua solicitação");
-            }
+            var categorias = _repository.GetCategorias();
+            return Ok(categorias);
+            // try
+            // {
+            //     return _context.Categorias.AsNoTracking().ToList(); //Otimizar a consulta sem rastreamento 
+            // }
+            // catch (Exception e)
+            // {
+            //     return StatusCode(StatusCodes.Status500InternalServerError,
+            //         "Ocorreu um problema ao tratar a sua solicitação");
+            // }
         }
         
-        [HttpGet("AsyncCategorias")]
-        [ServiceFilter(typeof(ApiLoggingFilter))]
-        public async Task<ActionResult<IEnumerable<Categoria>>> GetAsync()
-        {
-            try
-            {
-                return await _context.Categorias.AsNoTracking().ToListAsync();
-            }
-            catch (Exception e)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Ocorreu um problema ao tratar a sua solicitação");
-            }
-        }
+        // [HttpGet("AsyncCategorias")]
+        // [ServiceFilter(typeof(ApiLoggingFilter))]
+        // public async Task<ActionResult<IEnumerable<Categoria>>> GetAsync()
+        // {
+        //     try
+        //     {
+        //         return await _context.Categorias.AsNoTracking().ToListAsync();
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         return StatusCode(StatusCodes.Status500InternalServerError,
+        //             "Ocorreu um problema ao tratar a sua solicitação");
+        //     }
+        // }
 
         [HttpGet("{id:int}", Name = "ObterCategoria")]
         public ActionResult<Categoria> Get(int id)
         {
-            try
-            {
-                var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
+            var categoria = _repository.GetCategoria(id);
 
-                if (categoria is null)
-                {
-                    return NotFound($"Categoria com o id = {id} não encontrada...");
-                }
-
-                return Ok(categoria);
-            }
-            catch (Exception e)
+            if (categoria == null)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Ocorreu um problema ao tratar a sua solicitação");
+                _logger.LogWarning($"Categotia com id = {id} não encontrada...");
+                return NotFound($"Categoria com id = {id} não encontrada..."); 
             }
-            
+
+            return Ok(categoria);
+            // try
+            // {
+            //     var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
+            //
+            //     if (categoria is null)
+            //     {
+            //         return NotFound($"Categoria com o id = {id} não encontrada...");
+            //     }
+            //
+            //     return Ok(categoria);
+            // }
+            // catch (Exception e)
+            // {
+            //     return StatusCode(StatusCodes.Status500InternalServerError,
+            //         "Ocorreu um problema ao tratar a sua solicitação");
+            // }
+
         }
 
         [HttpPost]
@@ -120,12 +132,21 @@ namespace ApiCatalogo.Controllers
         {
             if (categoria is null)
             {
-                return BadRequest();
+                _logger.LogWarning($"Dados inválidos...");
+                return BadRequest("Dados invalidos");
             }
 
-            _context.Categorias.Add(categoria);
-            _context.SaveChanges();
-            return new CreatedAtRouteResult("ObterCategoria", new { id = categoria.CategoriaId }, categoria);
+            var categoriaCriada = _repository.Create(categoria);
+            return new CreatedAtRouteResult("ObterCategoria", new { id = categoriaCriada.CategoriaId },
+                categoriaCriada);
+            // if (categoria is null)
+            // {
+            //     return BadRequest();
+            // }
+            //
+            // _context.Categorias.Add(categoria);
+            // _context.SaveChanges();
+            // return new CreatedAtRouteResult("ObterCategoria", new { id = categoria.CategoriaId }, categoria);
         }
 
         [HttpPut("{id:int}")]
@@ -133,26 +154,34 @@ namespace ApiCatalogo.Controllers
         {
             if (id != categoria.CategoriaId)
             {
-                return BadRequest();
+                _logger.LogWarning($"Dados inválidos...");
+                return BadRequest("Dados inválidos");
             }
 
-            _context.Entry(categoria).State = EntityState.Modified;
-            _context.SaveChanges();
+            _repository.Update(categoria);
             return Ok(categoria);
+            // _context.Entry(categoria).State = EntityState.Modified;
+            // _context.SaveChanges();
+            // return Ok(categoria);
         }
 
         [HttpDelete("{id:int}")]
         public ActionResult Delete(int id)
         {
-            var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
+            // var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
+            var categoria = _repository.GetCategoria(id);
+            
             if (categoria == null)
             {
-                return NotFound("Categoria não encontrada...");
+                _logger.LogWarning($"Categoria com id = {id} não encontrada...");
+                return NotFound($"Categoria com id = {id} não encontrada...");
             }
 
-            _context.Categorias.Remove(categoria);
-            _context.SaveChanges();
-            return Ok(categoria);
+            var categoriaExcluida = _repository.Delete(id);
+            return Ok(categoriaExcluida);
+            // _context.Categorias.Remove(categoria);
+            // _context.SaveChanges();
+            // return Ok(categoria);
 
         }
     }
