@@ -16,7 +16,7 @@ public class ApiExceptionFilter : IExceptionFilter
     {
         _logger.LogError(context.Exception, "Ocorreu uma exceção não tratada: Status code 500");
 
-        context.Result = new ObjectResult("Ocorreu um provlema ao tratar a sua solicitação.")
+        context.Result = new ObjectResult("Ocorreu um problema ao tratar a sua solicitação.")
         {
             StatusCode = StatusCodes.Status500InternalServerError,
         };

@@ -14,11 +14,12 @@ namespace ApiCatalogo.Controllers
     public class CategoriasController : ControllerBase
     {
         //private readonly AppDbContext _context;
-        private readonly ICategoriaRepository _repository;
+        private readonly IRepository<Categoria> _repository;
+        //private readonly ICategoriaRepository _repository;
         private readonly IConfiguration _configuration;
         private readonly ILogger _logger;
 
-        public CategoriasController(ICategoriaRepository repository, IConfiguration configuration, ILogger<CategoriasController> logger)
+        public CategoriasController(IRepository<Categoria> repository, IConfiguration configuration, ILogger<CategoriasController> logger)
         {
             _logger = logger;
             _repository = repository;
@@ -68,7 +69,7 @@ namespace ApiCatalogo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            var categorias = _repository.GetCategorias();
+            var categorias = _repository.GetAll();
             return Ok(categorias);
             // try
             // {
@@ -99,7 +100,7 @@ namespace ApiCatalogo.Controllers
         [HttpGet("{id:int}", Name = "ObterCategoria")]
         public ActionResult<Categoria> Get(int id)
         {
-            var categoria = _repository.GetCategoria(id);
+            var categoria = _repository.Get(c => c.CategoriaId == id);
 
             if (categoria == null)
             {
@@ -169,7 +170,7 @@ namespace ApiCatalogo.Controllers
         public ActionResult Delete(int id)
         {
             // var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
-            var categoria = _repository.GetCategoria(id);
+            var categoria = _repository.Get(c => c.CategoriaId == id);
             
             if (categoria == null)
             {
@@ -177,7 +178,7 @@ namespace ApiCatalogo.Controllers
                 return NotFound($"Categoria com id = {id} não encontrada...");
             }
 
-            var categoriaExcluida = _repository.Delete(id);
+            var categoriaExcluida = _repository.Delete(categoria);
             return Ok(categoriaExcluida);
             // _context.Categorias.Remove(categoria);
             // _context.SaveChanges();
