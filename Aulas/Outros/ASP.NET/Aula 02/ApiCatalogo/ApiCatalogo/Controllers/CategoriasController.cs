@@ -14,15 +14,15 @@ namespace ApiCatalogo.Controllers
     public class CategoriasController : ControllerBase
     {
         //private readonly AppDbContext _context;
-        private readonly IRepository<Categoria> _repository;
+        private readonly IUnitOfWork _unitOfWork;
         //private readonly ICategoriaRepository _repository;
         private readonly IConfiguration _configuration;
         private readonly ILogger _logger;
 
-        public CategoriasController(IRepository<Categoria> repository, IConfiguration configuration, ILogger<CategoriasController> logger)
+        public CategoriasController(IUnitOfWork unitOfWork, IConfiguration configuration, ILogger<CategoriasController> logger)
         {
             _logger = logger;
-            _repository = repository;
+            _unitOfWork = unitOfWork;
             _configuration = configuration;
         }
 
@@ -69,7 +69,11 @@ namespace ApiCatalogo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            var categorias = _repository.GetAll();
+            var categorias = _unitOfWork.CategoriaRepository.GetAll();
+            if (categorias is null)
+            {
+                return NotFound("Não existem categorias... ");
+            }
             return Ok(categorias);
             // try
             // {
@@ -100,7 +104,7 @@ namespace ApiCatalogo.Controllers
         [HttpGet("{id:int}", Name = "ObterCategoria")]
         public ActionResult<Categoria> Get(int id)
         {
-            var categoria = _repository.Get(c => c.CategoriaId == id);
+            var categoria = _unitOfWork.CategoriaRepository.Get(c => c.CategoriaId == id);
 
             if (categoria == null)
             {
@@ -137,7 +141,8 @@ namespace ApiCatalogo.Controllers
                 return BadRequest("Dados invalidos");
             }
 
-            var categoriaCriada = _repository.Create(categoria);
+            var categoriaCriada = _unitOfWork.CategoriaRepository.Create(categoria);
+            _unitOfWork.Commit();
             return new CreatedAtRouteResult("ObterCategoria", new { id = categoriaCriada.CategoriaId },
                 categoriaCriada);
             // if (categoria is null)
@@ -159,7 +164,8 @@ namespace ApiCatalogo.Controllers
                 return BadRequest("Dados inválidos");
             }
 
-            _repository.Update(categoria);
+            _unitOfWork.CategoriaRepository.Update(categoria);
+            _unitOfWork.Commit();
             return Ok(categoria);
             // _context.Entry(categoria).State = EntityState.Modified;
             // _context.SaveChanges();
@@ -170,7 +176,7 @@ namespace ApiCatalogo.Controllers
         public ActionResult Delete(int id)
         {
             // var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
-            var categoria = _repository.Get(c => c.CategoriaId == id);
+            var categoria = _unitOfWork.CategoriaRepository.Get(c => c.CategoriaId == id);
             
             if (categoria == null)
             {
@@ -178,7 +184,8 @@ namespace ApiCatalogo.Controllers
                 return NotFound($"Categoria com id = {id} não encontrada...");
             }
 
-            var categoriaExcluida = _repository.Delete(categoria);
+            var categoriaExcluida = _unitOfWork.CategoriaRepository.Delete(categoria);
+            _unitOfWork.Commit();
             return Ok(categoriaExcluida);
             // _context.Categorias.Remove(categoria);
             // _context.SaveChanges();

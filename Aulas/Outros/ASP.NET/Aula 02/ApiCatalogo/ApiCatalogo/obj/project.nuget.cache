@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2ZfFNuWRAb95aO/TXysu2y+shU8chSVLg1j8XFAKATMxEqA/frtzU5bjzMnVJxIeOIoPo3Js8df6+s99wctLXQ==",
+  "dgSpecHash": "+GGrskM2IwM/PLVSpXe48tLWVv428phMeVl61tZkNlLZvWbNgPjWDlGp9ks45JArM75pIwVnNiOShjCGd7VbaA==",
   "success": true,
   "projectFilePath": "/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Outros/ASP.NET/Aula 02/ApiCatalogo/ApiCatalogo/ApiCatalogo.csproj",
   "expectedPackageFiles": [
+    "/Users/leonardoraiz/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/humanizer.core.af/2.14.1/humanizer.core.af.2.14.1.nupkg.sha512",

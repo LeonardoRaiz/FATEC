@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using ApiCatalogo.Context;
+using ApiCatalogo.DTO.Mappings;
 using ApiCatalogo.Extensions;
 using ApiCatalogo.Filters;
 using ApiCatalogo.Log;
@@ -40,11 +41,17 @@ builder.Services.AddScoped<ApiLoggingFilter>();
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 
 builder.Logging.AddProvider(new CustomLoggerProvider(new CustomLoggerProviderConfiguration()
 {
     LogLevel = LogLevel.Information
 }));
+
+
+builder.Services.AddAutoMapper(typeof(ProdutoDtoMappingProfile));
+
 
 var app = builder.Build();
 
