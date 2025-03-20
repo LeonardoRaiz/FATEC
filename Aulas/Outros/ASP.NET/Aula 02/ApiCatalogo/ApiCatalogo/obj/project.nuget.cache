@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+GGrskM2IwM/PLVSpXe48tLWVv428phMeVl61tZkNlLZvWbNgPjWDlGp9ks45JArM75pIwVnNiOShjCGd7VbaA==",
+  "dgSpecHash": "L3YKahyEEIxu+3huIQqExIzJYH3lZYsQijJVKjaRB/4VONFOnKs+/yGUZpihEEVguoBPV9v6afcCCrG6kF4rkQ==",
   "success": true,
   "projectFilePath": "/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Outros/ASP.NET/Aula 02/ApiCatalogo/ApiCatalogo/ApiCatalogo.csproj",
   "expectedPackageFiles": [
@@ -55,6 +55,8 @@
     "/Users/leonardoraiz/.nuget/packages/humanizer.core.zh-cn/2.14.1/humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/humanizer.core.zh-hans/2.14.1/humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/humanizer.core.zh-hant/2.14.1/humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "/Users/leonardoraiz/.nuget/packages/microsoft.aspnetcore.jsonpatch/10.0.0-preview.2.25164.1/microsoft.aspnetcore.jsonpatch.10.0.0-preview.2.25164.1.nupkg.sha512",
+    "/Users/leonardoraiz/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/8.0.14/microsoft.aspnetcore.mvc.newtonsoftjson.8.0.14.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.24/microsoft.aspnetcore.razor.language.6.0.24.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/microsoft.build/17.8.3/microsoft.build.17.8.3.nupkg.sha512",
@@ -72,6 +74,7 @@
     "/Users/leonardoraiz/.nuget/packages/microsoft.codeanalysis.scripting.common/4.8.0/microsoft.codeanalysis.scripting.common.4.8.0.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/microsoft.codeanalysis.workspaces.common/4.8.0/microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/microsoft.codeanalysis.workspaces.msbuild/4.8.0/microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg.sha512",
+    "/Users/leonardoraiz/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/microsoft.diasymreader/2.0.0/microsoft.diasymreader.2.0.0.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/microsoft.dotnet.scaffolding.shared/8.0.7/microsoft.dotnet.scaffolding.shared.8.0.7.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/microsoft.entityframeworkcore/9.0.2/microsoft.entityframeworkcore.9.0.2.nupkg.sha512",
@@ -103,6 +106,7 @@
     "/Users/leonardoraiz/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/mysqlconnector/2.4.0/mysqlconnector.2.4.0.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/leonardoraiz/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/nuget.common/6.11.0/nuget.common.6.11.0.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/nuget.configuration/6.11.0/nuget.configuration.6.11.0.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/nuget.dependencyresolver.core/6.11.0/nuget.dependencyresolver.core.6.11.0.nupkg.sha512",

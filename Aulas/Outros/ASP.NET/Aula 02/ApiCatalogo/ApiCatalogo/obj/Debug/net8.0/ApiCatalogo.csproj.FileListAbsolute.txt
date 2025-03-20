@@ -261,3 +261,6 @@
 /Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Outros/ASP.NET/Aula 02/ApiCatalogo/ApiCatalogo/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Security.Cryptography.ProtectedData.dll
 /Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Outros/ASP.NET/Aula 02/ApiCatalogo/ApiCatalogo/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
 /Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Outros/ASP.NET/Aula 02/ApiCatalogo/ApiCatalogo/bin/Debug/net8.0/AutoMapper.dll
+/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Outros/ASP.NET/Aula 02/ApiCatalogo/ApiCatalogo/bin/Debug/net8.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Outros/ASP.NET/Aula 02/ApiCatalogo/ApiCatalogo/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Outros/ASP.NET/Aula 02/ApiCatalogo/ApiCatalogo/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll

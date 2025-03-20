@@ -1,15 +1,22 @@
 using ApiCatalogo.Context;
 using ApiCatalogo.Models;
+using ApiCatalogo.Pagination;
 
 namespace ApiCatalogo.Repositories;
 
 public class ProdutoRepository : Repository<Produto>,  IProdutoRepository
 {
-    // private readonly AppDbContext _context;
-
     public ProdutoRepository(AppDbContext context) : base(context)
     {
         // _context = context;
+    }
+
+    public IEnumerable<Produto> GetProdutos(ProdutosParameters produtosParameters)
+    {
+        return GetAll()
+            .OrderBy(p => p.Nome)
+            .Skip((produtosParameters.PageNumber - 1) * produtosParameters.PageSize)
+            .Take(produtosParameters.PageSize).ToList();
     }
     
     public IEnumerable<Produto> GetProdutosPorCategoria(int id)
