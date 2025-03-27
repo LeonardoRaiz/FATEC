@@ -1,11 +1,13 @@
 using ApiCatalogo.Context;
 using ApiCatalogo.Filters;
 using ApiCatalogo.Models;
+using ApiCatalogo.Pagination;
 using ApiCatalogo.Repositories;
 using ApiCatalogo.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace ApiCatalogo.Controllers
 {
@@ -191,6 +193,53 @@ namespace ApiCatalogo.Controllers
             // _context.SaveChanges();
             // return Ok(categoria);
 
+        }
+        
+        [HttpGet("pagination")]
+        public ActionResult<IEnumerable<Categoria>> GetProdutos([FromQuery] CategoriasParameters categoriasParameters)
+        {
+            var categorias = _unitOfWork.CategoriaRepository.GetCategorias(categoriasParameters);
+            var metadata = new
+            {
+                categorias.TotalCount,
+                categorias.PageSize,
+                categorias.CurrentPage,
+                categorias.TotalPages,
+                categorias.HasNext,
+                categorias.HasPrevious
+            };
+
+            Response.Headers.Append("X-Pagination", JsonConvert.SerializeObject(metadata));
+            //var produtosDto = _mapper.Map<IEnumerable<ProdutoDTO>>(produtos);
+            return Ok(categorias);
+        }
+        
+        [HttpGet("filter/nome/pagination")]
+        public ActionResult<IEnumerable<Categoria>> GetCategoriasFiltradas(
+            [FromQuery] CategoriasFiltroNome categoriasFiltro)
+        {
+            var categoriasFiltradas = _unitOfWork.CategoriaRepository
+                .GetCategoriasFiltroNome(categoriasFiltro);
+
+            return ObterCategorias(categoriasFiltradas);
+
+        }
+        
+        private ActionResult<IEnumerable<Categoria>> ObterCategorias(PagedList<Categoria> categorias)
+        {
+            var metadata = new
+            {
+                categorias.TotalCount,
+                categorias.PageSize,
+                categorias.CurrentPage,
+                categorias.TotalPages,
+                categorias.HasNext,
+                categorias.HasPrevious
+            };
+
+            Response.Headers.Append("X-Pagination", JsonConvert.SerializeObject(metadata));
+            
+            return Ok(categorias);
         }
     }
 }
