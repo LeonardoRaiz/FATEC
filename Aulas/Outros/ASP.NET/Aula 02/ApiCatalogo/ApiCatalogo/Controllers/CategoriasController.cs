@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using X.PagedList;
 
 namespace ApiCatalogo.Controllers
 {
@@ -69,9 +70,9 @@ namespace ApiCatalogo.Controllers
         // }
         
         [HttpGet]
-        public ActionResult<IEnumerable<Categoria>> Get()
+        public async Task<ActionResult<IEnumerable<Categoria>>> Get()
         {
-            var categorias = _unitOfWork.CategoriaRepository.GetAll();
+            var categorias = await _unitOfWork.CategoriaRepository.GetAllAsync();
             if (categorias is null)
             {
                 return NotFound("Não existem categorias... ");
@@ -104,9 +105,9 @@ namespace ApiCatalogo.Controllers
         // }
 
         [HttpGet("{id:int}", Name = "ObterCategoria")]
-        public ActionResult<Categoria> Get(int id)
+        public async Task<ActionResult<Categoria>> Get(int id)
         {
-            var categoria = _unitOfWork.CategoriaRepository.Get(c => c.CategoriaId == id);
+            var categoria = await _unitOfWork.CategoriaRepository.GetAsync(c => c.CategoriaId == id);
 
             if (categoria == null)
             {
@@ -135,7 +136,7 @@ namespace ApiCatalogo.Controllers
         }
 
         [HttpPost]
-        public ActionResult Post(Categoria categoria)
+        public async Task<ActionResult> Post(Categoria categoria)
         {
             if (categoria is null)
             {
@@ -144,7 +145,7 @@ namespace ApiCatalogo.Controllers
             }
 
             var categoriaCriada = _unitOfWork.CategoriaRepository.Create(categoria);
-            _unitOfWork.Commit();
+            await _unitOfWork.CommitAsync();
             return new CreatedAtRouteResult("ObterCategoria", new { id = categoriaCriada.CategoriaId },
                 categoriaCriada);
             // if (categoria is null)
@@ -158,7 +159,7 @@ namespace ApiCatalogo.Controllers
         }
 
         [HttpPut("{id:int}")]
-        public ActionResult Put(int id, Categoria categoria)
+        public async Task<ActionResult> Put(int id, Categoria categoria)
         {
             if (id != categoria.CategoriaId)
             {
@@ -167,7 +168,7 @@ namespace ApiCatalogo.Controllers
             }
 
             _unitOfWork.CategoriaRepository.Update(categoria);
-            _unitOfWork.Commit();
+            await _unitOfWork.CommitAsync();
             return Ok(categoria);
             // _context.Entry(categoria).State = EntityState.Modified;
             // _context.SaveChanges();
@@ -175,10 +176,10 @@ namespace ApiCatalogo.Controllers
         }
 
         [HttpDelete("{id:int}")]
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
             // var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
-            var categoria = _unitOfWork.CategoriaRepository.Get(c => c.CategoriaId == id);
+            var categoria = await _unitOfWork.CategoriaRepository.GetAsync(c => c.CategoriaId == id);
             
             if (categoria == null)
             {
@@ -187,7 +188,7 @@ namespace ApiCatalogo.Controllers
             }
 
             var categoriaExcluida = _unitOfWork.CategoriaRepository.Delete(categoria);
-            _unitOfWork.Commit();
+            await _unitOfWork.CommitAsync();
             return Ok(categoriaExcluida);
             // _context.Categorias.Remove(categoria);
             // _context.SaveChanges();
@@ -196,17 +197,17 @@ namespace ApiCatalogo.Controllers
         }
         
         [HttpGet("pagination")]
-        public ActionResult<IEnumerable<Categoria>> GetProdutos([FromQuery] CategoriasParameters categoriasParameters)
+        public async Task<ActionResult<IEnumerable<Categoria>>> GetProdutos([FromQuery] CategoriasParameters categoriasParameters)
         {
-            var categorias = _unitOfWork.CategoriaRepository.GetCategorias(categoriasParameters);
+            var categorias = await _unitOfWork.CategoriaRepository.GetCategoriasAsync(categoriasParameters);
             var metadata = new
             {
-                categorias.TotalCount,
+                categorias.Count,
                 categorias.PageSize,
-                categorias.CurrentPage,
-                categorias.TotalPages,
-                categorias.HasNext,
-                categorias.HasPrevious
+                categorias.PageCount,
+                categorias.TotalItemCount,
+                categorias.HasNextPage,
+                categorias.HasPreviousPage
             };
 
             Response.Headers.Append("X-Pagination", JsonConvert.SerializeObject(metadata));
@@ -215,26 +216,26 @@ namespace ApiCatalogo.Controllers
         }
         
         [HttpGet("filter/nome/pagination")]
-        public ActionResult<IEnumerable<Categoria>> GetCategoriasFiltradas(
+        public async Task<ActionResult<IEnumerable<Categoria>>> GetCategoriasFiltradas(
             [FromQuery] CategoriasFiltroNome categoriasFiltro)
         {
-            var categoriasFiltradas = _unitOfWork.CategoriaRepository
-                .GetCategoriasFiltroNome(categoriasFiltro);
+            var categoriasFiltradas = await _unitOfWork.CategoriaRepository
+                .GetCategoriasFiltroNomeAsync(categoriasFiltro);
 
             return ObterCategorias(categoriasFiltradas);
 
         }
         
-        private ActionResult<IEnumerable<Categoria>> ObterCategorias(PagedList<Categoria> categorias)
+        private ActionResult<IEnumerable<Categoria>> ObterCategorias(IPagedList<Categoria> categorias)
         {
             var metadata = new
             {
-                categorias.TotalCount,
+                categorias.Count,
                 categorias.PageSize,
-                categorias.CurrentPage,
-                categorias.TotalPages,
-                categorias.HasNext,
-                categorias.HasPrevious
+                categorias.PageCount,
+                categorias.TotalItemCount,
+                categorias.HasNextPage,
+                categorias.HasPreviousPage
             };
 
             Response.Headers.Append("X-Pagination", JsonConvert.SerializeObject(metadata));

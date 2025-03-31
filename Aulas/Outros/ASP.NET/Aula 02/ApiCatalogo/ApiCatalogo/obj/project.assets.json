@@ -612,6 +612,19 @@
           }
         }
       },
+      "JetBrains.Annotations/2022.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.JsonPatch/10.0.0-preview.2.25164.1": {
         "type": "package",
         "dependencies": {
@@ -2526,6 +2539,33 @@
             "rid": "win"
           }
         }
+      },
+      "X.PagedList/8.4.7": {
+        "type": "package",
+        "dependencies": {
+          "JetBrains.Annotations": "2022.3.1"
+        },
+        "compile": {
+          "lib/net7.0/X.PagedList.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/X.PagedList.dll": {}
+        }
+      },
+      "X.PagedList.Mvc.Core/8.4.7": {
+        "type": "package",
+        "dependencies": {
+          "X.PagedList": "8.4.7"
+        },
+        "compile": {
+          "lib/net7.0/X.PagedList.Mvc.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/X.PagedList.Mvc.Core.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -3289,6 +3329,28 @@
         "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll",
         "lib/netstandard2.0/zh-Hant/Humanizer.resources.dll",
         "logo.png"
+      ]
+    },
+    "JetBrains.Annotations/2022.3.1": {
+      "sha512": "11nsS3+lFICGkztVs9PP2NRItxf9fF+qD6xEW/T0YGto52zj07wseUeBdMAU1ah9HNVTDZyRC1u4NWdtJScwhw==",
+      "type": "package",
+      "path": "jetbrains.annotations/2022.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "jetbrains.annotations.2022.3.1.nupkg.sha512",
+        "jetbrains.annotations.nuspec",
+        "lib/net20/JetBrains.Annotations.dll",
+        "lib/net20/JetBrains.Annotations.xml",
+        "lib/netstandard1.0/JetBrains.Annotations.deps.json",
+        "lib/netstandard1.0/JetBrains.Annotations.dll",
+        "lib/netstandard1.0/JetBrains.Annotations.xml",
+        "lib/netstandard2.0/JetBrains.Annotations.deps.json",
+        "lib/netstandard2.0/JetBrains.Annotations.dll",
+        "lib/netstandard2.0/JetBrains.Annotations.xml",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.dll",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.xml"
       ]
     },
     "Microsoft.AspNetCore.JsonPatch/10.0.0-preview.2.25164.1": {
@@ -7075,6 +7137,34 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "X.PagedList/8.4.7": {
+      "sha512": "ZA1WcyNviMUhivCgwKAm/5/YsNP3Yf/n81SzrPaHSJOcFzavA9MrXTT8M+ZX4fvHwLCL1bY6BPXvwZF5pRtgTg==",
+      "type": "package",
+      "path": "x.pagedlist/8.4.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/X.PagedList.dll",
+        "lib/net7.0/X.PagedList.dll",
+        "lib/netstandard2.0/X.PagedList.dll",
+        "lib/netstandard2.1/X.PagedList.dll",
+        "x.pagedlist.8.4.7.nupkg.sha512",
+        "x.pagedlist.nuspec"
+      ]
+    },
+    "X.PagedList.Mvc.Core/8.4.7": {
+      "sha512": "dS8sJr/aT3AoV9ePaqmF4wijh/2vqS9rxpOvzjPPStkQcR8rUaGPVezPgY/kJwWCZ2hdgKNralbU08So0otNxw==",
+      "type": "package",
+      "path": "x.pagedlist.mvc.core/8.4.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/X.PagedList.Mvc.Core.dll",
+        "lib/net7.0/X.PagedList.Mvc.Core.dll",
+        "x.pagedlist.mvc.core.8.4.7.nupkg.sha512",
+        "x.pagedlist.mvc.core.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -7086,7 +7176,8 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.7",
       "Newtonsoft.Json >= 13.0.3",
       "Pomelo.EntityFrameworkCore.MySql >= 9.0.0-preview.3.efcore.9.0.0",
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Swashbuckle.AspNetCore >= 6.6.2",
+      "X.PagedList.Mvc.Core >= 8.4.7"
     ]
   },
   "packageFolders": {
@@ -7120,6 +7211,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -7159,6 +7255,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.6.2, )"
+          },
+          "X.PagedList.Mvc.Core": {
+            "target": "Package",
+            "version": "[8.4.7, )"
           }
         },
         "imports": [

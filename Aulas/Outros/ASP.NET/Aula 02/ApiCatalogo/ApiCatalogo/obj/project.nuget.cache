@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "L3YKahyEEIxu+3huIQqExIzJYH3lZYsQijJVKjaRB/4VONFOnKs+/yGUZpihEEVguoBPV9v6afcCCrG6kF4rkQ==",
+  "dgSpecHash": "U0dOHlpR0SA=",
   "success": true,
   "projectFilePath": "/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Outros/ASP.NET/Aula 02/ApiCatalogo/ApiCatalogo/ApiCatalogo.csproj",
   "expectedPackageFiles": [
@@ -55,6 +55,7 @@
     "/Users/leonardoraiz/.nuget/packages/humanizer.core.zh-cn/2.14.1/humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/humanizer.core.zh-hans/2.14.1/humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/humanizer.core.zh-hant/2.14.1/humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "/Users/leonardoraiz/.nuget/packages/jetbrains.annotations/2022.3.1/jetbrains.annotations.2022.3.1.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/microsoft.aspnetcore.jsonpatch/10.0.0-preview.2.25164.1/microsoft.aspnetcore.jsonpatch.10.0.0-preview.2.25164.1.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/8.0.14/microsoft.aspnetcore.mvc.newtonsoftjson.8.0.14.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.24/microsoft.aspnetcore.razor.language.6.0.24.nupkg.sha512",
@@ -147,7 +148,9 @@
     "/Users/leonardoraiz/.nuget/packages/system.text.json/9.0.2/system.text.json.9.0.2.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
     "/Users/leonardoraiz/.nuget/packages/system.threading.tasks.dataflow/7.0.0/system.threading.tasks.dataflow.7.0.0.nupkg.sha512",
-    "/Users/leonardoraiz/.nuget/packages/system.windows.extensions/7.0.0/system.windows.extensions.7.0.0.nupkg.sha512"
+    "/Users/leonardoraiz/.nuget/packages/system.windows.extensions/7.0.0/system.windows.extensions.7.0.0.nupkg.sha512",
+    "/Users/leonardoraiz/.nuget/packages/x.pagedlist/8.4.7/x.pagedlist.8.4.7.nupkg.sha512",
+    "/Users/leonardoraiz/.nuget/packages/x.pagedlist.mvc.core/8.4.7/x.pagedlist.mvc.core.8.4.7.nupkg.sha512"
   ],
   "logs": []
 }
