@@ -4,6 +4,7 @@ using ApiCatalogo.Models;
 using ApiCatalogo.Pagination;
 using ApiCatalogo.Repositories;
 using ApiCatalogo.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -28,7 +29,8 @@ namespace ApiCatalogo.Controllers
             _unitOfWork = unitOfWork;
             _configuration = configuration;
         }
-
+        
+        #region Outros
         [HttpGet("LerArquivoConfiguracao")]
         public string GetValores()
         {
@@ -68,8 +70,11 @@ namespace ApiCatalogo.Controllers
         //     
         //     
         // }
+        #endregion
+        
         
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<Categoria>>> Get()
         {
             var categorias = await _unitOfWork.CategoriaRepository.GetAllAsync();
