@@ -580,3 +580,28 @@ INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
 VALUES ('20250402184154_CriaTabelasIdentity', '9.0.2');
 Information: 20101 - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
 SELECT RELEASE_LOCK('__CatalogoDB_EFMigrationsLock')
+Information: 20411 - Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT GET_LOCK('__CatalogoDB_EFMigrationsLock', 259200)
+Information: 20101 - Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;
+Information: 20101 - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='CatalogoDB' AND TABLE_NAME='__EFMigrationsHistory';
+Information: 20101 - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+Information: 20402 - Applying migration '20250407181733_AjusteApplicationUser'.
+Information: 20101 - Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `AspNetUsers` ADD `RefreshToken` longtext CHARACTER SET utf8mb4 NULL;
+Information: 20101 - Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `AspNetUsers` ADD `RefreshTokenExpiryTime` datetime(6) NOT NULL DEFAULT '0001-01-01 00:00:00';
+Information: 20101 - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250407181733_AjusteApplicationUser', '9.0.2');
+Information: 20101 - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT RELEASE_LOCK('__CatalogoDB_EFMigrationsLock')
