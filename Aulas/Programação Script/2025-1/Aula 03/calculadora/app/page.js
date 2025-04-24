@@ -14,6 +14,8 @@ export default function Home() {
       <Botoes valor={1} onClick={() => handleButtonClick("1")} > 1 </Botoes>
       <Botoes valor={2} onClick={() => handleButtonClick("2")} > 1 </Botoes>
       <Botoes valor={"+"} onClick={() => handleButtonClick("+")} > + </Botoes>
+      <Botoes valor={"."} onClick={() => handleButtonClick(".")} > . </Botoes>
+      <Botoes valor={".00"} onClick={() => handleButtonClick(".00")} > .00 </Botoes>
     </div>
   );
 }
