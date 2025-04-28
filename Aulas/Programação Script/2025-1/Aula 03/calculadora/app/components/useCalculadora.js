@@ -43,23 +43,33 @@ export default function useCalculadora() {
     }
 
     function handleOperator(op) {
-        switch (op) {
-            case "AC":
-                setDisplayValue("0");
-                break;
-            case "=":
-                if(previousValue !== null && operator)
-                {
-                    const resultado = calculate(previousValue, operator, displayValue);
-                    setDisplayValue(String(resultado));
-                    setOperator(null);
-                    setPreviousValue(null)
-                }
+        if (op === "AC") {
+            clear();
+        } else if (op === "+/-") {
+            setDisplayValue((prev) => String(-1 * parseFloat(prev)));
+        } else if (op === "%") {
+            setDisplayValue((prev) => String(parseFloat(prev) / 100));
+        } else if (op === "=") {
+            if (previousValue !== null && operator) {
+                const result = calculate(previousValue, displayValue, operator);
+                setDisplayValue(String(result));
+                setPreviousValue(null);
+                setOperator(null);
+            }
+        } else {
+            if (previousValue !== null && operator) {
+                const result = calculate(previousValue, displayValue, operator);
+                setDisplayValue(String(result));
+                setPreviousValue(result);
+            } else {
+                setPreviousValue(parseFloat(displayValue));
+            }
+            setOperator(op);
+            setDisplayValue("0");
         }
     }
 
-    function calculate(previousValue, operator, displayValue)
-    {
+    function calculate(previousValue, displayValue, operator) {
         const num1 = parseFloat(previousValue);
         const num2 = parseFloat(displayValue);
 
@@ -67,6 +77,12 @@ export default function useCalculadora() {
         if (operator === "-") return num1 - num2;
         if (operator === "/") return num1 / num2;
         if (operator === "*") return num1 * num2;
+    }
+
+    function clear() {
+        setDisplayValue("0");
+        setOperator(null);
+        setPreviousValue(null);
     }
 
     return {
