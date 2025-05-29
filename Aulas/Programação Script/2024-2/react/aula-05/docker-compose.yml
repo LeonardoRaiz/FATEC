@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres-fatec:
+    image: postgres:17
+    container_name: postgres-fatec
+    restart: always
+    environment:
+      POSTGRES_USER: fatec
+      POSTGRES_PASSWORD: fatec123
+      POSTGRES_DB: fatecdb
+    ports:
+      - "5433:5432"
+    volumes:
+      - fatec_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  fatec_postgres_data:
