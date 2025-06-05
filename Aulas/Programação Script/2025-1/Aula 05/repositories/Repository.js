@@ -1,4 +1,4 @@
-const IRepository = require('./IRepository');
+const IRepository = require('../interfaces/IRepository');
 
 class Repository extends IRepository {
     constructor(model) {
@@ -25,5 +25,4 @@ class Repository extends IRepository {
     async delete(id){
         return await this.model.delete({ where: { id }});
     }
-
 }
