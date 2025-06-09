@@ -1,87 +1,104 @@
-algoritmo "Matriz_Operacoes"
+algoritmo "Campo_Minadado_Energia_Contador"
 
-var
-   matriz: vetor[0..4, 0..4] de inteiro
-   valor, posicao, posicao1, soma: inteiro
-
-// Gera números aleatórios entre 2 e 20
-procedimento gerarMatriz()
-var i, j: inteiro
+procedimento gerarTabuleiro()
 inicio
-    para i de 0 ate 4 faca
-        para j de 0 ate 4 faca
-            matriz[i, j] <- randi(19) + 2
-        fimpara
-    fimpara
+   para i de 0 ate 4 faca
+      para j de 0 ate 4 faca
+         tabuleiro[i, j] <- randi(19) + 2
+      fimpara
+   fimpara
 fimprocedimento
 
-// Mostra a matriz 5x5
-procedimento mostrarMatriz()
+procedimento mostrarTabuleiro(titulo: caractere)
 var i, j: inteiro
 inicio
-    escreval("===== MATRIZ ATUAL =====")
-    para i de 0 ate 4 faca
-        para j de 0 ate 4 faca
-            escreva(matriz[i, j]:3, " ")
-        fimpara
-        escreval()
-    fimpara
-    escreval("========================")
+   escreval("==============================")
+   escreval(titulo)
+   escreval("       C0   C1   C2   C3   C4")
+   escreval("     -------------------------")
+   para i de 0 ate 4 faca
+      escreva("L", i, " |")
+      para j de 0 ate 4 faca
+         escreva(tabuleiro[i, j]:4)
+      fimpara
+      escreval()
+   fimpara
+   escreval("==============================")
 fimprocedimento
 
-// Se o valor existir na matriz, troca para 0. Senão, troca o valor da posição para 1
-procedimento buscaValor(valor: inteiro; posicao: inteiro)
-var i, j, contador: inteiro
-    encontrou: logico
+procedimento desativarOuMarcar(cargaDesejada: inteiro; posicaoLinear: inteiro)
+var i, j, contador, achou: inteiro
 inicio
-    encontrou <- falso
-    para i de 0 ate 4 faca
-        para j de 0 ate 4 faca
-            se matriz[i, j] = valor entao
-                matriz[i, j] <- 0
-                encontrou <- verdadeiro
+   achou <- 0
+   contador <- 0
+
+   // Desativa todas as ocorrências
+   para i de 0 ate 4 faca
+      para j de 0 ate 4 faca
+         se tabuleiro[i, j] = cargaDesejada entao
+            tabuleiro[i, j] <- 0
+            achou <- 1
+         fimse
+         contador <- contador + 1
+      fimpara
+   fimpara
+
+   // Se não encontrou a carga, marca posição como suspeita (1)
+   se achou = 0 entao
+      contador <- 0
+      para i de 0 ate 4 faca
+         para j de 0 ate 4 faca
+            se contador = posicaoLinear entao
+               tabuleiro[i, j] <- 1
             fimse
-        fimpara
-    fimpara
-
-    se nao encontrou entao
-        // Converter posição 0..24 para coordenadas da matriz 5x5
-        i <- posicao div 5
-        j <- posicao mod 5
-        matriz[i, j] <- 1
-    fimse
+            contador <- contador + 1
+         fimpara
+      fimpara
+   fimse
 fimprocedimento
 
-// Retorna a soma dos valores ímpares > 10 a partir da posição informada
-funcao calcularValor(posicao: inteiro): inteiro
-var i, j, k, soma: inteiro
+funcao escanearAmeaca(posInicial: inteiro): inteiro
+var i, j, contador, soma: inteiro
 inicio
-    soma <- 0
-    para k de posicao ate 24 faca
-        i <- k div 5
-        j <- k mod 5
-        se (matriz[i, j] mod 2 <> 0) e (matriz[i, j] > 10) entao
-            soma <- soma + matriz[i, j]
-        fimse
-    fimpara
-    retorne soma
+   soma <- 0
+   contador <- 0
+
+   para i de 0 ate 4 faca
+      para j de 0 ate 4 faca
+         se contador >= posInicial entao
+            se (tabuleiro[i, j] > 10) e (tabuleiro[i, j] mod 2 <> 0) entao
+               soma <- soma + tabuleiro[i, j]
+            fimse
+         fimse
+         contador <- contador + 1
+      fimpara
+   fimpara
+
+   retorne soma
 fimfuncao
 
-// Programa principal
+
+var
+   tabuleiro: vetor [0..4, 0..4] de inteiro
+   carga, posicao, i, j: inteiro
+
 inicio
-    gerarMatriz()
-    mostrarMatriz()
+   escreval("=== ⚡ CAMPO MINADO DE ENERGIA ⚡ ===")
+   gerarTabuleiro()
+   mostrarTabuleiro("🔋 Tabuleiro Energético Inicial:")
 
-    escreval("Digite um valor entre 2 e 20:")
-    leia(valor)
-    escreval("Digite uma posição entre 0 e 24:")
-    leia(posicao)
-    escreval("Digite uma posição entre 0 e 24:")
-    leia(posicao)
+   escreval("Informe a carga energética a desativar (2 a 20):")
+   leia(carga)
 
-    buscaValor(valor, posicao)
-    soma <- calcularValor(posicao)
+   escreval("Informe a célula para investigar (posição 0 a 24):")
+   leia(posicao)
 
-    mostrarMatriz()
-    escreval("Soma dos ímpares > 10 a partir da posição ", posicao, ": ", soma)
+   desativarOuMarcar(carga, posicao)
+
+   escreval()
+   escreval("🔎 Escaneando ameaça restante...")
+   escreval("Nível de ameaça a partir da posição ", posicao, ": 
+   ", escanearAmeaca(posicao))
+
+   mostrarTabuleiro("🧯 Tabuleiro Após Ação:")
 fimalgoritmo
