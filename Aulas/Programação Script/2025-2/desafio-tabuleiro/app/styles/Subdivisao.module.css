@@ -1,0 +1,43 @@
+
+
+.subdivisao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+}
+
+.preta {
+    background-color: black;
+}
+
+.branca {
+    background-color: white;
+}
+
+.peca {
+    background-color: #12cc74;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.peca:hover {
+    background-color: #0c884d;
+    cursor: pointer;
+}
+
+.peca1 {
+    background-color: #cc6f12;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.peca1:hover {
+    background-color: #88520c;
+    cursor: pointer;
+}
