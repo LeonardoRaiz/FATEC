@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 21/10">
-      <change afterPath="$PROJECT_DIR$/2025-2/desafio-tabuleiro/app/components/Linha.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/desafio-tabuleiro/app/components/Subdivisao.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/desafio-tabuleiro/app/styles/Linha.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/desafio-tabuleiro/app/styles/Subdivisao.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/desafio-tabuleiro/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IA/2025-2/Aula 01/Aula 01.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../IA/2025-2/Aula 01/Aula 01.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IA/Outros/Aula 01 - Introdução/Classificacao.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../IA/Outros/Aula 01 - Introdução/Classificacao.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025-2/desafio-tabuleiro/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/desafio-tabuleiro/app/page.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +169,7 @@
       <workItem from="1737722625984" duration="9595000" />
       <workItem from="1738066752719" duration="1216000" />
       <workItem from="1738080221718" duration="6359000" />
-      <workItem from="1756167696565" duration="1083000" />
+      <workItem from="1756167696565" duration="1306000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />

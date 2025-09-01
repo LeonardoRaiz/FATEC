@@ -1,6 +1,4 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Subdivisao from "@/app/components/Subdivisao";
+
 import Linha from "@/app/components/Linha";
 
 export default function Home() {
