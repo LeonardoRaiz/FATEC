@@ -5,7 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 21/10">
-      <change beforePath="$PROJECT_DIR$/2025-2/desafio-tabuleiro/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/desafio-tabuleiro/app/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA/Outros/Aula 02/01 - Nao supervisionado.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA/Outros/Aula 02/02 - Processamento de imagens.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA/Outros/Aula 02/ressonancia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/Go.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/betterCommentsSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/src/hello/hello.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/src/menu/menu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/src/menu/menufuncs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/src/menu/menuif.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/src/menu/menuswitch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Outros/Go/src/variables/variables.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/app/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/app/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/app/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/app/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/eslint.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/next.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/public/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/public/globe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/public/window.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IA/2025-2/Aula 01/Aula 01.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../IA/2025-2/Aula 01/Aula 01.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,34 +89,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Node.js.mega.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Programação Script",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "npm.start.executor": "Debug",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Node.js.mega.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Programação Script&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Debug&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/2024-2/react/aula-02/app/comunicacao" />
@@ -170,6 +204,7 @@
       <workItem from="1738066752719" duration="1216000" />
       <workItem from="1738080221718" duration="6359000" />
       <workItem from="1756167696565" duration="1306000" />
+      <workItem from="1756937362742" duration="5349000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
@@ -314,5 +349,17 @@
     <MESSAGE value="Aula 09/10" />
     <MESSAGE value="Aula 21/10" />
     <option name="LAST_COMMIT_MESSAGE" value="Aula 21/10" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/2025-2/aula-03/app/page.js</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
