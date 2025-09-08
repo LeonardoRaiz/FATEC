@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../assets/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+</head>
+<body>
+  <div class="widget-wrap">
+    <h1>API - Gin e Golang</h1>
+    <div class="widget-wrap">
+        <ul id="the-list">
+          {{range .alunos}}
+            <li>{{.Nome}}</li>
+          {{end}}
+        </ul>
+      </div>
+</body>
+</html>

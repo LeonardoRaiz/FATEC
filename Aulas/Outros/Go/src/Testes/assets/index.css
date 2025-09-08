@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Josefin+Slab');
+
+body {
+  background-color: #aeb6bf;
+}
+  
+h1 {
+  font-family: 'Alfa Slab One', cursive;
+  margin: 0 auto;
+  margin-top: 6%;
+  text-align: center;
+  font-size: 70px;
+}
+
+ul, li {
+  font-family: 'Josefin Slab', serif;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  list-style: none;
+}
