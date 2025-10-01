@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    color: #1c1c1c;
+    margin-bottom: 3rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}

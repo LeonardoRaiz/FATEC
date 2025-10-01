@@ -1,0 +1,90 @@
+/* app/pokemon/[id]/Pokemon.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.pokemonCard {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.pokemonName {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.details {
+    text-align: left;
+    margin: 1.5rem 0;
+}
+
+.details p, .details div {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.types {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.typeList {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.type {
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+
+.backButton {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #3B4CCA;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.backButton:hover {
+    background-color: #2a3aa5;
+}
+
+/* Cores dos Tipos */
+.normal { background-color: #A8A77A; }
+.fire { background-color: #EE8130; }
+.water { background-color: #6390F0; }
+.electric { background-color: #F7D02C; color: #333}
+.grass { background-color: #7AC74C; }
+.ice { background-color: #96D9D6; }
+.fighting { background-color: #C22E28; }
+.poison { background-color: #A33EA1; }
+.ground { background-color: #E2BF65; }
+.flying { background-color: #A98FF3; }
+.psychic { background-color: #F95587; }
+.bug { background-color: #A6B91A; }
+.rock { background-color: #B6A136; }
+.ghost { background-color: #735797; }
+.dragon { background-color: #6F35FC; }
+.dark { background-color: #705746; }
+.steel { background-color: #B7B7CE; }
+.fairy { background-color: #D685AD; }

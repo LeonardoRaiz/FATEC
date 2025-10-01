@@ -5,40 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 21/10">
-      <change afterPath="$PROJECT_DIR$/../IA/Outros/Aula 02/01 - Nao supervisionado.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA/Outros/Aula 02/02 - Processamento de imagens.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA/Outros/Aula 02/ressonancia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/Go.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/betterCommentsSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/src/hello/hello.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/src/menu/menu.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/src/menu/menufuncs.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/src/menu/menuif.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/src/menu/menuswitch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Outros/Go/src/variables/variables.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/app/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/app/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/app/page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/eslint.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/next.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/public/file.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/public/globe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/public/next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/public/vercel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-03/public/window.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IA/2025-2/Aula 01/Aula 01.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../IA/2025-2/Aula 01/Aula 01.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/Home.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/pokemon/[id]/Pokemon.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/pokemon/[id]/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/components/PokemonGrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/eslint.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/next.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/public/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/public/globe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/public/window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/Home.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/components/PokemonGrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/eslint.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/next.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/public/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/public/globe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/public/window.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,6 +211,8 @@
       <workItem from="1738080221718" duration="6359000" />
       <workItem from="1756167696565" duration="1306000" />
       <workItem from="1756937362742" duration="5349000" />
+      <workItem from="1759326549315" duration="1503000" />
+      <workItem from="1759355550156" duration="6369000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
@@ -356,7 +364,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/2025-2/aula-03/app/page.js</url>
           <line>1</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
