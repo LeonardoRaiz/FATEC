@@ -5,47 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 21/10">
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/Home.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/pokemon/[id]/Pokemon.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/app/pokemon/[id]/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/components/PokemonGrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/eslint.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/next.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/public/file.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/public/globe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/public/next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/public/vercel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-1/pokedex-nextjs/public/window.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/Home.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/components/PokemonGrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/eslint.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/next.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/public/file.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/public/globe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/public/next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/public/vercel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/public/window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA/2025-2/Aula 04/Aula 04.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA/Outros/Aula 05 - Deep learning/deep_learning.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-1/Aula 06/Backend.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/pokemon/[id]/Pokemon.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/app/pokemon/[id]/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/styles/PokemonGrid.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-06-backend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-06-backend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-06-backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IA/2025-2/Aula 03/sistema-especialista.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../IA/2025-2/Aula 03/sistema-especialista.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025-2/aula-05-pokedex/components/PokemonGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/aula-05-pokedex/components/PokemonGrid.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +84,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.dev.executor&quot;: &quot;Run&quot;,
     &quot;npm.start.executor&quot;: &quot;Debug&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -213,6 +184,10 @@
       <workItem from="1756937362742" duration="5349000" />
       <workItem from="1759326549315" duration="1503000" />
       <workItem from="1759355550156" duration="6369000" />
+      <workItem from="1759784376536" duration="5684000" />
+      <workItem from="1760983684523" duration="3270000" />
+      <workItem from="1761005459658" duration="3047000" />
+      <workItem from="1761170772009" duration="3325000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
