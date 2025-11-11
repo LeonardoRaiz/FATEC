@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 21/10">
-      <change afterPath="$PROJECT_DIR$/../IA/2025-2/Aula 05/Aula 05.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/src/dtos/ProdutoDTOCreateRequest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/src/dtos/ProdutoDTOResponse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/src/repositories/CatalagoRepository.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/src/repositories/ProdutoRepository.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/src/controllers/ProdutoContoller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/src/dtos/CatalogoDTOCreateRequest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/src/dtos/CatalogoDTOResponse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IA/2025-2/Aula 05/Aula 05.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../IA/2025-2/Aula 05/Aula 05.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025-2/aula-07-prisma/src/repositories/UnitOfWork.js" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/src/repositories/UnitOfWork.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +78,7 @@
     &quot;npm.dev (1).executor&quot;: &quot;Run&quot;,
     &quot;npm.dev.executor&quot;: &quot;Run&quot;,
     &quot;npm.start.executor&quot;: &quot;Debug&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -90,6 +88,15 @@
     ]
   }
 }</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/2025-2/aula-07-prisma" />
@@ -143,7 +150,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.411" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
       </set>
     </attachedChunks>
   </component>
@@ -198,7 +205,12 @@
       <workItem from="1761005459658" duration="3047000" />
       <workItem from="1761170772009" duration="5204000" />
       <workItem from="1761776429647" duration="4712000" />
-      <workItem from="1762214388232" duration="2564000" />
+      <workItem from="1762214388232" duration="2933000" />
+      <workItem from="1762738052400" duration="12000" />
+      <workItem from="1762799975380" duration="131000" />
+      <workItem from="1762800115358" duration="638000" />
+      <workItem from="1762800803633" duration="718000" />
+      <workItem from="1762819402720" duration="2939000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
