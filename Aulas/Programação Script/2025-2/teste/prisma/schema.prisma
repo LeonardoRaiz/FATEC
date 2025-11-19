@@ -14,7 +14,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// Modelos do padrão MVC -- MODELS
 model Catalogo {
   id       Int       @id @default(autoincrement())
   nome     String

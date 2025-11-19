@@ -1,5 +1,12 @@
 {
-  "name": "aula-07-prisma",
+  "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "prisma": "^6.19.0"
+  },
+  "name": "teste",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,15 +18,7 @@
   "license": "ISC",
   "type": "commonjs",
   "description": "",
-  "dependencies": {
-    "@prisma/client": "^6.19.0",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "pg": "^8.16.3",
-    "prisma": "^6.18.0"
-  },
   "devDependencies": {
-    "dotenv-cli": "^11.0.0",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.11"
   }
 }

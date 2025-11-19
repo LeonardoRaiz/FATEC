@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 21/10">
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/src/controllers/ProdutoContoller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/src/dtos/CatalogoDTOCreateRequest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/src/dtos/CatalogoDTOResponse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IA/2025-2/Aula 05/Aula 05.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../IA/2025-2/Aula 05/Aula 05.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025-2/aula-07-prisma/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025-2/aula-07-prisma/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025-2/aula-07-prisma/prisma.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/prisma.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025-2/aula-07-prisma/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025-2/aula-07-prisma/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +69,8 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;23.6.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.10.1&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/leonardoraiz/Documents/Leonardo/FATEC/Aulas/Programação Script&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -210,7 +213,11 @@
       <workItem from="1762799975380" duration="131000" />
       <workItem from="1762800115358" duration="638000" />
       <workItem from="1762800803633" duration="718000" />
-      <workItem from="1762819402720" duration="2939000" />
+      <workItem from="1762819402720" duration="3291000" />
+      <workItem from="1762985608597" duration="5646000" />
+      <workItem from="1762991808816" duration="1755000" />
+      <workItem from="1763559770158" duration="62000" />
+      <workItem from="1763593191329" duration="766000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
