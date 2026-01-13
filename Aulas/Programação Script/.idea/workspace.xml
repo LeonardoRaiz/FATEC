@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 21/10">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025-2/aula-07-prisma/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025-2/aula-07-prisma/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025-2/aula-07-prisma/prisma.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/prisma.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025-2/aula-07-prisma/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025-2/aula-07-prisma/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/2025-2/aula-07-prisma/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="1df47f5e-54de-446d-ba3b-814feca6c88f" name="Changes" comment="Aula 21/10" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,7 +210,7 @@
       <workItem from="1762985608597" duration="5646000" />
       <workItem from="1762991808816" duration="1755000" />
       <workItem from="1763559770158" duration="62000" />
-      <workItem from="1763593191329" duration="766000" />
+      <workItem from="1763593191329" duration="1278000" />
     </task>
     <task id="LOCAL-00001" summary="Aula 07/08">
       <option name="closed" value="true" />
