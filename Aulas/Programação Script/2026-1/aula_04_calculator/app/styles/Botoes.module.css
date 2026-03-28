@@ -1,0 +1,27 @@
+.botao {
+    color: white;
+    font-size: xx-large;
+    width: 80px;
+    height: 80px;
+    background-color: #494949;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.botao:hover {
+    background-color: #2c2c2c;
+}
+.botao:active {
+    background-color: #151515;
+    transform: translateY(5px);
+}
+.operator {
+    background-color: #501585;
+}
+.operator:hover {
+    background-color: #3e0d67;
+}
+.operator:active {
+    background-color: #2e074d;
+    transform: translateY(5px);
+}

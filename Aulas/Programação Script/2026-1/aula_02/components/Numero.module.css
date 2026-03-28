@@ -1,0 +1,19 @@
+.par{
+    background-color: #ef13c2;
+    color: black;
+    padding: 16px;
+    width: 20%;
+    margin: 8px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 32px;
+}
+.impar{
+    background-color: #8513ef;
+    color: white;
+    padding: 16px;
+    width: 20%;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 32px;
+}

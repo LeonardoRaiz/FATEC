@@ -1,0 +1,27 @@
+:root {
+    --subdivisao-size: 70px;
+    --peca-size: 50px
+}
+
+.subdivisao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--subdivisao-size);
+    height: var(--subdivisao-size);
+    border: 1px black solid;
+}
+
+.preta {
+    background-color: #383838;
+}
+.branca {
+    background-color: #eaebef;
+}
+
+.peca {
+    width: var(--peca-size);
+    height: var(--peca-size);
+    border-radius: 50%;
+    background-color: #8513ef;
+}
