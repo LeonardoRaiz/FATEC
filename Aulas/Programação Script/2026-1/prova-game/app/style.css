@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.character {
+    color: #282828;
+    background-color: lightgray;
+    border: 2px solid #648bc9;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #648bc9;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+button:hover{
+    background-color: #345a91;
+}
+button:active {
+    transform: translateY(2px);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.life-bar {
+    position: relative;
+    height: 30px;
+    background-color: #d72929;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border: 1px solid #282828;
+}
+
+.life-fill {
+    background-color: #489b34;
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+.life-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: #282828;
+}
+
+.sprite {
+    height: 250px;
+    background-color: #7c7c7c;
+    border-radius: 5px;
+}
